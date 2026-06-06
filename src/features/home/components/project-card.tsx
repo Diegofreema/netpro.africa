@@ -19,9 +19,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
         />
         <Link
           to="/projects"
+          aria-label={`Learn more about ${project.title}`}
           className="np-focus absolute bottom-[-1.4rem] left-1/2 inline-flex min-h-12 -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-white/12 bg-background/90 px-6 text-sm font-medium text-foreground backdrop-blur transition-[background-color,border-color,transform] duration-(--np-duration-fast) hover:border-white/22 hover:bg-white/[0.08]"
         >
-          View project details
+          Learn more
           <ArrowRightIcon className="size-4" aria-hidden="true" />
         </Link>
       </div>

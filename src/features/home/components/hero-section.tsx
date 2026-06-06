@@ -40,7 +40,7 @@ export function HeroSection() {
             <LandingButton to="/contact-us">
               {heroContent.primaryCta}
             </LandingButton>
-            <LandingButton to="/contact-us" variant="quiet">
+            <LandingButton to="/projects" variant="quiet">
               {heroContent.secondaryCta}
             </LandingButton>
           </div>

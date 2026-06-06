@@ -1,6 +1,6 @@
-import { projectsCta } from '@/features/projects/data/projects-page-content'
-import { LandingButton } from '@/features/home/components/landing-button'
-import { assetUrl } from '@/shared/config/site'
+import { projectsCta } from '@/features/projects/data/projects-page-content';
+import { LandingButton } from '@/features/home/components/landing-button';
+import { assetUrl } from '@/shared/config/site';
 
 export function ProjectsCta() {
   return (
@@ -13,21 +13,28 @@ export function ProjectsCta() {
           <p className="max-w-4xl text-sm leading-7 text-muted-foreground sm:text-base">
             {projectsCta.description}
           </p>
-          <p className="mt-5 text-base font-medium text-foreground">{projectsCta.prompt}</p>
+          <p className="mt-5 text-base font-medium text-foreground">
+            {projectsCta.prompt}
+          </p>
           <div className="flex flex-col gap-4 sm:flex-row">
-            <LandingButton to="/contact-us">{projectsCta.primary}</LandingButton>
+            <LandingButton to="/contact-us">
+              {projectsCta.primary}
+            </LandingButton>
             <LandingButton to="/services" variant="quiet">
               {projectsCta.secondary}
             </LandingButton>
           </div>
         </div>
 
-        <div className="relative z-10 mx-auto mt-20 h-48 max-w-4xl overflow-hidden sm:h-60" aria-hidden="true">
+        <div
+          className="relative z-10 mx-auto mt-20 h-48 max-w-4xl overflow-hidden sm:h-60"
+          aria-hidden="true"
+        >
           <div className="absolute inset-x-0 bottom-[-4.8rem] text-[clamp(8rem,23vw,18rem)] font-light leading-none tracking-[-0.08em] text-[#1279c8]">
             netpro
           </div>
           <img
-            src={assetUrl('/assets/netpro/logo-crop.png')}
+            src={assetUrl('/assets/netpro/logo.png')}
             alt=""
             className="absolute bottom-12 left-[58%] w-28 border-0 outline-none sm:w-36"
             loading="lazy"
@@ -36,5 +43,5 @@ export function ProjectsCta() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,6 +1,6 @@
-import { contactCta } from '@/features/contact/data/contact-page-content'
-import { LandingButton } from '@/features/home/components/landing-button'
-import { assetUrl } from '@/shared/config/site'
+import { contactCta } from '@/features/contact/data/contact-page-content';
+import { LandingButton } from '@/features/home/components/landing-button';
+import { assetUrl } from '@/shared/config/site';
 
 export function ContactCta() {
   return (
@@ -13,8 +13,12 @@ export function ContactCta() {
           <h2 className="font-heading text-[clamp(2.1rem,4.5vw,3.7rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-foreground">
             {contactCta.title}
           </h2>
-          <p className="max-w-4xl text-sm leading-7 text-muted-foreground sm:text-base">{contactCta.body}</p>
-          <p className="mt-5 text-base font-medium text-foreground">{contactCta.prompt}</p>
+          <p className="max-w-4xl text-sm leading-7 text-muted-foreground sm:text-base">
+            {contactCta.body}
+          </p>
+          <p className="mt-5 text-base font-medium text-foreground">
+            {contactCta.prompt}
+          </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <LandingButton to="/contact-us">{contactCta.primary}</LandingButton>
             <LandingButton to="/projects" variant="quiet">
@@ -23,12 +27,15 @@ export function ContactCta() {
           </div>
         </div>
 
-        <div className="relative z-10 mx-auto mt-20 h-48 max-w-4xl overflow-hidden sm:h-60" aria-hidden="true">
+        <div
+          className="relative z-10 mx-auto mt-20 h-48 max-w-4xl overflow-hidden sm:h-60"
+          aria-hidden="true"
+        >
           <div className="absolute inset-x-0 bottom-[-4.8rem] text-[clamp(8rem,23vw,18rem)] font-light leading-none tracking-[-0.08em] text-[#1279c8]">
             netpro
           </div>
           <img
-            src={assetUrl('/assets/netpro/logo-crop.png')}
+            src={assetUrl('/assets/netpro/logo.png')}
             alt=""
             className="absolute bottom-12 left-[58%] w-28 border-0 outline-none sm:w-36"
             loading="lazy"
@@ -37,5 +44,5 @@ export function ContactCta() {
         </div>
       </div>
     </section>
-  )
+  );
 }

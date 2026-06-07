@@ -1,4 +1,4 @@
-import type { LucideIcon } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react';
 import {
   BarChart3Icon,
   BriefcaseBusinessIcon,
@@ -13,55 +13,55 @@ import {
   ShieldCheckIcon,
   SparklesIcon,
   SmartphoneIcon,
-} from 'lucide-react'
+} from 'lucide-react';
 
-import { assetUrl } from '@/shared/config/site'
+import { assetUrl } from '@/shared/config/site';
 
 export type ProjectTag = {
-  label: string
-  icon: LucideIcon
-}
+  label: string;
+  icon: LucideIcon;
+};
 
 export type ProjectMeta = {
-  label: string
-  value: string
-}
+  label: string;
+  value: string;
+};
 
 export type ProjectTechnology = {
-  label: string
-  icon: LucideIcon
-}
+  label: string;
+  icon: LucideIcon;
+};
 
 export type ShowcaseLabels = {
-  summary: string
-  details: string
-  technologies: string
-  subject: string
-  methods: string
-}
+  summary: string;
+  details: string;
+  technologies: string;
+  subject: string;
+  methods: string;
+};
 
 export type SoftwareProject = {
-  id: string
-  title: string
-  image?: string
-  tags: ProjectTag[]
-  summary: string
-  details: string[]
-  meta: ProjectMeta[]
-  technologies: ProjectTechnology[]
-  subject: string
-  subjectInitials: string
-  methods: string[]
-  labels?: Partial<ShowcaseLabels>
-}
+  id: string;
+  title: string;
+  image?: string;
+  tags: ProjectTag[];
+  summary: string;
+  details: string[];
+  meta: ProjectMeta[];
+  technologies: ProjectTechnology[];
+  subject: string;
+  subjectInitials: string;
+  methods: string[];
+  labels?: Partial<ShowcaseLabels>;
+};
 
 export type ShowcaseSection = {
-  id: string
-  eyebrow: string
-  title: string
-  description: string
-  projects: SoftwareProject[]
-}
+  id: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+  projects: SoftwareProject[];
+};
 
 const productLabels: ShowcaseLabels = {
   summary: 'Product Overview',
@@ -69,7 +69,7 @@ const productLabels: ShowcaseLabels = {
   technologies: 'Solution Areas',
   subject: 'Best Fit',
   methods: 'Commercial Notes',
-}
+};
 
 const deploymentLabels: ShowcaseLabels = {
   summary: 'Deployment Overview',
@@ -77,7 +77,7 @@ const deploymentLabels: ShowcaseLabels = {
   technologies: 'Solution Areas',
   subject: 'Client / Institution',
   methods: 'Delivery Highlights',
-}
+};
 
 export const projectsHero = {
   title: 'Our Software Products',
@@ -87,7 +87,7 @@ export const projectsHero = {
     'Create a free account and explore any of our core products in a live demo environment.',
   primary: 'Talk to Sales',
   secondary: 'View Services',
-}
+};
 
 const educationProducts: SoftwareProject[] = [
   {
@@ -114,7 +114,10 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'EE1 / EMS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Universities, polytechnics, colleges' },
+      {
+        label: 'Primary Market',
+        value: 'Universities, polytechnics, colleges',
+      },
     ],
     technologies: [
       { label: 'Admissions', icon: PanelsTopLeftIcon },
@@ -122,9 +125,14 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Academics', icon: GraduationCapIcon },
       { label: 'Analytics', icon: LineChartIcon },
     ],
-    subject: 'Institutions that need one operational hub for admissions, finance, academics, and student records.',
+    subject:
+      'Institutions that need one operational hub for admissions, finance, academics, and student records.',
     subjectInitials: 'EM',
-    methods: ['Live demo access', 'Multi-campus ready', 'Nigerian compliance fit'],
+    methods: [
+      'Live demo access',
+      'Multi-campus ready',
+      'Nigerian compliance fit',
+    ],
     labels: productLabels,
   },
   {
@@ -159,7 +167,8 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Content Hosting', icon: DatabaseIcon },
       { label: 'Student Access', icon: SmartphoneIcon },
     ],
-    subject: 'Institutions delivering blended, online, or distance learning at scale.',
+    subject:
+      'Institutions delivering blended, online, or distance learning at scale.',
     subjectInitials: 'LM',
     methods: ['Live demo access', 'ODL-ready workflows', 'EMS integration'],
     labels: productLabels,
@@ -188,7 +197,10 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'EE3 / RTMS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Universities and awarding institutions' },
+      {
+        label: 'Primary Market',
+        value: 'Universities and awarding institutions',
+      },
     ],
     technologies: [
       { label: 'Result Processing', icon: LayoutDashboardIcon },
@@ -196,9 +208,14 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Audit Trail', icon: ShieldCheckIcon },
       { label: 'Payments', icon: BarChart3Icon },
     ],
-    subject: 'Institutions that need faster approvals, safer records, and digital transcript workflows.',
+    subject:
+      'Institutions that need faster approvals, safer records, and digital transcript workflows.',
     subjectInitials: 'RT',
-    methods: ['Live demo access', 'Forgery risk reduction', 'Alumni self-service'],
+    methods: [
+      'Live demo access',
+      'Forgery risk reduction',
+      'Alumni self-service',
+    ],
     labels: productLabels,
   },
   {
@@ -225,7 +242,10 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'EE5 / JMS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Universities and research institutions' },
+      {
+        label: 'Primary Market',
+        value: 'Universities and research institutions',
+      },
     ],
     technologies: [
       { label: 'Peer Review', icon: ShieldCheckIcon },
@@ -233,7 +253,8 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Metadata', icon: DatabaseIcon },
       { label: 'Discoverability', icon: LineChartIcon },
     ],
-    subject: 'Institutions improving research output, editorial quality, and indexing readiness.',
+    subject:
+      'Institutions improving research output, editorial quality, and indexing readiness.',
     subjectInitials: 'JM',
     methods: ['Live demo access', 'Indexing support', 'Open-access ready'],
     labels: productLabels,
@@ -270,9 +291,14 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Assessments', icon: LayoutDashboardIcon },
       { label: 'Compliance Reporting', icon: ShieldCheckIcon },
     ],
-    subject: 'Institutions managing large SIWES cohorts and accreditation evidence requirements.',
+    subject:
+      'Institutions managing large SIWES cohorts and accreditation evidence requirements.',
     subjectInitials: 'SW',
-    methods: ['Live demo access', 'ITF reporting support', 'Supervisor portals'],
+    methods: [
+      'Live demo access',
+      'ITF reporting support',
+      'Supervisor portals',
+    ],
     labels: productLabels,
   },
   {
@@ -307,9 +333,14 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Watermarking', icon: ShieldCheckIcon },
       { label: 'Reporting', icon: LineChartIcon },
     ],
-    subject: 'Institutions protecting research output and improving repository visibility.',
+    subject:
+      'Institutions protecting research output and improving repository visibility.',
     subjectInitials: 'DR',
-    methods: ['Live demo access', 'Accreditation support', 'Open-access integration'],
+    methods: [
+      'Live demo access',
+      'Accreditation support',
+      'Open-access integration',
+    ],
     labels: productLabels,
   },
   {
@@ -336,7 +367,10 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'EE8 / QMS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Institutions under NUC, NBTE, and NABTEB oversight' },
+      {
+        label: 'Primary Market',
+        value: 'Institutions under NUC, NBTE, and NABTEB oversight',
+      },
     ],
     technologies: [
       { label: 'Document Control', icon: DatabaseIcon },
@@ -344,9 +378,14 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Compliance', icon: ShieldCheckIcon },
       { label: 'Management Review', icon: LineChartIcon },
     ],
-    subject: 'Institutions standardising quality assurance and preparing for recurring accreditation cycles.',
+    subject:
+      'Institutions standardising quality assurance and preparing for recurring accreditation cycles.',
     subjectInitials: 'QM',
-    methods: ['Live demo access', 'Gap analysis ready', 'Continuous improvement workflows'],
+    methods: [
+      'Live demo access',
+      'Gap analysis ready',
+      'Continuous improvement workflows',
+    ],
     labels: productLabels,
   },
   {
@@ -381,9 +420,14 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Performance', icon: LineChartIcon },
       { label: 'Staff Records', icon: DatabaseIcon },
     ],
-    subject: 'Institutions managing academic, administrative, and casual staff from one HR platform.',
+    subject:
+      'Institutions managing academic, administrative, and casual staff from one HR platform.',
     subjectInitials: 'HR',
-    methods: ['Live demo access', 'Payroll compliance fit', 'Academic HR workflows'],
+    methods: [
+      'Live demo access',
+      'Payroll compliance fit',
+      'Academic HR workflows',
+    ],
     labels: productLabels,
   },
   {
@@ -418,17 +462,19 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Authentication', icon: ShieldCheckIcon },
       { label: 'Usage Analytics', icon: LineChartIcon },
     ],
-    subject: 'Libraries balancing physical collections, digital subscriptions, and self-service access.',
+    subject:
+      'Libraries balancing physical collections, digital subscriptions, and self-service access.',
     subjectInitials: 'LB',
     methods: ['Live demo access', 'OPAC ready', 'EMS integration'],
     labels: productLabels,
   },
-]
+];
 
 const healthcareProducts: SoftwareProject[] = [
   {
     id: 'hms',
     title: 'Hospital Management System',
+    image: assetUrl('/assets/netpro/Hospital Management System.png'),
     tags: [
       { label: 'Healthcare Software', icon: ShieldCheckIcon },
       { label: 'NHIA Aware', icon: BarChart3Icon },
@@ -458,7 +504,8 @@ const healthcareProducts: SoftwareProject[] = [
       { label: 'Pharmacy & Lab', icon: DatabaseIcon },
       { label: 'Reporting', icon: LineChartIcon },
     ],
-    subject: 'Hospitals replacing paper-heavy clinical and billing processes with one connected platform.',
+    subject:
+      'Hospitals replacing paper-heavy clinical and billing processes with one connected platform.',
     subjectInitials: 'HM',
     methods: ['Live demo access', 'NHIA support', 'Low-bandwidth friendly'],
     labels: productLabels,
@@ -488,7 +535,10 @@ const healthcareProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'HC2 / SHIMS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Universities, schools, and campus clinics' },
+      {
+        label: 'Primary Market',
+        value: 'Universities, schools, and campus clinics',
+      },
     ],
     technologies: [
       { label: 'Appointments', icon: LayoutDashboardIcon },
@@ -496,7 +546,8 @@ const healthcareProducts: SoftwareProject[] = [
       { label: 'Pharmacy', icon: DatabaseIcon },
       { label: 'EMS Sync', icon: GraduationCapIcon },
     ],
-    subject: 'Campuses managing student and staff care with tighter reporting and privacy controls.',
+    subject:
+      'Campuses managing student and staff care with tighter reporting and privacy controls.',
     subjectInitials: 'SH',
     methods: ['Live demo access', 'Campus clinic fit', 'EMS integration'],
     labels: productLabels,
@@ -526,7 +577,10 @@ const healthcareProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'HC3 / HHS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Home-care agencies and digital health providers' },
+      {
+        label: 'Primary Market',
+        value: 'Home-care agencies and digital health providers',
+      },
     ],
     technologies: [
       { label: 'Care Plans', icon: BriefcaseBusinessIcon },
@@ -534,12 +588,13 @@ const healthcareProducts: SoftwareProject[] = [
       { label: 'Medication Tracking', icon: ShieldCheckIcon },
       { label: 'Claims & Outcomes', icon: BarChart3Icon },
     ],
-    subject: 'Providers scaling structured home-based care, follow-up, and caregiver coordination.',
+    subject:
+      'Providers scaling structured home-based care, follow-up, and caregiver coordination.',
     subjectInitials: 'HH',
     methods: ['Live demo access', 'Caregiver scheduling', 'Outcome tracking'],
     labels: productLabels,
   },
-]
+];
 
 const financialProducts: SoftwareProject[] = [
   {
@@ -567,7 +622,10 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'FN1 / MFBS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Microfinance banks and regulated lenders' },
+      {
+        label: 'Primary Market',
+        value: 'Microfinance banks and regulated lenders',
+      },
     ],
     technologies: [
       { label: 'Deposits & Loans', icon: BarChart3Icon },
@@ -575,9 +633,14 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Interbank Transfers', icon: Globe2Icon },
       { label: 'Branch Reporting', icon: LineChartIcon },
     ],
-    subject: 'CBN-licensed institutions that need a regulated operating backbone, not generic accounting software.',
+    subject:
+      'CBN-licensed institutions that need a regulated operating backbone, not generic accounting software.',
     subjectInitials: 'MF',
-    methods: ['Live demo access', 'CBN reporting support', 'Multi-branch architecture'],
+    methods: [
+      'Live demo access',
+      'CBN reporting support',
+      'Multi-branch architecture',
+    ],
     labels: productLabels,
   },
   {
@@ -605,7 +668,10 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'FN2 / CSMS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Registered cooperatives and thrift societies' },
+      {
+        label: 'Primary Market',
+        value: 'Registered cooperatives and thrift societies',
+      },
     ],
     technologies: [
       { label: 'Member Accounts', icon: DatabaseIcon },
@@ -613,9 +679,14 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Notifications', icon: SmartphoneIcon },
       { label: 'Audit Reports', icon: ShieldCheckIcon },
     ],
-    subject: 'Cooperatives that need digital transparency across member savings, loans, and annual reporting.',
+    subject:
+      'Cooperatives that need digital transparency across member savings, loans, and annual reporting.',
     subjectInitials: 'CS',
-    methods: ['Live demo access', 'Member self-service', 'Payroll deduction support'],
+    methods: [
+      'Live demo access',
+      'Member self-service',
+      'Payroll deduction support',
+    ],
     labels: productLabels,
   },
   {
@@ -643,7 +714,10 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'FN3 / LMS-Fin' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Digital lenders and credit providers' },
+      {
+        label: 'Primary Market',
+        value: 'Digital lenders and credit providers',
+      },
     ],
     technologies: [
       { label: 'Origination', icon: SmartphoneIcon },
@@ -651,9 +725,14 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Collections', icon: ShieldCheckIcon },
       { label: 'Integrations', icon: Globe2Icon },
     ],
-    subject: 'Lenders that need faster loan operations, cleaner repayment tracking, and stronger portfolio control.',
+    subject:
+      'Lenders that need faster loan operations, cleaner repayment tracking, and stronger portfolio control.',
     subjectInitials: 'DL',
-    methods: ['Live demo access', 'Bureau integration ready', 'USSD to collections flow'],
+    methods: [
+      'Live demo access',
+      'Bureau integration ready',
+      'USSD to collections flow',
+    ],
     labels: productLabels,
   },
   {
@@ -681,7 +760,10 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'FN4 / ABP' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Banks, MFBs, and agent network operators' },
+      {
+        label: 'Primary Market',
+        value: 'Banks, MFBs, and agent network operators',
+      },
     ],
     technologies: [
       { label: 'Agent Onboarding', icon: BriefcaseBusinessIcon },
@@ -689,7 +771,8 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Commissions', icon: BarChart3Icon },
       { label: 'Fraud Alerts', icon: ShieldCheckIcon },
     ],
-    subject: 'Institutions extending services through agent networks and needing stronger transaction control.',
+    subject:
+      'Institutions extending services through agent networks and needing stronger transaction control.',
     subjectInitials: 'AB',
     methods: ['Live demo access', 'Super-agent support', 'Fraud monitoring'],
     labels: productLabels,
@@ -719,7 +802,10 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'FN5 / MbApp' },
       { label: 'Delivery Model', value: 'White-labelled SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'MFBs, cooperatives, and community banks' },
+      {
+        label: 'Primary Market',
+        value: 'MFBs, cooperatives, and community banks',
+      },
     ],
     technologies: [
       { label: 'Mobile Self-Service', icon: SmartphoneIcon },
@@ -727,7 +813,8 @@ const financialProducts: SoftwareProject[] = [
       { label: 'KYC Onboarding', icon: ShieldCheckIcon },
       { label: 'Customer Support', icon: MonitorSmartphoneIcon },
     ],
-    subject: 'Financial institutions ready to launch branded mobile banking without building from scratch.',
+    subject:
+      'Financial institutions ready to launch branded mobile banking without building from scratch.',
     subjectInitials: 'MB',
     methods: ['Live demo access', 'White-label delivery', 'Biometric login'],
     labels: productLabels,
@@ -757,7 +844,10 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'FN6 / PMTS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Payment-heavy institutions and platforms' },
+      {
+        label: 'Primary Market',
+        value: 'Payment-heavy institutions and platforms',
+      },
     ],
     technologies: [
       { label: 'Channel Processing', icon: Globe2Icon },
@@ -765,12 +855,17 @@ const financialProducts: SoftwareProject[] = [
       { label: 'Fraud Monitoring', icon: ShieldCheckIcon },
       { label: 'API Integrations', icon: Code2Icon },
     ],
-    subject: 'Institutions that need one source of truth for settlements, disputes, and payment exceptions.',
+    subject:
+      'Institutions that need one source of truth for settlements, disputes, and payment exceptions.',
     subjectInitials: 'PM',
-    methods: ['Live demo access', 'Gateway integrations', 'Reconciliation engine'],
+    methods: [
+      'Live demo access',
+      'Gateway integrations',
+      'Reconciliation engine',
+    ],
     labels: productLabels,
   },
-]
+];
 
 const enterpriseProducts: SoftwareProject[] = [
   {
@@ -798,7 +893,10 @@ const enterpriseProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'EN1 / HRMS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Government, private sector, NGOs, finance' },
+      {
+        label: 'Primary Market',
+        value: 'Government, private sector, NGOs, finance',
+      },
     ],
     technologies: [
       { label: 'Recruitment', icon: BriefcaseBusinessIcon },
@@ -806,9 +904,14 @@ const enterpriseProducts: SoftwareProject[] = [
       { label: 'Employee Self-Service', icon: SmartphoneIcon },
       { label: 'Workforce Analytics', icon: LineChartIcon },
     ],
-    subject: 'Organisations that need compliant payroll and full employee lifecycle control in one HR platform.',
+    subject:
+      'Organisations that need compliant payroll and full employee lifecycle control in one HR platform.',
     subjectInitials: 'HR',
-    methods: ['Live demo access', 'Statutory payroll fit', 'Cross-sector ready'],
+    methods: [
+      'Live demo access',
+      'Statutory payroll fit',
+      'Cross-sector ready',
+    ],
     labels: productLabels,
   },
   {
@@ -836,7 +939,10 @@ const enterpriseProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'EN2 / JMIS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Courts, tribunals, and legal institutions' },
+      {
+        label: 'Primary Market',
+        value: 'Courts, tribunals, and legal institutions',
+      },
     ],
     technologies: [
       { label: 'Case Tracking', icon: LayoutDashboardIcon },
@@ -844,9 +950,14 @@ const enterpriseProducts: SoftwareProject[] = [
       { label: 'Public Enquiry', icon: Globe2Icon },
       { label: 'Judiciary Reporting', icon: LineChartIcon },
     ],
-    subject: 'Judicial bodies reducing backlog while strengthening records, visibility, and court administration.',
+    subject:
+      'Judicial bodies reducing backlog while strengthening records, visibility, and court administration.',
     subjectInitials: 'JM',
-    methods: ['Live demo access', 'Court workflow fit', 'Public enquiry portal'],
+    methods: [
+      'Live demo access',
+      'Court workflow fit',
+      'Public enquiry portal',
+    ],
     labels: productLabels,
   },
   {
@@ -874,7 +985,10 @@ const enterpriseProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'EN3 / PMS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Property managers, estates, hospitality operators' },
+      {
+        label: 'Primary Market',
+        value: 'Property managers, estates, hospitality operators',
+      },
     ],
     technologies: [
       { label: 'Tenancy Workflows', icon: BriefcaseBusinessIcon },
@@ -882,9 +996,14 @@ const enterpriseProducts: SoftwareProject[] = [
       { label: 'Maintenance Tracking', icon: LayoutDashboardIcon },
       { label: 'Portfolio Reporting', icon: LineChartIcon },
     ],
-    subject: 'Property operators that need better tenant service, collection discipline, and maintenance coordination.',
+    subject:
+      'Property operators that need better tenant service, collection discipline, and maintenance coordination.',
     subjectInitials: 'PM',
-    methods: ['Live demo access', 'Multi-channel payments', 'Work-order tracking'],
+    methods: [
+      'Live demo access',
+      'Multi-channel payments',
+      'Work-order tracking',
+    ],
     labels: productLabels,
   },
   {
@@ -912,7 +1031,10 @@ const enterpriseProducts: SoftwareProject[] = [
       { label: 'Product Code', value: 'EN4 / NBACCS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
-      { label: 'Primary Market', value: 'Legal practitioners and conveyancing teams' },
+      {
+        label: 'Primary Market',
+        value: 'Legal practitioners and conveyancing teams',
+      },
     ],
     technologies: [
       { label: 'Document Automation', icon: Code2Icon },
@@ -920,18 +1042,24 @@ const enterpriseProducts: SoftwareProject[] = [
       { label: 'Registry Workflow', icon: Globe2Icon },
       { label: 'Client Access', icon: MonitorSmartphoneIcon },
     ],
-    subject: 'Firms and legal teams handling property transactions under NBA and land-registry compliance rules.',
+    subject:
+      'Firms and legal teams handling property transactions under NBA and land-registry compliance rules.',
     subjectInitials: 'NB',
-    methods: ['Live demo access', 'Template-driven drafting', 'Deadline alerts'],
+    methods: [
+      'Live demo access',
+      'Template-driven drafting',
+      'Deadline alerts',
+    ],
     labels: productLabels,
   },
-]
+];
 
 export const productCatalogSections: ShowcaseSection[] = [
   {
     id: 'education-products',
     eyebrow: 'Education Software',
-    title: 'Academic operations, learning delivery, and institutional quality on one stack',
+    title:
+      'Academic operations, learning delivery, and institutional quality on one stack',
     description:
       "NetPro's education software suite covers the full academic lifecycle, from admissions and fee management through learning delivery, research, and quality assurance.",
     projects: educationProducts,
@@ -955,19 +1083,20 @@ export const productCatalogSections: ShowcaseSection[] = [
   {
     id: 'enterprise-products',
     eyebrow: 'Enterprise & Other',
-    title: 'Specialised platforms for HR, justice administration, property, and legal compliance',
+    title:
+      'Specialised platforms for HR, justice administration, property, and legal compliance',
     description:
       'Beyond education, healthcare, and financial services, NetPro deploys specialised management platforms for public institutions, legal practitioners, and cross-sector enterprise teams.',
     projects: enterpriseProducts,
   },
-]
+];
 
 export const portfolioIntro = {
   eyebrow: 'Portfolio',
   title: 'Our Work in Action',
   description:
     "A selection of completed and live deployments across education, healthcare, the judiciary, and enterprise, demonstrating NetPro's proven capacity to deliver digital technology for Nigerian institutions.",
-}
+};
 
 export const featuredDeployments: SoftwareProject[] = [
   {
@@ -1002,7 +1131,11 @@ export const featuredDeployments: SoftwareProject[] = [
     ],
     subject: 'UISTO (University of Information Science & Technology, Owerri)',
     subjectInitials: 'UI',
-    methods: ['Candidate shortlisting', 'Interview coordination', 'Digital onboarding'],
+    methods: [
+      'Candidate shortlisting',
+      'Interview coordination',
+      'Digital onboarding',
+    ],
     labels: deploymentLabels,
   },
   {
@@ -1037,13 +1170,19 @@ export const featuredDeployments: SoftwareProject[] = [
     ],
     subject: 'Federal Polytechnic Nekede Owerri (FPNO)',
     subjectInitials: 'FP',
-    methods: ['Real-time visibility', 'Assessment automation', 'ITF-ready reporting'],
+    methods: [
+      'Real-time visibility',
+      'Assessment automation',
+      'ITF-ready reporting',
+    ],
     labels: deploymentLabels,
   },
   {
     id: 'imo-judiciary',
     title: 'Judiciary Management Information System',
-    image: assetUrl('/assets/netpro/Judiciary Management Information System.png'),
+    image: assetUrl(
+      '/assets/netpro/Judiciary Management Information System.png',
+    ),
     tags: [
       { label: 'Enterprise Technology', icon: BriefcaseBusinessIcon },
       { label: 'Justice Administration', icon: ShieldCheckIcon },
@@ -1073,7 +1212,11 @@ export const featuredDeployments: SoftwareProject[] = [
     ],
     subject: 'Imo State Judiciary',
     subjectInitials: 'IJ',
-    methods: ['Backlog reduction', 'Archive search', 'Court administration visibility'],
+    methods: [
+      'Backlog reduction',
+      'Archive search',
+      'Court administration visibility',
+    ],
     labels: deploymentLabels,
   },
   {
@@ -1108,7 +1251,11 @@ export const featuredDeployments: SoftwareProject[] = [
     ],
     subject: 'Ancilla Catholic Hospital Foundation, Lagos',
     subjectInitials: 'AC',
-    methods: ['Roadmap delivery', 'Clinical digitisation', 'Post-go-live support'],
+    methods: [
+      'Roadmap delivery',
+      'Clinical digitisation',
+      'Post-go-live support',
+    ],
     labels: deploymentLabels,
   },
   {
@@ -1144,7 +1291,11 @@ export const featuredDeployments: SoftwareProject[] = [
     ],
     subject: 'Federal Polytechnic Nekede Owerri (FPNO)',
     subjectInitials: 'FP',
-    methods: ['Blended learning support', 'Lecturer onboarding', 'AI learning pathways'],
+    methods: [
+      'Blended learning support',
+      'Lecturer onboarding',
+      'AI learning pathways',
+    ],
     labels: deploymentLabels,
   },
   {
@@ -1178,7 +1329,11 @@ export const featuredDeployments: SoftwareProject[] = [
     ],
     subject: 'Holy Family Hospital',
     subjectInitials: 'HF',
-    methods: ['Paper-to-digital shift', 'Department-wide rollout', 'Live management visibility'],
+    methods: [
+      'Paper-to-digital shift',
+      'Department-wide rollout',
+      'Live management visibility',
+    ],
     labels: deploymentLabels,
   },
   {
@@ -1213,7 +1368,11 @@ export const featuredDeployments: SoftwareProject[] = [
     ],
     subject: 'Claretian University of Nigeria (CUN)',
     subjectInitials: 'CU',
-    methods: ['Research visibility', 'Peer review automation', 'Indexing readiness'],
+    methods: [
+      'Research visibility',
+      'Peer review automation',
+      'Indexing readiness',
+    ],
     labels: deploymentLabels,
   },
   {
@@ -1248,10 +1407,14 @@ export const featuredDeployments: SoftwareProject[] = [
     ],
     subject: 'Imo State Polytechnic (IMOPOLY)',
     subjectInitials: 'IM',
-    methods: ['Orientation at scale', 'Policy sign-off', 'Completion dashboards'],
+    methods: [
+      'Orientation at scale',
+      'Policy sign-off',
+      'Completion dashboards',
+    ],
     labels: deploymentLabels,
   },
-]
+];
 
 export const projectsCta = {
   title: 'Find the Right Product for Your Institution',
@@ -1260,4 +1423,4 @@ export const projectsCta = {
   prompt: 'Talk through your requirements with a NetPro product specialist.',
   primary: 'Talk to Sales',
   secondary: 'View Services',
-}
+};

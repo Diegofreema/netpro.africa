@@ -64,6 +64,11 @@ export const trustedInstitutions = [
   'Rocana Institute',
   'Living Temple Academy',
   'Federal Institutions',
+  'Handmaids of the Holy Child Jesus',
+  'Federal Polytechnic Nekede',
+  'University of Innovation, Science and Technology',
+  'Treasure Scientia School',
+  'University of Agriculture and Environmental Sciences',
 ];
 
 export const benefits: LandingBenefit[] = [
@@ -189,21 +194,39 @@ export const projects: LandingProject[] = [
 export const testimonials = [
   {
     quote:
-      "Working with Netpro Africa was a pleasure. Their web design team captured our brand's essence and helped customers understand our offer faster.",
-    name: 'Mark Roberts',
-    role: 'Founder of GreenEarth Eco Store',
+      'NetPro International Limited has been the ICT Consultants and part of the success story of Imo State Polytechnic, Umuagwo since 2011. Their outstanding leadership, and clear commitment to the professional development of the team is second to none. There services and support are indeed the best you can get in this region. I will recommend them any time any day.',
+    name: 'Chukwuma Obinna',
+    role: 'Director of ICT, Imo State Polytechnic Umuagwo',
   },
   {
     quote:
-      'The mobile app exceeded our expectations. The interface is approachable, reliable, and easier for our members to use every week.',
-    name: 'Lisa Williams',
-    role: 'Head of Product at HealthTech Innovations',
+      'NetPro implemented the Educational Management System in our institution and I must commend the team and management for taking us from a painful manual system to a fully automated system.',
+    name: 'Dr Ngozu Azubogu',
+    role: 'Claretian University of Nigeria',
   },
   {
     quote:
-      'Netpro Africa helped modernize our outdated website with care. The process was clear and the final result felt easy for our team to own.',
-    name: 'Michael Johnson',
-    role: 'Marketing Manager at GlobalTech Solutions',
+      'NetPro implemented the Educational Management System in our institution and I must commend the team and management for taking us from a painful manual system to a fully automated system. This has made our lives easy at absolutely no overhead cost to the institution. Thank you so much guys.',
+    name: 'Ekene Ikwuegbu',
+    role: 'Registrar, Rocana Institute of Technology, Enugu',
+  },
+  {
+    quote:
+      'The implementation of the Precisie Hospital Management System at the Claretian University Hospital - Padre Pio Unit, by NetPro International Limited is truly magical. This is the first time I have seen and technology company and team with a level of enthusiasm and commitment to ensuring that technology truly works and adds value to all of us who work here. I cannot thank them enough.',
+    name: 'Rev. Sr. Dr. Joannes Uzoma',
+    role: 'Chief Medical Director, Claretian University Hospital',
+  },
+  {
+    quote:
+      'The Code Camp by NetPro Academy created the most amazing experience learning experience my kids have every experienced in Living Temple Academy. I send you a big hug from the kids and their parents. Thank you.',
+    name: 'Mrs Eunice Emenaha',
+    role: 'Proprietress, Living Temple Academy Owerri',
+  },
+  {
+    quote:
+      'On Behalf of the Handmaids of the Holy Child Jesus (HHCJ), US Mission, I would like to thank the Management and Staff of NetPro International Limited for their professionalism and generosity. We have you in our prayers and we are confident that you will attain greatness globally.',
+    name: 'Sister Germaine Ocansey HHCJ',
+    role: 'Pearland Texas 77584 USA',
   },
 ];
 

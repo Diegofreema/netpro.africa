@@ -15,6 +15,8 @@ import {
   SmartphoneIcon,
 } from 'lucide-react'
 
+import { assetUrl } from '@/shared/config/site'
+
 export type ProjectTag = {
   label: string
   icon: LucideIcon
@@ -41,6 +43,7 @@ export type ShowcaseLabels = {
 export type SoftwareProject = {
   id: string
   title: string
+  image?: string
   tags: ProjectTag[]
   summary: string
   details: string[]
@@ -970,6 +973,7 @@ export const featuredDeployments: SoftwareProject[] = [
   {
     id: 'uisto-recruitment',
     title: 'AI-Powered Recruitment System',
+    image: assetUrl('/assets/netpro/AI-Powered Recruitment System.png'),
     tags: [
       { label: 'Education Technology', icon: GraduationCapIcon },
       { label: 'Artificial Intelligence', icon: SparklesIcon },
@@ -1004,6 +1008,7 @@ export const featuredDeployments: SoftwareProject[] = [
   {
     id: 'fpno-siwes',
     title: 'SIWES Management System',
+    image: assetUrl('/assets/netpro/SIWES Management System.png'),
     tags: [
       { label: 'Education Technology', icon: GraduationCapIcon },
       { label: 'Student Industrial Training', icon: BriefcaseBusinessIcon },
@@ -1038,6 +1043,7 @@ export const featuredDeployments: SoftwareProject[] = [
   {
     id: 'imo-judiciary',
     title: 'Judiciary Management Information System',
+    image: assetUrl('/assets/netpro/Judiciary Management Information System.png'),
     tags: [
       { label: 'Enterprise Technology', icon: BriefcaseBusinessIcon },
       { label: 'Justice Administration', icon: ShieldCheckIcon },
@@ -1073,6 +1079,7 @@ export const featuredDeployments: SoftwareProject[] = [
   {
     id: 'ancilla-transformation',
     title: 'Technology Transformation Programme',
+    image: assetUrl('/assets/netpro/Technology Transformation Programme.png'),
     tags: [
       { label: 'Healthcare Technology', icon: ShieldCheckIcon },
       { label: 'Digital Transformation', icon: SparklesIcon },
@@ -1107,6 +1114,7 @@ export const featuredDeployments: SoftwareProject[] = [
   {
     id: 'fpno-elearning',
     title: 'AI-Powered E-Learning Transformation',
+    image: assetUrl('/assets/netpro/AI-Powered E-Learning Transformation.png'),
     tags: [
       { label: 'Education Technology', icon: GraduationCapIcon },
       { label: 'E-Learning', icon: MonitorSmartphoneIcon },
@@ -1176,6 +1184,7 @@ export const featuredDeployments: SoftwareProject[] = [
   {
     id: 'cun-jms',
     title: 'Academic Journal Management System',
+    image: assetUrl('/assets/netpro/Academic Journal Management System.png'),
     tags: [
       { label: 'Education Technology', icon: GraduationCapIcon },
       { label: 'Research Publishing', icon: Globe2Icon },
@@ -1210,6 +1219,7 @@ export const featuredDeployments: SoftwareProject[] = [
   {
     id: 'imopoly-induction',
     title: 'Digital Induction Programme',
+    image: assetUrl('/assets/netpro/Digital Induction Programme.png'),
     tags: [
       { label: 'Education Technology', icon: GraduationCapIcon },
       { label: 'Digital Onboarding', icon: MonitorSmartphoneIcon },

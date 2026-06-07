@@ -296,6 +296,26 @@ export function ProductVisual({
   const metaC = project.meta[2]
   const isFeature = variant === 'feature'
 
+  if (project.image) {
+    return (
+      <div
+        className={cn(
+          'relative isolate aspect-[16/10] overflow-hidden rounded-[var(--np-radius-lg)] border border-white/10 bg-[#05070c]',
+          className,
+        )}
+      >
+        <img
+          src={project.image}
+          alt={`${project.title} preview`}
+          className="size-full object-cover object-top"
+          loading="lazy"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,transparent_55%,rgba(5,7,12,.54)_100%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-white/20" />
+      </div>
+    )
+  }
+
   return (
     <div
       className={cn(

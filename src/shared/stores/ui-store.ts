@@ -1,15 +1,51 @@
 import { create } from 'zustand'
 
-const themeStorageKey = 'netpro-theme-mode'
+export const themeStorageKey = 'netpro-theme-mode'
 
 export type ThemeMode = 'dark' | 'light'
 
-function getInitialThemeMode(): ThemeMode {
+function getStoredThemeMode(): ThemeMode {
   if (typeof window === 'undefined') {
     return 'dark'
   }
 
-  return window.localStorage.getItem(themeStorageKey) === 'light' ? 'light' : 'dark'
+  try {
+    return window.localStorage.getItem(themeStorageKey) === 'light' ? 'light' : 'dark'
+  } catch {
+    return 'dark'
+  }
+}
+
+export function applyThemeMode(themeMode: ThemeMode) {
+  if (typeof document === 'undefined') {
+    return
+  }
+
+  const root = document.documentElement
+
+  root.classList.remove('dark', 'light')
+  root.classList.add(themeMode)
+  root.style.colorScheme = themeMode
+}
+
+function persistThemeMode(themeMode: ThemeMode) {
+  if (typeof window === 'undefined') {
+    return
+  }
+
+  try {
+    window.localStorage.setItem(themeStorageKey, themeMode)
+  } catch {
+    // Fall back to the in-memory store if persistence is unavailable.
+  }
+}
+
+export function initializeThemeMode() {
+  const themeMode = getStoredThemeMode()
+
+  applyThemeMode(themeMode)
+
+  return themeMode
 }
 
 type UiState = {
@@ -25,7 +61,7 @@ type UiState = {
 }
 
 export const useUiStore = create<UiState>((set) => ({
-  themeMode: getInitialThemeMode(),
+  themeMode: getStoredThemeMode(),
   inquiryContext: 'General inquiry',
   isMobileNavOpen: false,
   closeMobileNav: () => set({ isMobileNavOpen: false }),
@@ -33,14 +69,16 @@ export const useUiStore = create<UiState>((set) => ({
   setInquiryContext: (inquiryContext) => set({ inquiryContext }),
   setMobileNavOpen: (isMobileNavOpen) => set({ isMobileNavOpen }),
   setThemeMode: (themeMode) => {
-    window.localStorage.setItem(themeStorageKey, themeMode)
+    persistThemeMode(themeMode)
+    applyThemeMode(themeMode)
     set({ themeMode })
   },
   toggleThemeMode: () =>
     set((state) => {
       const themeMode = state.themeMode === 'dark' ? 'light' : 'dark'
 
-      window.localStorage.setItem(themeStorageKey, themeMode)
+      persistThemeMode(themeMode)
+      applyThemeMode(themeMode)
 
       return { themeMode }
     }),

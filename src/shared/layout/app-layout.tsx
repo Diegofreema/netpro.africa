@@ -1,4 +1,3 @@
-import type { PropsWithChildren } from 'react';
 import { Link } from '@tanstack/react-router';
 import {
   CameraIcon,
@@ -9,12 +8,10 @@ import {
   PhoneCallIcon,
   SendIcon,
 } from 'lucide-react';
+import type { PropsWithChildren } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { BrandLogo } from '@/shared/components/brand-logo';
-import { SiteCta } from '@/shared/components/site-cta';
-import { ThemeToggle } from '@/shared/components/theme-toggle';
 import {
   Sheet,
   SheetClose,
@@ -24,6 +21,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { BrandLogo } from '@/shared/components/brand-logo';
+import { SiteCta } from '@/shared/components/site-cta';
 import { navigationItems } from '@/shared/config/navigation';
 import { useUiStore } from '@/shared/stores/ui-store';
 
@@ -226,7 +225,7 @@ export function AppLayout({ children }: PropsWithChildren) {
 
       <main className="flex w-full flex-1 flex-col">{children}</main>
 
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
 
       <SiteCta />
 

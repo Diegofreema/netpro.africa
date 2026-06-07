@@ -1,16 +1,15 @@
-import { ProjectHero } from '@/features/projects/components/project-hero'
-import { ProjectShowcaseSection } from '@/features/projects/components/project-showcase-section'
-import { ProjectsCta } from '@/features/projects/components/projects-cta'
+import { ProjectHero } from '@/features/projects/components/project-hero';
+import { ProjectShowcaseSection } from '@/features/projects/components/project-showcase-section';
 import {
   featuredDeployments,
   portfolioIntro,
   productCatalogSections,
-} from '@/features/projects/data/projects-page-content'
+} from '@/features/projects/data/projects-page-content';
 import {
   AnimatedPageSections,
   type AnimatedPageSectionConfig,
-} from '@/shared/components/animated-page-sections'
-import { useInViewAnimations } from '@/shared/hooks/use-in-view-animations'
+} from '@/shared/components/animated-page-sections';
+import { useInViewAnimations } from '@/shared/hooks/use-in-view-animations';
 
 const projectsSections: AnimatedPageSectionConfig[] = [
   {
@@ -31,13 +30,13 @@ const projectsSections: AnimatedPageSectionConfig[] = [
     scale: 0.994,
     amount: 0.22,
   })),
-  {
-    id: 'products-cta',
-    Component: ProjectsCta,
-    y: 30,
-    scale: 0.995,
-    amount: 0.26,
-  },
+  // {
+  //   id: 'products-cta',
+  //   Component: ProjectsCta,
+  //   y: 30,
+  //   scale: 0.995,
+  //   amount: 0.26,
+  // },
   {
     id: 'portfolio',
     Component: () => (
@@ -51,14 +50,14 @@ const projectsSections: AnimatedPageSectionConfig[] = [
     scale: 0.994,
     amount: 0.22,
   },
-]
+];
 
 export function ProjectsPage() {
-  useInViewAnimations()
+  useInViewAnimations();
 
   return (
     <div className="overflow-hidden bg-background">
       <AnimatedPageSections sections={projectsSections} />
     </div>
-  )
+  );
 }

@@ -13,7 +13,7 @@ export function PartnerCard({ partner }: PartnerCardProps) {
       <div className="relative z-10 flex min-h-[25rem] flex-col items-center justify-center gap-12">
         <div className="flex items-center gap-5 sm:gap-7">
           <span className="rounded-full border border-white/10 bg-black/10 px-5 py-3 shadow-[inset_0_0_0_1px_oklch(1_0_0/0.04)] sm:px-6">
-            <BrandLogo className="min-h-0 text-[1.45rem]" />
+            <BrandLogo className="min-h-0 [&_img]:h-7 [&_img]:max-w-[7rem]" />
           </span>
           <span className="text-4xl font-light text-foreground">+</span>
           <span className="inline-flex size-20 items-center justify-center rounded-full border border-white/10 bg-black/20 shadow-[inset_0_0_0_1px_oklch(1_0_0/0.05)]">

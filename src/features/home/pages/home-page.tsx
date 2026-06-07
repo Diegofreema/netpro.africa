@@ -1,7 +1,6 @@
 import { FocusAreasSection } from '@/features/home/components/focus-areas-section';
 import { HeroSection } from '@/features/home/components/hero-section';
 import { HomeFaqSection } from '@/features/home/components/home-faq-section';
-import { PartnersSection } from '@/features/home/components/partners-section';
 import { ServiceTiersSection } from '@/features/home/components/service-tiers-section';
 import { TestimonialsSection } from '@/features/home/components/testimonials-section';
 import { TrustStrip } from '@/features/home/components/trust-strip';
@@ -60,13 +59,13 @@ const homeSections: AnimatedPageSectionConfig[] = [
     scale: 0.995,
     amount: 0.25,
   },
-  {
-    id: 'partners',
-    Component: PartnersSection,
-    y: 34,
-    scale: 0.994,
-    amount: 0.2,
-  },
+  // {
+  //   id: 'partners',
+  //   Component: PartnersSection,
+  //   y: 34,
+  //   scale: 0.994,
+  //   amount: 0.2,
+  // },
 ];
 
 export function HomePage() {

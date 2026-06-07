@@ -871,6 +871,7 @@ const enterpriseProducts: SoftwareProject[] = [
   {
     id: 'hrms-enterprise',
     title: 'Human Resource Management System',
+    image: assetUrl('/assets/netpro/Human Resource Management System.png'),
     tags: [
       { label: 'Enterprise HR', icon: BriefcaseBusinessIcon },
       { label: 'Payroll Compliance', icon: BarChart3Icon },
@@ -963,6 +964,7 @@ const enterpriseProducts: SoftwareProject[] = [
   {
     id: 'pms',
     title: 'Property Management Software',
+    image: assetUrl('/assets/netpro/Property Management Software.png'),
     tags: [
       { label: 'Property Operations', icon: BriefcaseBusinessIcon },
       { label: 'Rent & Maintenance', icon: BarChart3Icon },
@@ -1301,6 +1303,7 @@ export const featuredDeployments: SoftwareProject[] = [
   {
     id: 'holy-family-hms',
     title: 'Hospital Management System Deployment',
+    image: assetUrl('/assets/netpro/Hospital Management System.png'),
     tags: [
       { label: 'Healthcare Technology', icon: ShieldCheckIcon },
       { label: 'Hospital Operations Management', icon: LayoutDashboardIcon },

@@ -1,23 +1,26 @@
-import { LandingSectionHeading } from '@/features/home/components/landing-section-heading';
-import { ProjectCard } from '@/features/home/components/project-card';
-import { projects } from '@/features/home/data/landing-page-content';
+import { ProjectShowcaseSection } from '@/features/projects/components/project-showcase-section';
+import {
+  featuredDeployments,
+  portfolioIntro,
+} from '@/features/projects/data/projects-page-content';
+
+const homeDeployments = featuredDeployments.slice(0, 4);
 
 export function WorksSection() {
   return (
-    <section className="np-section">
-      <div className="np-container flex flex-col gap-16">
-        <LandingSectionHeading
-          title="Works"
-          description="Selected projects show how strategy, design, and implementation come together across different industries and product needs."
-        />
-        <div className="np-reveal-stagger grid gap-10 lg:grid-cols-2">
-          {projects.map((project) => (
-            <div key={project.title} data-reveal="media">
-              <ProjectCard project={project} />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <ProjectShowcaseSection
+      intro={{
+        ...portfolioIntro,
+        eyebrow: 'Works',
+      }}
+      projects={homeDeployments}
+      itemLabel="deployment"
+      variant="home"
+      carouselClassName="pb-0 sm:pb-4"
+      cta={{
+        label: 'View More Projects',
+        to: '/projects',
+      }}
+    />
   );
 }

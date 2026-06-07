@@ -314,26 +314,26 @@ export function ProductVisual({
       <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,.08),transparent_38%,rgba(5,7,12,.18)_58%,rgba(5,7,12,.82)_100%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(255,255,255,.16),transparent_22%)]" />
       <div className="absolute inset-x-0 top-0 h-px bg-white/20" />
-      <div className="absolute left-[7%] top-[18%] h-[46%] w-[40%] rounded-[1.35rem] border border-white/12 bg-[#07111d]/56 shadow-[0_32px_80px_rgba(5,7,12,.28)] backdrop-blur-md" />
-      <div className="absolute right-[7%] top-[13%] h-[28%] w-[24%] rounded-[1.1rem] border border-white/12 bg-white/8 backdrop-blur-md" />
-      <div className="absolute bottom-[13%] right-[10%] h-[24%] w-[32%] rounded-[1.15rem] border border-white/12 bg-[#07111d]/54 backdrop-blur-md" />
+      <div className="absolute left-[7%] top-[18%] h-[46%] w-[40%] rounded-[1.1rem] border border-white/12 bg-[#07111d]/56 shadow-[0_32px_80px_rgba(5,7,12,.28)] backdrop-blur-md sm:rounded-[1.35rem]" />
+      <div className="absolute right-[7%] top-[13%] h-[28%] w-[24%] rounded-[0.95rem] border border-white/12 bg-white/8 backdrop-blur-md sm:rounded-[1.1rem]" />
+      <div className="absolute bottom-[13%] right-[10%] h-[24%] w-[32%] rounded-[1rem] border border-white/12 bg-[#07111d]/54 backdrop-blur-md sm:rounded-[1.15rem]" />
 
-      <div className="absolute inset-0 grid grid-cols-[minmax(0,1fr)_auto] gap-4 p-5 sm:p-6">
+      <div className="absolute inset-0 grid grid-cols-[minmax(0,1fr)_auto] gap-3 p-4 sm:gap-4 sm:p-6">
         <div className="min-w-0">
-          <span className="inline-flex min-h-8 items-center rounded-full border border-white/12 bg-white/8 px-3 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-white/72">
+          <span className="inline-flex min-h-8 max-w-full items-center rounded-full border border-white/12 bg-white/8 px-3 text-[0.64rem] font-medium uppercase tracking-[0.1em] text-white/72 sm:text-[0.7rem] sm:tracking-[0.14em]">
             {spec.kicker}
           </span>
           <p
             className={cn(
               'mt-4 max-w-[20rem] text-pretty font-heading font-semibold leading-[1.08] text-white',
-              isFeature ? 'text-[clamp(1.65rem,3vw,2.5rem)]' : 'text-xl sm:text-2xl',
+              isFeature ? 'text-[clamp(1.35rem,7vw,2.5rem)]' : 'text-lg sm:text-2xl',
             )}
           >
             {project.title}
           </p>
           <p
             className={cn(
-              'mt-3 max-w-[26rem] text-sm leading-6 text-white/72',
+              'mt-3 max-w-[26rem] text-xs leading-5 text-white/72 sm:text-sm sm:leading-6',
               isFeature ? 'sm:text-base' : '[display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3] overflow-hidden',
             )}
           >
@@ -342,8 +342,8 @@ export function ProductVisual({
         </div>
 
         <div className="flex flex-col items-end gap-3">
-          <span className="inline-flex size-14 items-center justify-center rounded-[1.1rem] border border-white/12 bg-white/10 text-white shadow-[0_20px_44px_rgba(5,7,12,.22)] backdrop-blur-md sm:size-16">
-            <Icon className="size-7 sm:size-8" aria-hidden="true" />
+          <span className="inline-flex size-11 items-center justify-center rounded-[0.95rem] border border-white/12 bg-white/10 text-white shadow-[0_20px_44px_rgba(5,7,12,.22)] backdrop-blur-md sm:size-16 sm:rounded-[1.1rem]">
+            <Icon className="size-5 sm:size-8" aria-hidden="true" />
           </span>
           <div className="hidden rounded-[1rem] border border-white/12 bg-[#07111d]/54 px-4 py-3 text-right backdrop-blur-md sm:block">
             <p className="text-[0.68rem] uppercase tracking-[0.14em] text-white/48">
@@ -354,13 +354,13 @@ export function ProductVisual({
         </div>
       </div>
 
-      <div className="absolute inset-x-5 bottom-5 grid gap-3 sm:inset-x-6 sm:bottom-6 sm:grid-cols-[minmax(0,1.35fr)_minmax(11rem,.8fr)]">
-        <div className="rounded-[1.15rem] border border-white/12 bg-[#07111d]/56 p-4 backdrop-blur-md">
+      <div className="absolute inset-x-4 bottom-4 grid gap-3 sm:inset-x-6 sm:bottom-6 sm:grid-cols-[minmax(0,1.35fr)_minmax(11rem,.8fr)]">
+        <div className="rounded-[1rem] border border-white/12 bg-[#07111d]/56 p-3 backdrop-blur-md sm:rounded-[1.15rem] sm:p-4">
           <div className="flex flex-wrap gap-2">
             {spec.chips.map((chip) => (
               <span
                 key={chip}
-                className="inline-flex min-h-8 items-center rounded-full border border-white/12 bg-white/8 px-3 text-xs font-medium text-white/82"
+                className="inline-flex min-h-8 items-center rounded-full border border-white/12 bg-white/8 px-2.5 text-xs font-medium text-white/82 sm:px-3"
               >
                 {chip}
               </span>
@@ -368,7 +368,7 @@ export function ProductVisual({
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="hidden grid-cols-2 gap-3 sm:grid">
           {[metaB, metaC].map((item, index) => (
             <div
               key={item?.label ?? `meta-${index}`}

@@ -10,9 +10,14 @@ import { cn } from '@/lib/utils'
 type ProjectsCarouselProps = {
   projects: SoftwareProject[]
   itemLabel?: string
+  className?: string
 }
 
-export function ProjectsCarousel({ projects, itemLabel = 'item' }: ProjectsCarouselProps) {
+export function ProjectsCarousel({
+  projects,
+  itemLabel = 'item',
+  className,
+}: ProjectsCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isExpanded, setExpanded] = useState(false)
   const itemRefs = useRef<Array<HTMLButtonElement | null>>([])
@@ -41,9 +46,9 @@ export function ProjectsCarousel({ projects, itemLabel = 'item' }: ProjectsCarou
   }
 
   return (
-    <section className="relative mx-auto w-full max-w-[80rem] px-4 pb-16 sm:px-8 sm:pb-24">
+    <section className={cn('relative mx-auto w-full max-w-[80rem] pb-12 sm:px-4 sm:pb-20 lg:px-8', className)}>
       <div data-reveal="media">
-        <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        <div className="-mx-1 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1 pb-2 [scrollbar-width:none] [-ms-overflow-style:none] sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden">
           {projects.map((project, index) => (
             <button
               key={project.id}
@@ -52,7 +57,7 @@ export function ProjectsCarousel({ projects, itemLabel = 'item' }: ProjectsCarou
               }}
               type="button"
               className={cn(
-                'np-focus group shrink-0 snap-start basis-[88%] text-left sm:basis-[calc(50%-0.5rem)] xl:basis-[calc((100%-2rem)/3)]',
+                'np-focus group shrink-0 snap-start basis-[86%] text-left sm:basis-[calc(50%-0.5rem)] xl:basis-[calc((100%-2rem)/3)]',
                 'transition-transform duration-(--np-duration-fast) active:scale-[0.99]',
               )}
               aria-label={`Show ${project.title}`}
@@ -67,16 +72,19 @@ export function ProjectsCarousel({ projects, itemLabel = 'item' }: ProjectsCarou
                     : 'border-white/10 hover:border-white/18 hover:bg-white/[0.02]',
                 )}
               >
-                <ProductVisual project={project} className="rounded-[var(--np-radius-lg)]" />
+                <ProductVisual
+                  project={project}
+                  className="aspect-[4/5] rounded-[var(--np-radius-lg)] sm:aspect-[16/10]"
+                />
 
                 <div className="mt-5">
-                  <div className="flex items-start justify-between gap-4">
-                    <h3 className="text-lg font-semibold tracking-[-0.02em] text-foreground sm:text-xl">
+                  <div className="flex min-w-0 flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+                    <h3 className="text-base font-semibold leading-snug tracking-[-0.02em] text-foreground sm:text-xl">
                       {project.title}
                     </h3>
                     <span
                       className={cn(
-                        'mt-0.5 inline-flex min-h-8 shrink-0 items-center rounded-full border px-3 text-xs font-medium',
+                        'inline-flex min-h-8 w-fit shrink-0 items-center rounded-full border px-3 text-xs font-medium sm:mt-0.5',
                         index === activeIndex
                           ? 'border-primary/35 bg-primary/12 text-foreground'
                           : 'border-white/10 bg-white/[0.04] text-[color:var(--np-subtle)]',
@@ -88,7 +96,7 @@ export function ProjectsCarousel({ projects, itemLabel = 'item' }: ProjectsCarou
                   <p className="mt-3 text-sm leading-6 text-muted-foreground [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3] overflow-hidden">
                     {project.summary}
                   </p>
-                  <div className="mt-4 flex flex-wrap gap-2">
+                  <div className="mt-4 flex flex-wrap gap-2.5">
                     {project.tags.slice(0, 2).map((tag) => (
                       <span
                         key={tag.label}
@@ -105,8 +113,11 @@ export function ProjectsCarousel({ projects, itemLabel = 'item' }: ProjectsCarou
           ))}
         </div>
 
-        <div className="mt-6 flex items-center justify-between gap-4">
-          <div className="flex min-h-11 items-center gap-2" aria-label={`${itemLabel} slides`}>
+        <div className="mt-5 flex flex-col gap-4 sm:mt-6 sm:flex-row sm:items-center sm:justify-between">
+          <div
+            className="-mx-1 flex min-h-11 max-w-full items-center gap-1 overflow-x-auto px-1 [scrollbar-width:none] [-ms-overflow-style:none] sm:mx-0 sm:gap-2 sm:px-0 [&::-webkit-scrollbar]:hidden"
+            aria-label={`${itemLabel} slides`}
+          >
             {projects.map((project, index) => (
               <button
                 key={project.id}
@@ -127,7 +138,7 @@ export function ProjectsCarousel({ projects, itemLabel = 'item' }: ProjectsCarou
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-between gap-3 sm:justify-end">
             <span className="text-sm text-[color:var(--np-subtle)]">{countLabel}</span>
             <CarouselButton label={`Previous ${itemLabel}`} onClick={() => moveProject(-1)}>
               <ChevronLeftIcon className="size-5" aria-hidden="true" />
@@ -144,20 +155,20 @@ export function ProjectsCarousel({ projects, itemLabel = 'item' }: ProjectsCarou
 
       <article
         key={activeProject.id}
-        className="np-project-slide mt-8 rounded-[var(--np-radius-xl)] border border-white/10 bg-[color:var(--np-surface)] p-5 sm:p-8 lg:p-10"
+        className="np-project-slide mt-8 rounded-[var(--np-radius-xl)] border border-white/10 bg-[color:var(--np-surface)] p-4 sm:p-8 lg:p-10"
         data-reveal="media"
       >
         <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(20rem,.8fr)] xl:items-start">
           <ProductVisual
             project={activeProject}
             variant="feature"
-            className="min-h-[19rem] sm:min-h-[24rem]"
+            className="aspect-[5/6] min-h-[22rem] sm:aspect-[16/10] sm:min-h-[24rem]"
           />
 
           <div className="flex flex-col gap-6">
             <div>
               <p className="text-sm font-medium text-[color:var(--np-subtle)]">{countLabel}</p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-[-0.02em] text-foreground sm:text-3xl">
+              <h2 className="mt-3 text-[clamp(1.45rem,6.5vw,1.875rem)] font-semibold leading-tight tracking-[-0.02em] text-foreground sm:text-3xl">
                 {activeProject.title}
               </h2>
               <div className="mt-6 flex flex-wrap gap-3">

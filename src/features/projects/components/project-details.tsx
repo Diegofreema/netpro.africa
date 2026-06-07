@@ -17,7 +17,7 @@ export function ProjectDetails({ project, isExpanded }: ProjectDetailsProps) {
 
   return (
     <div className="grid gap-6">
-      <section className="rounded-[var(--np-radius-lg)] border border-white/10 bg-background/35 p-6 sm:p-8">
+      <section className="rounded-[var(--np-radius-lg)] border border-white/10 bg-background/35 p-5 sm:p-8">
         <h3 className="text-lg font-medium text-foreground">{labels.summary}</h3>
         <p className="mt-4 text-sm leading-7 text-muted-foreground sm:text-base">
           {project.summary}
@@ -40,11 +40,11 @@ export function ProjectDetails({ project, isExpanded }: ProjectDetailsProps) {
 
       {isExpanded ? (
         <>
-          <dl className="grid rounded-[var(--np-radius-lg)] border border-white/10 bg-background/35 sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="grid overflow-hidden rounded-[var(--np-radius-lg)] border border-white/10 bg-background/35 sm:grid-cols-2 lg:grid-cols-4">
             {project.meta.map((item) => (
               <div
                 key={item.label}
-                className="border-b border-white/10 p-5 last:border-b-0 sm:border-b-0 sm:border-r sm:last:border-r-0"
+                className="border-b border-white/10 p-5 last:border-b-0 sm:border-r sm:even:border-r-0 sm:last:border-r-0 lg:border-b-0 lg:even:border-r lg:last:border-r-0"
               >
                 <dt className="text-sm text-[color:var(--np-subtle)]">{item.label}</dt>
                 <dd className="mt-2 text-base font-medium text-foreground">{item.value}</dd>
@@ -52,7 +52,7 @@ export function ProjectDetails({ project, isExpanded }: ProjectDetailsProps) {
             ))}
           </dl>
 
-          <section className="flex flex-col gap-5 rounded-[var(--np-radius-lg)] border border-white/10 bg-background/35 p-6 sm:flex-row sm:items-center sm:gap-10 sm:p-8">
+          <section className="flex flex-col gap-5 rounded-[var(--np-radius-lg)] border border-white/10 bg-background/35 p-5 sm:flex-row sm:items-center sm:gap-10 sm:p-8">
             <h3 className="text-base font-medium text-foreground">{labels.technologies}</h3>
             <div className="flex flex-wrap gap-5">
               {project.technologies.map((technology) => {
@@ -72,7 +72,7 @@ export function ProjectDetails({ project, isExpanded }: ProjectDetailsProps) {
             </div>
           </section>
 
-          <section className="flex flex-col gap-4 rounded-[var(--np-radius-lg)] border border-white/20 bg-background/35 p-6 sm:flex-row sm:items-center sm:p-8">
+          <section className="flex flex-col gap-4 rounded-[var(--np-radius-lg)] border border-white/20 bg-background/35 p-5 sm:flex-row sm:items-center sm:p-8">
             <h3 className="text-base font-medium text-foreground">{labels.subject}</h3>
             <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-full border border-white/20 bg-[color:var(--np-blue-soft)] text-sm font-semibold text-foreground">
               {project.subjectInitials}
@@ -80,13 +80,13 @@ export function ProjectDetails({ project, isExpanded }: ProjectDetailsProps) {
             <p className="text-sm leading-6 text-muted-foreground sm:text-base">{project.subject}</p>
           </section>
 
-          <section className="rounded-[var(--np-radius-lg)] border border-white/10 bg-background/35 p-6 sm:p-8">
+          <section className="rounded-[var(--np-radius-lg)] border border-white/10 bg-background/35 p-5 sm:p-8">
             <h3 className="text-lg font-medium text-foreground">{labels.methods}</h3>
-            <div className="mt-6 grid gap-4 rounded-[var(--np-radius-md)] border border-white/10 p-4 sm:grid-cols-3">
+            <div className="mt-5 grid gap-3 rounded-[var(--np-radius-md)] border border-white/10 p-3 sm:mt-6 sm:grid-cols-3 sm:gap-4 sm:p-4">
               {project.methods.map((method) => (
                 <span
                   key={method}
-                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.025] px-5 text-sm font-medium text-foreground"
+                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.025] px-4 text-center text-sm font-medium leading-5 text-foreground sm:px-5"
                 >
                   {method}
                 </span>

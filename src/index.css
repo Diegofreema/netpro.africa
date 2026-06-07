@@ -76,6 +76,11 @@
     @apply focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/60;
   }
 
+  .np-trust-marquee {
+    animation: np-trust-marquee 24s linear infinite;
+    will-change: transform;
+  }
+
   .light .border-white\/8,
   .light .border-white\/10,
   .light .border-white\/12 {
@@ -244,8 +249,8 @@
     background-size: 20px 20px;
     content: "";
     inset: 0 0 auto 0;
-    height: 18rem;
-    opacity: 0.32;
+    height: 12rem;
+    opacity: 0.24;
     pointer-events: none;
     position: absolute;
   }
@@ -256,7 +261,7 @@
       linear-gradient(90deg, transparent 0 16%, oklch(0.17 0.025 236 / 48%) 16% 29%, transparent 29% 35%, oklch(0.2 0.045 246 / 44%) 35% 47%, transparent 47% 54%, oklch(0.19 0.035 235 / 46%) 54% 62%, transparent 62% 69%, oklch(0.2 0.032 142 / 52%) 69% 78%, transparent 78%);
     bottom: 0;
     content: "";
-    height: 16rem;
+    height: 10rem;
     left: 0;
     opacity: 0.94;
     pointer-events: none;
@@ -267,23 +272,23 @@
 
   .np-site-cta-mark {
     align-items: flex-end;
-    bottom: -4.2rem;
+    bottom: -1.25rem;
     display: flex;
-    gap: 1.25rem;
+    gap: 0.45rem;
     justify-content: center;
     left: 50%;
     opacity: 0.9;
     pointer-events: none;
     position: absolute;
     transform: translateX(-50%);
-    width: min(76rem, 92vw);
+    width: min(38rem, 92vw);
     z-index: 1;
   }
 
   .np-site-cta-word {
     color: #1f7fc8;
     display: block;
-    font-size: clamp(8rem, 19vw, 20rem);
+    font-size: clamp(4.25rem, 18vw, 20rem);
     font-weight: 300;
     letter-spacing: -0.075em;
     line-height: 0.76;
@@ -296,10 +301,10 @@
     box-shadow: inset -1.1rem -1.2rem 1.8rem oklch(0 0 0 / 18%), 0 0 0 0.45rem oklch(1 0 0 / 65%);
     display: block;
     flex: 0 0 auto;
-    height: clamp(4.8rem, 9vw, 9.5rem);
-    margin-bottom: clamp(0.45rem, 1.2vw, 1.1rem);
+    height: clamp(2.6rem, 8.5vw, 9.5rem);
+    margin-bottom: clamp(0.25rem, 1vw, 1.1rem);
     position: relative;
-    width: clamp(4.8rem, 9vw, 9.5rem);
+    width: clamp(2.6rem, 8.5vw, 9.5rem);
   }
 
   .np-site-cta-cap {
@@ -333,6 +338,29 @@
     right: -14%;
     transform: rotate(-16deg);
     width: 38%;
+  }
+
+  @media (min-width: 640px) {
+    .np-site-cta::before {
+      height: 18rem;
+      opacity: 0.32;
+    }
+
+    .np-site-cta::after {
+      height: 16rem;
+    }
+
+    .np-site-cta-mark {
+      bottom: -4.2rem;
+      gap: 1.25rem;
+      width: min(76rem, 92vw);
+    }
+
+    .np-site-cta-globe {
+      height: clamp(4.8rem, 9vw, 9.5rem);
+      margin-bottom: clamp(0.45rem, 1.2vw, 1.1rem);
+      width: clamp(4.8rem, 9vw, 9.5rem);
+    }
   }
 
   .light .np-project-hero {
@@ -423,6 +451,15 @@
   }
 }
 
+@keyframes np-trust-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 @keyframes np-faq-open {
   from {
     height: 0;
@@ -473,7 +510,8 @@
   .np-hero-support,
   .np-hero-actions,
   .np-type-cursor,
-  .np-project-slide {
+  .np-project-slide,
+  .np-trust-marquee {
     animation: none !important;
     filter: none !important;
     opacity: 1 !important;

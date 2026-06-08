@@ -40,7 +40,7 @@ export function SiteCta() {
               className="np-focus h-13 w-full max-w-xs rounded-full border-white/10 bg-white/8 px-6 text-base font-medium text-foreground transition-[background-color,transform,border-color] duration-(--np-duration-fast) hover:border-white/16 hover:bg-white/12 active:scale-[0.98] sm:h-14 sm:w-auto sm:min-w-52 sm:px-7"
               variant="outline"
             >
-              <Link to="/services">See our products</Link>
+              <Link to="/projects">See our products</Link>
             </Button>
           </div>
         </div>

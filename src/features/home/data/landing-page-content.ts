@@ -232,41 +232,69 @@ export const testimonials = [
 
 export const faqs: LandingFaq[] = [
   {
-    question: 'How long does it take to complete a web development project?',
+    question: 'Why should we choose NetPro Africa over other technology companies?',
     answer:
-      'Timelines vary by complexity and approvals. Most teams receive a scoped plan before delivery begins, so launch expectations are clear.',
+      'NetPro Africa is more than a software development company - we are a digital transformation partner. We combine strategy, engineering, infrastructure, cybersecurity, and enterprise support to deliver technology solutions that solve real business problems and create measurable impact.',
   },
   {
-    question:
-      'Can you create a responsive website design that looks great on all devices?',
+    question: 'Do you build products or custom enterprise solutions?',
     answer:
-      'Yes. We design mobile-first interfaces, then refine tablet and desktop states so the experience feels consistent across every viewport.',
+      "Both. We develop proprietary platforms while also designing fully customized solutions tailored to an organization's processes, policies, and growth objectives. Every implementation is engineered to fit your business rather than forcing your business to fit the software.",
   },
   {
-    question: 'Can you handle large-scale mobile app development projects?',
+    question: 'Can NetPro Africa handle large-scale digital transformation projects?',
     answer:
-      'Yes. We plan architecture, delivery milestones, QA, and release support for complex mobile products across Android, iOS, and cross-platform stacks.',
+      'Yes. Our team works with institutions and enterprises to modernize operations through integrated technology ecosystems, automation, cloud solutions, intelligent data management, and enterprise applications that scale with organizational growth.',
   },
   {
-    question:
-      'What digital marketing strategies do you use to drive website traffic?',
+    question: 'How do you approach a new project?',
     answer:
-      'We combine SEO, content strategy, paid campaigns, analytics, and conversion optimization so traffic growth is measurable and useful.',
+      'Every engagement begins with understanding your business, not just your technology requirements. We conduct discovery sessions, analyze workflows, identify challenges, and develop a solution architecture before moving into design, development, deployment, and continuous support.',
   },
   {
-    question: 'Can you integrate third-party APIs into our mobile app?',
+    question: 'What industries do you specialize in?',
     answer:
-      'Yes. We integrate payment, identity, messaging, maps, analytics, and business APIs with attention to reliability, security, and long-term maintainability.',
+      'Our experience spans Education, Healthcare, Government, Financial Services, NGOs, Manufacturing, and Private Enterprises. While industries differ, our focus remains the same: using technology to improve efficiency, decision-making, and service delivery.',
   },
   {
-    question: 'How do you ensure cross-platform compatibility for mobile apps?',
+    question: 'Can your solutions integrate with our existing systems?',
     answer:
-      'We define shared interaction patterns, test across target devices, and use platform-aware implementation where native behavior matters.',
+      'Absolutely. Our platforms are designed for interoperability and can integrate with existing ERPs, CRMs, payment gateways, APIs, identity management systems, third-party applications, and legacy infrastructure where feasible.',
   },
   {
-    question: 'How do you secure user data in web applications?',
+    question: 'How do you ensure security and data protection?',
     answer:
-      'We apply secure authentication, access control, encrypted transport, careful API design, and routine reviews throughout delivery.',
+      'Security is embedded throughout our development lifecycle. We implement industry best practices for authentication, authorization, encryption, infrastructure protection, secure coding, monitoring, and risk management to safeguard business-critical information.',
+  },
+  {
+    question: 'Do you provide support after deployment?',
+    answer:
+      'Yes. Technology is an ongoing journey, not a one-time delivery. We provide post-deployment support, maintenance, performance optimization, updates, troubleshooting, and continuous improvement to ensure long-term success.',
+  },
+  {
+    question: 'Can NetPro Africa work with organizations outside Nigeria?',
+    answer:
+      'Yes. Our solutions are designed for organizations across Africa and beyond. Through remote collaboration, cloud infrastructure, and modern development practices, we successfully deliver projects regardless of geographical location.',
+  },
+  {
+    question: 'Do you only develop software?',
+    answer:
+      'No. We provide end-to-end technology services including software engineering, digital transformation consulting, network infrastructure, cybersecurity, cloud solutions, enterprise equipment supply, technology training, and managed support services.',
+  },
+  {
+    question: 'How long does a typical project take?',
+    answer:
+      'Project timelines depend on complexity, scope, integrations, and organizational requirements. After discovery and requirements analysis, we provide a transparent implementation roadmap with clearly defined milestones and deliverables.',
+  },
+  {
+    question: 'What makes NetPro Africa different?',
+    answer:
+      'Our philosophy is simple: Technology should solve business problems, not create new ones. We combine technical excellence with strategic thinking to deliver solutions that are scalable, secure, user-centric, and built for long-term value.',
+  },
+  {
+    question: 'How can we start working with NetPro Africa?',
+    answer:
+      "Simply reach out to our team with your objectives or challenges. We'll schedule a consultation, assess your needs, recommend the most suitable solution, and develop a roadmap that aligns technology with your business goals.",
   },
 ];
 

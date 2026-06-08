@@ -17,7 +17,7 @@ export function TrustStrip() {
         <div className="np-card-texture overflow-hidden rounded-(--np-radius-xl) border border-white/10 px-5 py-5 shadow-(--np-shadow-soft) sm:px-7">
           <div className="relative z-10 flex flex-col gap-5">
             <p className="text-sm font-medium text-(--np-muted) sm:text-base">
-              Trusted by institutions across Nigeria:
+              Trusted by institutions including:
             </p>
             <div className="relative -mx-5 overflow-hidden sm:-mx-7">
               <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-14 bg-linear-to-r from-(--np-surface) to-transparent sm:w-20" />

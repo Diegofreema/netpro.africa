@@ -159,6 +159,14 @@ export const organizationJsonLd = {
     },
     {
       '@type': 'ContactPoint',
+      telephone: '+2349011770294',
+      email: 'sales@netpro.africa',
+      contactType: 'sales',
+      areaServed: ['NG', 'Africa'],
+      availableLanguage: ['en'],
+    },
+    {
+      '@type': 'ContactPoint',
       email: 'support@netpro.africa',
       contactType: 'customer support',
       areaServed: ['NG', 'Africa'],
@@ -171,18 +179,24 @@ export const organizationJsonLd = {
       addressCountry: 'NG',
       addressLocality: 'Owerri',
       addressRegion: 'Imo State',
+      streetAddress:
+        'NetPro International Limited, 10 Wilfred Okereke Street, Obinze, Owerri West',
     },
     {
       '@type': 'PostalAddress',
       addressCountry: 'NG',
       addressLocality: 'Abuja',
       addressRegion: 'FCT',
+      streetAddress:
+        'NetPro International Limited, AUJ COMPLEX Block A, Central Business District',
     },
     {
       '@type': 'PostalAddress',
       addressCountry: 'NG',
       addressLocality: 'Lagos',
-      streetAddress: 'House U1, Chevron Drive, Lekki',
+      addressRegion: 'Lagos State',
+      streetAddress:
+        'NetPro International Limited, House U1 Northpoint Estate, by Chevron Drive, Lekki',
     },
   ],
   areaServed: ['Nigeria', 'Africa'],
@@ -190,7 +204,7 @@ export const organizationJsonLd = {
     absoluteUrl('/'),
     'https://instagram.com/netpro.ltd',
     'https://facebook.com/NetproAfrica',
-    'https://linkedin.com/company/netpro-Africa-limited',
-    'https://youtube.com/@netproAfrica5023',
+    'https://www.linkedin.com/company/netpro-international-limited',
+    'https://www.youtube.com/@netprointernational5023',
   ],
 };

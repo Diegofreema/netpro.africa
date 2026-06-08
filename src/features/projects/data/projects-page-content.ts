@@ -93,6 +93,7 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'ems',
     title: 'Educational Management System',
+    image: assetUrl('/assets/netpro/Educational Management System.png'),
     tags: [
       { label: 'Education Software', icon: GraduationCapIcon },
       { label: 'AI-Powered', icon: SparklesIcon },
@@ -138,6 +139,7 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'lms-education',
     title: 'Learning Management System',
+    image: assetUrl('/assets/netpro/Library Management System.png'),
     tags: [
       { label: 'E-Learning Ready', icon: MonitorSmartphoneIcon },
       { label: 'Education Software', icon: GraduationCapIcon },
@@ -176,6 +178,9 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'rtms',
     title: 'Results & Transcript Management System',
+    image: assetUrl(
+      '/assets/netpro/Results & Transcript Management System.png',
+    ),
     tags: [
       { label: 'Academic Records', icon: DatabaseIcon },
       { label: 'Tamper-Proof', icon: ShieldCheckIcon },
@@ -221,6 +226,7 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'jms',
     title: 'Academic Journal Management System',
+    image: assetUrl('/assets/netpro/Academic Journal Management System.png'),
     tags: [
       { label: 'Research Publishing', icon: Globe2Icon },
       { label: 'Editorial Workflow', icon: BriefcaseBusinessIcon },
@@ -262,6 +268,7 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'siwes',
     title: 'Student Industrial Work Experience System',
+    image: assetUrl('/assets/netpro/SIWES Management System.png'),
     tags: [
       { label: 'SIWES', icon: BriefcaseBusinessIcon },
       { label: 'Accreditation Ready', icon: ShieldCheckIcon },
@@ -304,6 +311,7 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'drs',
     title: 'Digital Project Repository System',
+    image: assetUrl('/assets/netpro/Digital Project Repository System.png'),
     tags: [
       { label: 'Research Repository', icon: DatabaseIcon },
       { label: 'Knowledge Preservation', icon: ShieldCheckIcon },
@@ -346,6 +354,7 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'qms',
     title: 'Quality Management System',
+    image: assetUrl('/assets/netpro/Quality Management System.png'),
     tags: [
       { label: 'Quality Assurance', icon: ShieldCheckIcon },
       { label: 'Accreditation Support', icon: GraduationCapIcon },
@@ -391,6 +400,7 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'hrms-education',
     title: 'Human Resource Management System',
+    image: assetUrl('/assets/netpro/Human Resource Management System.png'),
     tags: [
       { label: 'Education HR', icon: BriefcaseBusinessIcon },
       { label: 'Payroll & Appraisal', icon: BarChart3Icon },
@@ -433,6 +443,7 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'library-lms',
     title: 'Library Management System',
+    image: assetUrl('/assets/netpro/Library Management System.png'),
     tags: [
       { label: 'Library Operations', icon: DatabaseIcon },
       { label: 'E-Library', icon: Globe2Icon },
@@ -513,6 +524,9 @@ const healthcareProducts: SoftwareProject[] = [
   {
     id: 'shims',
     title: 'Student Health Information Management System',
+    image: assetUrl(
+      '/assets/netpro/Student Health Information Management System.png',
+    ),
     tags: [
       { label: 'Campus Health', icon: GraduationCapIcon },
       { label: 'Electronic Health Records', icon: ShieldCheckIcon },
@@ -555,6 +569,7 @@ const healthcareProducts: SoftwareProject[] = [
   {
     id: 'hhs',
     title: 'Home Health Software',
+    image: assetUrl('/assets/netpro/Home Health Software.png'),
     tags: [
       { label: 'Home-Based Care', icon: MonitorSmartphoneIcon },
       { label: 'Care Coordination', icon: BriefcaseBusinessIcon },
@@ -600,6 +615,7 @@ const financialProducts: SoftwareProject[] = [
   {
     id: 'mfbs',
     title: 'Microfinance Bank Management System',
+    image: assetUrl('/assets/netpro/Microfinance Bank Management System.png'),
     tags: [
       { label: 'Core Banking', icon: BarChart3Icon },
       { label: 'CBN Aware', icon: ShieldCheckIcon },
@@ -646,6 +662,7 @@ const financialProducts: SoftwareProject[] = [
   {
     id: 'csms',
     title: 'Cooperative Society Management System',
+    image: assetUrl('/assets/netpro/Cooperative Society Management System.png'),
     tags: [
       { label: 'Cooperatives', icon: BriefcaseBusinessIcon },
       { label: 'Thrift & Credit', icon: BarChart3Icon },
@@ -692,6 +709,9 @@ const financialProducts: SoftwareProject[] = [
   {
     id: 'lms-fin',
     title: 'Digital Lending & Loan Management System',
+    image: assetUrl(
+      '/assets/netpro/Digital Lending & Loan Management System.png',
+    ),
     tags: [
       { label: 'Digital Lending', icon: SmartphoneIcon },
       { label: 'Credit Workflows', icon: LineChartIcon },
@@ -738,6 +758,7 @@ const financialProducts: SoftwareProject[] = [
   {
     id: 'abp',
     title: 'Agent Banking Management Platform',
+    image: assetUrl('/assets/netpro/Agent Banking Management Platform.png'),
     tags: [
       { label: 'Agent Banking', icon: Globe2Icon },
       { label: 'Network Visibility', icon: LineChartIcon },
@@ -780,6 +801,7 @@ const financialProducts: SoftwareProject[] = [
   {
     id: 'mbapp',
     title: 'Mobile Banking Application',
+    image: assetUrl('/assets/netpro/Mobile Banking Application.png'),
     tags: [
       { label: 'Digital Banking', icon: SmartphoneIcon },
       { label: 'White Label', icon: BriefcaseBusinessIcon },
@@ -822,6 +844,9 @@ const financialProducts: SoftwareProject[] = [
   {
     id: 'pmts',
     title: 'Payment & Transaction Management System',
+    image: assetUrl(
+      '/assets/netpro/Payment & Transaction Management System.png',
+    ),
     tags: [
       { label: 'Payments Infrastructure', icon: Globe2Icon },
       { label: 'Reconciliation', icon: BarChart3Icon },
@@ -918,6 +943,9 @@ const enterpriseProducts: SoftwareProject[] = [
   {
     id: 'jmis',
     title: 'Judiciary Management Information System',
+    image: assetUrl(
+      '/assets/netpro/Judiciary Management Information System.png',
+    ),
     tags: [
       { label: 'Justice Administration', icon: ShieldCheckIcon },
       { label: 'Case Management', icon: LayoutDashboardIcon },
@@ -1011,6 +1039,7 @@ const enterpriseProducts: SoftwareProject[] = [
   {
     id: 'nbaccs',
     title: 'NBA Conveyancing Compliance System',
+    image: assetUrl('/assets/netpro/NBA Conveyancing Compliance System.png'),
     tags: [
       { label: 'Legal Compliance', icon: ShieldCheckIcon },
       { label: 'Property Transactions', icon: Globe2Icon },

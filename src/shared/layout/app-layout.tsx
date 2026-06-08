@@ -50,15 +50,20 @@ const productLinks = [
 ] as const;
 
 const officeLocations = [
-  'Owerri, Imo State',
-  'Abuja, FCT',
-  'Lagos - House U1, Chevron Drive, Lekki',
+  'NetPro International Limited, 10 Wilfred Okereke Street, Obinze, Owerri West, Imo State',
+  'NetPro International Limited, AUJ COMPLEX Block A, Central Business District, Abuja FCT',
+  'NetPro International Limited, House U1 Northpoint Estate, by Chevron Drive, Lekki, Lagos State',
 ] as const;
 
 const contactLinks = [
   {
     label: '+234 90-4679-5968',
     href: 'tel:+2349046795968',
+    icon: PhoneCallIcon,
+  },
+  {
+    label: '+234 90-1177-0294',
+    href: 'tel:+2349011770294',
     icon: PhoneCallIcon,
   },
   {
@@ -101,12 +106,12 @@ const socialLinks = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://linkedin.com/company/netpro-Africa-limited',
+    href: 'https://www.linkedin.com/company/netpro-international-limited',
     icon: LinkIcon,
   },
   {
     label: 'YouTube',
-    href: 'https://youtube.com/@netproAfrica5023',
+    href: 'https://www.youtube.com/@netprointernational5023',
     icon: SendIcon,
   },
 ] as const;

@@ -1,6 +1,7 @@
 import { Link } from '@tanstack/react-router';
 
 import { Button } from '@/components/ui/button';
+import { assetUrl } from '@/shared/config/site';
 
 export function SiteCta() {
   return (
@@ -45,11 +46,11 @@ export function SiteCta() {
         </div>
 
         <div className="np-site-cta-mark" aria-hidden="true">
-          <span className="np-site-cta-word">netpro</span>
-          <span className="np-site-cta-globe">
-            <span className="np-site-cta-cap" />
-            <span className="np-site-cta-leaf" />
-          </span>
+          <img
+            src={assetUrl('/assets/netpro/logo.png')}
+            alt=""
+            className="np-site-cta-logo"
+          />
         </div>
       </div>
     </section>

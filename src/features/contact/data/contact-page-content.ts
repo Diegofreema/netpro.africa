@@ -61,6 +61,12 @@ export const phoneContacts: ContactAction[] = [
     href: 'tel:+2349046795968',
     icon: PhoneCallIcon,
   },
+  {
+    label: 'Call Us',
+    value: '+234 90-1177-0294',
+    href: 'tel:+2349011770294',
+    icon: PhoneCallIcon,
+  },
 ]
 
 export const officeIntro = {
@@ -71,18 +77,21 @@ export const officeIntro = {
 export const officeLocations: OfficeLocation[] = [
   {
     city: 'Owerri, Nigeria',
-    address: 'Owerri, Imo State',
-    href: 'https://maps.google.com/?q=Owerri+Imo+State+Nigeria',
+    address:
+      'NetPro International Limited, 10 Wilfred Okereke Street, Obinze, Owerri West, Imo State',
+    href: 'https://maps.google.com/?q=NetPro+International+Limited+10+Wilfred+Okereke+Street+Obinze+Owerri+West+Imo+State',
   },
   {
     city: 'Abuja, Nigeria',
-    address: 'Abuja, FCT',
-    href: 'https://maps.google.com/?q=Abuja+FCT+Nigeria',
+    address:
+      'NetPro International Limited, AUJ COMPLEX Block A, Central Business District, Abuja FCT',
+    href: 'https://maps.google.com/?q=NetPro+International+Limited+AUJ+COMPLEX+Block+A+Central+Business+District+Abuja+FCT',
   },
   {
     city: 'Lagos, Nigeria',
-    address: 'Lagos - House U1, Chevron Drive, Lekki',
-    href: 'https://maps.google.com/?q=House+U1+Chevron+Drive+Lekki+Lagos+Nigeria',
+    address:
+      'NetPro International Limited, House U1 Northpoint Estate, by Chevron Drive, Lekki, Lagos State',
+    href: 'https://maps.google.com/?q=NetPro+International+Limited+House+U1+Northpoint+Estate+Chevron+Drive+Lekki+Lagos+State',
   },
 ]
 
@@ -135,8 +144,8 @@ export const socialSection = {
 export const socialLinks = [
   { label: 'Instagram', href: 'https://instagram.com/netpro.ltd', icon: CameraIcon },
   { label: 'Facebook', href: 'https://facebook.com/NetproAfrica', icon: LinkIcon },
-  { label: 'LinkedIn', href: 'https://linkedin.com/company/netpro-Africa-limited', icon: LinkIcon },
-  { label: 'YouTube', href: 'https://youtube.com/@netproAfrica5023', icon: SendIcon },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/netpro-international-limited', icon: LinkIcon },
+  { label: 'YouTube', href: 'https://www.youtube.com/@netprointernational5023', icon: SendIcon },
 ]
 
 export const contactCta = {

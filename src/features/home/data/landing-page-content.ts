@@ -52,7 +52,7 @@ export type LandingFaq = {
 export const heroContent = {
   title: 'Leading Innovation & Technology Transformation Since 2000',
   description:
-    'NetPro Africa delivers bespoke software solutions, technology  transformation, and innovation-led services across education,  healthcare, financial services, and enterprise in sub-Saharan Africa.',
+    'NetPro delivers bespoke software solutions, technology  transformation, and innovation-led services across education,  healthcare, government, SMEs and enterprises in sub-Saharan Africa.',
   pretext: 'Transforming Africa Through Technology',
   primaryCta: 'Talk to an Expert',
   secondaryCta: 'Explore Products',
@@ -232,7 +232,8 @@ export const testimonials = [
 
 export const faqs: LandingFaq[] = [
   {
-    question: 'Why should we choose NetPro Africa over other technology companies?',
+    question:
+      'Why should we choose NetPro Africa over other technology companies?',
     answer:
       'NetPro Africa is more than a software development company - we are a digital transformation partner. We combine strategy, engineering, infrastructure, cybersecurity, and enterprise support to deliver technology solutions that solve real business problems and create measurable impact.',
   },
@@ -242,7 +243,8 @@ export const faqs: LandingFaq[] = [
       "Both. We develop proprietary platforms while also designing fully customized solutions tailored to an organization's processes, policies, and growth objectives. Every implementation is engineered to fit your business rather than forcing your business to fit the software.",
   },
   {
-    question: 'Can NetPro Africa handle large-scale digital transformation projects?',
+    question:
+      'Can NetPro Africa handle large-scale digital transformation projects?',
     answer:
       'Yes. Our team works with institutions and enterprises to modernize operations through integrated technology ecosystems, automation, cloud solutions, intelligent data management, and enterprise applications that scale with organizational growth.',
   },

@@ -269,7 +269,7 @@ export function AppLayout({ children }: PropsWithChildren) {
               <BrandLogo className="w-fit" />
               <div className="space-y-3">
                 <h2 className="text-xl font-semibold text-foreground">
-                  NetPro Africa
+                  NetPro International Limited
                 </h2>
                 <p className="text-base leading-8 text-(--np-subtle)">
                   Leading Innovation &amp; Technology Transformation since 2000.
@@ -354,7 +354,7 @@ export function AppLayout({ children }: PropsWithChildren) {
           </div>
           <Separator />
           <div className="flex flex-col justify-between gap-4 text-base text-(--np-subtle) md:flex-row">
-            <p>© 2026 NetPro Africa Limited. All Rights Reserved.</p>
+            <p>© 2026 NetPro International Limited. All Rights Reserved.</p>
             <div className="flex flex-wrap gap-5">
               <Link
                 className="inline-flex min-h-11 items-center"

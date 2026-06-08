@@ -1,4 +1,4 @@
-import type { LucideIcon } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react';
 import {
   ArrowRightIcon,
   BarChart3Icon,
@@ -12,64 +12,62 @@ import {
   ServerIcon,
   ShieldCheckIcon,
   SmartphoneIcon,
-  TagsIcon,
   TerminalSquareIcon,
-} from 'lucide-react'
+} from 'lucide-react';
 
 export type ServiceLine = {
-  id: string
-  number: string
-  title: string
-  body: string
-  points: string[]
-  icon: LucideIcon
-}
+  id: string;
+  number: string;
+  title: string;
+  body: string;
+  points: string[];
+  icon: LucideIcon;
+};
 
-export type ExpertiseTabId = 'software' | 'fintech' | 'pricing'
+export type ExpertiseTabId = 'software' | 'fintech' | 'pricing';
 
 export type ExpertiseTab = {
-  id: ExpertiseTabId
-  title: string
-  icon: LucideIcon
-  heading: string
-  summary: string
+  id: ExpertiseTabId;
+  title: string;
+  icon: LucideIcon;
+  heading: string;
+  summary: string;
   sections: Array<{
-    title: string
-    body?: string
-    points?: string[]
-  }>
-}
+    title: string;
+    body?: string;
+    points?: string[];
+  }>;
+};
 
 export type SuccessStory = {
-  id: string
-  title: string
-  industry: string
-  service: string
-  challenge: string
-  solution: string
-  icon: LucideIcon
-}
+  id: string;
+  title: string;
+  industry: string;
+  service: string;
+  challenge: string;
+  solution: string;
+  icon: LucideIcon;
+};
 
 export const servicesHero = {
   title: 'Services & Capabilities',
   summary:
     'From strategy and software development to network infrastructure, financial technology, and cybersecurity services built for African institutions.',
-}
+};
 
 export const serviceLinesIntro = {
   kicker: 'What we offer',
   title: '9 Service Lines. One Technology Partner.',
   summary:
     'Our capabilities span the full technology lifecycle, from initial strategy through implementation, training, and long-term support.',
-}
+};
 
 export const serviceLines: ServiceLine[] = [
   {
     id: 'management-consultancy',
     number: '01',
     title: 'Management Consultancy',
-    body:
-      'Technology and business transformation consultancy for education, healthcare, financial services, and government. We help leadership teams make better technology decisions, from platform selection to compliance strategy.',
+    body: 'Technology and business transformation consultancy for education, healthcare, financial services, and government. We help leadership teams make better technology decisions, from platform selection to compliance strategy.',
     points: [
       'ICT strategy and digital transformation advisory',
       'Technology procurement and vendor assessment',
@@ -82,8 +80,7 @@ export const serviceLines: ServiceLine[] = [
     id: 'bespoke-software-development',
     number: '02',
     title: 'Bespoke Software Development',
-    body:
-      'End-to-end custom software: ERPs, web apps, mobile apps, and financial platforms. Every engagement starts with requirements engineering and ends with rigorous QA.',
+    body: 'End-to-end custom software: ERPs, web apps, mobile apps, and financial platforms. Every engagement starts with requirements engineering and ends with rigorous QA.',
     points: [
       'Enterprise Resource Planning systems',
       'Core banking and microfinance software',
@@ -96,8 +93,7 @@ export const serviceLines: ServiceLine[] = [
     id: 'technology-transformation',
     number: '03',
     title: 'Technology Transformation',
-    body:
-      'Structured transition from legacy or manual systems to modern digital platforms with change management support, data migration, staff training, and measurable outcomes.',
+    body: 'Structured transition from legacy or manual systems to modern digital platforms with change management support, data migration, staff training, and measurable outcomes.',
     points: [
       'Legacy system migration and data transfer',
       'Change management and stakeholder communication',
@@ -110,8 +106,7 @@ export const serviceLines: ServiceLine[] = [
     id: 'fintech-solutions',
     number: '04',
     title: 'Financial Technology (FinTech) Solutions',
-    body:
-      'Purpose-built financial infrastructure for microfinance institutions, cooperative societies, credit unions, agent banking networks, and SME lenders.',
+    body: 'Purpose-built financial infrastructure for microfinance institutions, cooperative societies, credit unions, agent banking networks, and SME lenders.',
     points: [
       'Microfinance bank core platform design and deployment',
       'Cooperative society and SACCO management systems',
@@ -125,8 +120,7 @@ export const serviceLines: ServiceLine[] = [
     id: 'hardware-enterprise-equipment',
     number: '05',
     title: 'Hardware & Enterprise Equipment',
-    body:
-      'Supply and installation of enterprise network equipment, portable systems, servers, and didactic equipment for technical and engineering education.',
+    body: 'Supply and installation of enterprise network equipment, portable systems, servers, and didactic equipment for technical and engineering education.',
     points: [
       'Network switches, routers, and access points',
       'Server and storage systems for institutional data centres',
@@ -138,8 +132,7 @@ export const serviceLines: ServiceLine[] = [
     id: 'training-capacity-building',
     number: '06',
     title: 'Training & Capacity Building',
-    body:
-      'Technical training programmes for Nigerian and African learners covering software development, data analysis, cybersecurity, AI/ML, UI/UX, DevOps, project management, and FinTech operations.',
+    body: 'Technical training programmes for Nigerian and African learners covering software development, data analysis, cybersecurity, AI/ML, UI/UX, DevOps, project management, and FinTech operations.',
     points: [
       'Software engineering bootcamps',
       'Cybersecurity awareness and practitioner training',
@@ -152,8 +145,7 @@ export const serviceLines: ServiceLine[] = [
     id: 'cybersecurity-data-analysis',
     number: '07',
     title: 'Cybersecurity & Data Analysis',
-    body:
-      'Cybersecurity services including network security audits, penetration testing, data analysis, and protection of digital assets and institutional data.',
+    body: 'Cybersecurity services including network security audits, penetration testing, data analysis, and protection of digital assets and institutional data.',
     points: [
       'Network security assessments and vulnerability scanning',
       'Data governance frameworks and privacy compliance',
@@ -166,8 +158,7 @@ export const serviceLines: ServiceLine[] = [
     id: 'mobile-app-development',
     number: '08',
     title: 'Mobile App Development',
-    body:
-      'Native and cross-platform mobile applications built with modern stacks for institutional clients, healthcare providers, financial services, and SMEs.',
+    body: 'Native and cross-platform mobile applications built with modern stacks for institutional clients, healthcare providers, financial services, and SMEs.',
     points: [
       'Cross-platform mobile apps for iOS and Android',
       'Financial services mobile applications',
@@ -180,8 +171,7 @@ export const serviceLines: ServiceLine[] = [
     id: 'booking-scheduling-software',
     number: '09',
     title: 'Booking & Scheduling Software',
-    body:
-      'Appointment and scheduling management software for service businesses including salons, barbershops, clinics, and financial service branches.',
+    body: 'Appointment and scheduling management software for service businesses including salons, barbershops, clinics, and financial service branches.',
     points: [
       'Multi-location scheduling and capacity management',
       'Automated appointment reminders via SMS and email',
@@ -189,12 +179,12 @@ export const serviceLines: ServiceLine[] = [
     ],
     icon: CalendarDaysIcon,
   },
-]
+];
 
 export const expertiseIntro = {
   kicker: 'Deep Dive',
   title: 'Enterprise Software and FinTech Expertise',
-}
+};
 
 export const expertiseTabs: ExpertiseTab[] = [
   {
@@ -226,13 +216,11 @@ export const expertiseTabs: ExpertiseTab[] = [
       },
       {
         title: 'Technology Stack',
-        body:
-          'LAMP Stack · ASP.NET · MEAN Stack · MERN Stack · MEVN Stack · Python · Java · Flutter · Serverless · AI / ML Integration',
+        body: 'LAMP Stack · ASP.NET · MEAN Stack · MERN Stack · MEVN Stack · Python · Java · Flutter · Serverless · AI / ML Integration',
       },
       {
         title: 'Licensing Note',
-        body:
-          'All products are delivered as SaaS with unlimited user base, onboarding support, and defined minimum user thresholds.',
+        body: 'All products are delivered as SaaS with unlimited user base, onboarding support, and defined minimum user thresholds.',
       },
     ],
   },
@@ -256,8 +244,7 @@ export const expertiseTabs: ExpertiseTab[] = [
       },
       {
         title: 'Regulatory Awareness',
-        body:
-          'Our financial platforms are designed with CBN guidelines in mind, including data residency, audit trails, KYC/AML workflow support, and role-based access control. We work with your compliance team to ensure every system deployment meets current regulatory requirements.',
+        body: 'Our financial platforms are designed with CBN guidelines in mind, including data residency, audit trails, KYC/AML workflow support, and role-based access control. We work with your compliance team to ensure every system deployment meets current regulatory requirements.',
       },
       {
         title: 'Integration Capabilities',
@@ -271,46 +258,52 @@ export const expertiseTabs: ExpertiseTab[] = [
       },
     ],
   },
-  {
-    id: 'pricing',
-    title: 'Pricing',
-    icon: TagsIcon,
-    heading: 'Transparent, Flexible Pricing',
-    summary:
-      'Our SaaS model means you pay for value, not headcount. Our EMS pricing starts as low as ₦10,000/student/year, with full institution licensing available for larger deployments. Financial platform pricing is based on seat and transaction volume.',
-    sections: [
-      {
-        title: 'Pricing Matrix',
-        body:
-          'EMS — Standard (per student/year): ₦10,000 – ₦15,000. EMS — Full E-Learning / Distance Learning: ₦15,000 – ₦20,000. Financial Platforms: Quote-based: contact sales for MFB and cooperative tiers.',
-      },
-      {
-        title: 'Commercial Notes',
-        points: [
-          'Institution licensing available for larger deployments',
-          'Onboarding, training, and support priced by rollout complexity',
-          'Financial platforms scoped around compliance and integration needs',
-        ],
-      },
-    ],
-  },
-]
+  // {
+  //   id: 'pricing',
+  //   title: 'Pricing',
+  //   icon: TagsIcon,
+  //   heading: 'Transparent, Flexible Pricing',
+  //   summary:
+  //     'Our SaaS model means you pay for value, not headcount. Our EMS pricing starts as low as ₦10,000/student/year, with full institution licensing available for larger deployments. Financial platform pricing is based on seat and transaction volume.',
+  //   sections: [
+  //     {
+  //       title: 'Pricing Matrix',
+  //       body:
+  //         'EMS — Standard (per student/year): ₦10,000 – ₦15,000. EMS — Full E-Learning / Distance Learning: ₦15,000 – ₦20,000. Financial Platforms: Quote-based: contact sales for MFB and cooperative tiers.',
+  //     },
+  //     {
+  //       title: 'Commercial Notes',
+  //       points: [
+  //         'Institution licensing available for larger deployments',
+  //         'Onboarding, training, and support priced by rollout complexity',
+  //         'Financial platforms scoped around compliance and integration needs',
+  //       ],
+  //     },
+  //   ],
+  // },
+];
 
 export const pricing = {
   title: 'Transparent, Flexible Pricing',
-  body:
-    'Our SaaS model means you pay for value, not headcount. Our EMS pricing starts as low as ₦10,000/student/year, with full institution licensing available for larger deployments. Financial platform pricing is based on seat and transaction volume.',
-  columns: ['EMS — Standard (per student/year)', 'EMS — Full E-Learning / Distance Learning', 'Financial Platforms'],
-  values: ['₦10,000 – ₦15,000', '₦15,000 – ₦20,000', 'Quote-based: contact sales for MFB and cooperative tiers'],
+  body: 'Our SaaS model means you pay for value, not headcount. Our EMS pricing starts as low as ₦10,000/student/year, with full institution licensing available for larger deployments. Financial platform pricing is based on seat and transaction volume.',
+  columns: [
+    'EMS — Standard (per student/year)',
+    'EMS — Full E-Learning / Distance Learning',
+    'Financial Platforms',
+  ],
+  values: [
+    '₦10,000 – ₦15,000',
+    '₦15,000 – ₦20,000',
+    'Quote-based: contact sales for MFB and cooperative tiers',
+  ],
   cta: 'Get a Custom Quote',
-}
+};
 
 export const successIntro = {
   titleLead: 'Success',
   title: 'Stories',
-  body:
-    'Our success is defined by client outcomes. These stories show how focused technology work improves operations and customer experience.',
-}
+  body: 'Our success is defined by client outcomes. These stories show how focused technology work improves operations and customer experience.',
+};
 
 export const successStories: SuccessStory[] = [
   {
@@ -335,7 +328,7 @@ export const successStories: SuccessStory[] = [
       'We built an interactive mobile product with goal tracking, progress views, and a clean engagement loop for recurring use.',
     icon: LineChartIcon,
   },
-]
+];
 
 export const servicesCta = {
   title: "Let's Solve Your Technology Challenge",
@@ -343,6 +336,6 @@ export const servicesCta = {
     'Whether you need a full ERP, a bespoke app, a microfinance banking platform, or a network overhaul, we have the team and track record to deliver.',
   primary: 'Request a Consultation',
   secondary: 'See Our Products',
-}
+};
 
-export const arrowIcon = ArrowRightIcon
+export const arrowIcon = ArrowRightIcon;

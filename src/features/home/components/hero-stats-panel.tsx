@@ -4,7 +4,7 @@ const heroStats = [
   { value: 25, suffix: '+', label: 'Years of Experience' },
   { value: 20, suffix: '+', label: 'Products' },
   { value: 9, suffix: '+', label: 'Service lines' },
-  { value: 3, suffix: '+', label: 'Tier offerings' },
+  { value: 5, suffix: '+', label: 'Office locations' },
 ];
 
 type HeroStatsPanelProps = {

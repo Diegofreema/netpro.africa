@@ -9,8 +9,8 @@ export function FocusAreasSection() {
         <LandingSectionHeading
           eyebrow=""
           label="What We Do"
-          title="Purpose-Built Software for Education, Healthcare & Financial Services"
-          description="We build and deploy intelligent software platforms that transform how institutions educate, how hospitals deliver care, how financial institutions serve their clients, and how businesses operate."
+          title="Purpose-Built Software for Education, Healthcare & SME/Enterprise"
+          description="We build and deploy intelligent software platforms that transform how institutions educate, how hospitals deliver care, how institutions serve their clients, and how businesses operate."
         />
         <div className="np-reveal-stagger grid gap-y-12 divide-white/10 md:grid-cols-2 lg:grid-cols-3 lg:divide-x">
           {benefits.slice(0, 3).map((benefit) => (

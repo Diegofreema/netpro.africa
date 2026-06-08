@@ -8,9 +8,16 @@ import {
   PhoneCallIcon,
   SendIcon,
 } from 'lucide-react';
-import { useLayoutEffect, type PropsWithChildren } from 'react';
+import { useLayoutEffect, useState, type PropsWithChildren } from 'react';
 
 import { Button } from '@/components/ui/button';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 import { Separator } from '@/components/ui/separator';
 import {
   Sheet,
@@ -49,10 +56,20 @@ const productLinks = [
   'LMS-Fin - Digital Lending',
 ] as const;
 
+const siteLinks = [
+  { label: 'Netpro International', href: 'https://www.netpro.international' },
+  { label: 'NetPro Software', href: 'https://www.netpro.software' },
+] as const;
+
 const officeLocations = [
   'NetPro International Limited, 10 Wilfred Okereke Street, Obinze, Owerri West, Imo State',
   'NetPro International Limited, AUJ COMPLEX Block A, Central Business District, Abuja FCT',
   'NetPro International Limited, House U1 Northpoint Estate, by Chevron Drive, Lekki, Lagos State',
+] as const;
+
+const countryLocations = [
+  { value: 'nigeria', label: 'Nigeria', cities: 'Owerri, Abuja & Lagos' },
+  { value: 'kenya', label: 'Kenya', cities: 'Nairobi & Mombasa' },
 ] as const;
 
 const contactLinks = [
@@ -117,6 +134,7 @@ const socialLinks = [
 ] as const;
 
 export function AppLayout({ children }: PropsWithChildren) {
+  const [selectedCountry, setSelectedCountry] = useState('nigeria');
   const isMobileNavOpen = useUiStore((state) => state.isMobileNavOpen);
   const setMobileNavOpen = useUiStore((state) => state.setMobileNavOpen);
   const pathname = useRouterState({
@@ -176,10 +194,19 @@ export function AppLayout({ children }: PropsWithChildren) {
               sales@netpro.africa
             </a>
           </div>
-          <span className="inline-flex items-center gap-2">
-            <MapPinIcon className="size-4" aria-hidden="true" />
-            Nigeria · Owerri · Abuja · Lagos
-          </span>
+          <Select value={selectedCountry} onValueChange={setSelectedCountry}>
+            <SelectTrigger className="h-auto gap-2 border-transparent bg-transparent p-0 text-sm font-medium text-primary-foreground shadow-none hover:bg-transparent focus-visible:ring-0 [&>svg:last-child]:text-primary-foreground/70">
+              <MapPinIcon className="size-4" aria-hidden="true" />
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {countryLocations.map((country) => (
+                <SelectItem key={country.value} value={country.value}>
+                  {country.label} &mdash; {country.cities}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
       </div>
       <header className="sticky top-0 z-40 border-b border-white/8 bg-background/94 supports-backdrop-filter:bg-background/90">
@@ -299,7 +326,7 @@ export function AppLayout({ children }: PropsWithChildren) {
               </div>
             </div>
 
-            <div className="grid gap-9 sm:grid-cols-3">
+            <div className="grid gap-9 sm:grid-cols-2 lg:grid-cols-4">
               {footerColumns.map((column) => (
                 <div key={column.title} className="flex flex-col gap-5">
                   <h2 className="text-base font-semibold text-foreground">
@@ -325,6 +352,25 @@ export function AppLayout({ children }: PropsWithChildren) {
                   </ul>
                 </div>
               ))}
+              <div className="flex flex-col gap-5">
+                <h2 className="text-base font-semibold text-foreground">
+                  Our Sites
+                </h2>
+                <ul className="flex flex-col gap-3 text-base text-(--np-subtle)">
+                  {siteLinks.map((item) => (
+                    <li key={item.label}>
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="np-focus inline-flex min-h-8 items-center rounded-sm transition-colors duration-(--np-duration-fast) hover:text-foreground"
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
           <Separator />

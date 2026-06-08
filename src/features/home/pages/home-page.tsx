@@ -2,6 +2,7 @@ import { FocusAreasSection } from '@/features/home/components/focus-areas-sectio
 import { HeroSection } from '@/features/home/components/hero-section';
 import { HomeFaqSection } from '@/features/home/components/home-faq-section';
 import { ServiceTiersSection } from '@/features/home/components/service-tiers-section';
+import { TechPartnersSection } from '@/features/home/components/tech-partners-strip';
 import { TestimonialsSection } from '@/features/home/components/testimonials-section';
 import { TrustStrip } from '@/features/home/components/trust-strip';
 import { WorksSection } from '@/features/home/components/works-section';
@@ -20,6 +21,13 @@ const homeSections: AnimatedPageSectionConfig[] = [
   {
     id: 'trust-strip',
     Component: TrustStrip,
+    y: 22,
+    scale: 0.996,
+    amount: 0.55,
+  },
+  {
+    id: 'tech-partners',
+    Component: TechPartnersSection,
     y: 22,
     scale: 0.996,
     amount: 0.55,

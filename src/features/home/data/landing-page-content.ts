@@ -51,6 +51,11 @@ export type LandingFaq = {
 
 export const heroContent = {
   title: 'Leading Innovation & Technology Transformation Since 2000',
+  titles: [
+    'Leading Innovation & Technology Transformation Since 2000',
+    'Pushing the boundaries of Bi/Ai in education and Healthcare',
+    'Credible, honest technology service provision like no other',
+  ],
   description:
     'NetPro delivers bespoke software solutions, technology  transformation, and innovation-led services across education,  healthcare, government, SMEs and enterprises in sub-Saharan Africa.',
   pretext: 'Transforming Africa Through Technology',
@@ -63,7 +68,6 @@ export const trustedInstitutions = [
   'Claretian University',
   'Rocana Institute',
   'Living Temple Academy',
-  'Federal Institutions',
   'Handmaids of the Holy Child Jesus',
   'Federal Polytechnic Nekede',
   'University of Innovation, Science and Technology',

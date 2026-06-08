@@ -1,4 +1,4 @@
-import Shuffle from '@/components/Shuffle';
+import TextType from '@/components/TextType';
 import { HeroStatsPanel } from '@/features/home/components/hero-stats-panel';
 import { HeroVisual } from '@/features/home/components/hero-visual';
 import { LandingButton } from '@/features/home/components/landing-button';
@@ -14,22 +14,14 @@ export function HeroSection() {
           <p className="np-hero-support max-w-5xl leading-8 text-[oklch(0.93_0_0/0.88)] sm:text-lg">
             {heroContent.pretext}
           </p>
-          <Shuffle
-            text={heroContent.title}
-            tag="h1"
-            shuffleDirection="up"
-            duration={0.42}
-            animationMode="evenodd"
-            shuffleTimes={2}
-            ease="power3.out"
-            stagger={0.018}
-            threshold={0.1}
-            rootMargin="0px"
-            triggerOnce
-            triggerOnHover
-            respectReducedMotion
-            scrambleCharset="NETPROAFRICA0123456789"
-            textAlign="center"
+          <TextType
+            text={heroContent.titles}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor
+            cursorCharacter="_"
+            deletingSpeed={50}
+            cursorBlinkDuration={0.5}
             className="np-hero-title max-w-full normal-case font-heading text-[clamp(2.15rem,5.2vw,4.3rem)] font-semibold leading-[1.08] tracking-tight text-[oklch(0.985_0_0)]"
           />
 

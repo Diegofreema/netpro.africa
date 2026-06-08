@@ -99,7 +99,7 @@ const educationProducts: SoftwareProject[] = [
       { label: 'AI-Powered', icon: SparklesIcon },
     ],
     summary:
-      'NetPro EMS is a flagship academic ERP for Nigerian institutions, built to manage the full student lifecycle from first enquiry to alumni engagement across single-campus and multi-campus environments.',
+      'NetPro EMS is a flagship academic ERP for institutions, built to manage the full student lifecycle from first enquiry to alumni engagement across single-campus and multi-campus environments.',
     details: [
       'Admissions management with online application portal and shortlisting workflows',
       'Fee and invoice management with automated receipting and financial reporting',
@@ -269,6 +269,49 @@ const educationProducts: SoftwareProject[] = [
     id: 'siwes',
     title: 'Student Industrial Work Experience System',
     image: assetUrl('/assets/netpro/SIWES Management System.png'),
+    tags: [
+      { label: 'SIWES', icon: BriefcaseBusinessIcon },
+      { label: 'Accreditation Ready', icon: ShieldCheckIcon },
+    ],
+    summary:
+      'SIWES replaces paper logbooks and manual coordination with a digital workflow for placement, supervision, assessment, and ITF reporting.',
+    details: [
+      'Student placement application, employer search, and placement confirmation workflows',
+      'Digital daily and weekly logbook entries with timestamp and location data',
+      'Industry supervisor assessment and report submission portal',
+      'Coordinator dashboard for placement tracking across departments',
+      'Midpoint and final assessment forms with automated scoring',
+      'Automated SIWES completion certificates for eligible students',
+      'Employer feedback module for programme improvement insights',
+      'Integration with EMS for student eligibility and programme data',
+      'Bulk reporting tools for ITF returns and accreditation documentation',
+    ],
+    meta: [
+      { label: 'Product Code', value: 'EE6 / SIWES' },
+      { label: 'Delivery Model', value: 'SaaS' },
+      { label: 'Demo Access', value: 'Live demo available' },
+      { label: 'Primary Market', value: 'Polytechnics and universities' },
+    ],
+    technologies: [
+      { label: 'Placements', icon: BriefcaseBusinessIcon },
+      { label: 'Digital Logbooks', icon: SmartphoneIcon },
+      { label: 'Assessments', icon: LayoutDashboardIcon },
+      { label: 'Compliance Reporting', icon: ShieldCheckIcon },
+    ],
+    subject:
+      'Institutions managing large SIWES cohorts and accreditation evidence requirements.',
+    subjectInitials: 'SW',
+    methods: [
+      'Live demo access',
+      'ITF reporting support',
+      'Supervisor portals',
+    ],
+    labels: productLabels,
+  },
+  {
+    id: 'cpms',
+    title: 'Clinical placement management system',
+    image: assetUrl('/assets/netpro/Clinical placement Management System.png'),
     tags: [
       { label: 'SIWES', icon: BriefcaseBusinessIcon },
       { label: 'Accreditation Ready', icon: ShieldCheckIcon },
@@ -491,7 +534,7 @@ const healthcareProducts: SoftwareProject[] = [
       { label: 'NHIA Aware', icon: BarChart3Icon },
     ],
     summary:
-      'HMS is an end-to-end hospital platform for patient care, billing, pharmacy, labs, and reporting, designed for Nigerian clinical workflows and multi-department operations.',
+      'HMS is an end-to-end hospital platform for patient care, billing, pharmacy, labs, and reporting, designed for clinical workflows and multi-department operations.',
     details: [
       'Patient registration with biometric and ID capture',
       'Outpatient consultation scheduling, triage, and clinical note management',
@@ -609,288 +652,329 @@ const healthcareProducts: SoftwareProject[] = [
     methods: ['Live demo access', 'Caregiver scheduling', 'Outcome tracking'],
     labels: productLabels,
   },
-];
-
-const financialProducts: SoftwareProject[] = [
   {
-    id: 'mfbs',
-    title: 'Microfinance Bank Management System',
-    image: assetUrl('/assets/netpro/Microfinance Bank Management System.png'),
-    tags: [
-      { label: 'Core Banking', icon: BarChart3Icon },
-      { label: 'CBN Aware', icon: ShieldCheckIcon },
-    ],
-    summary:
-      'MFBS is a core banking platform for CBN-licensed microfinance banks, covering deposit accounts, loans, treasury, reporting, and branch operations in one regulated system.',
-    details: [
-      'Customer onboarding with BVN verification, KYC documentation, and account opening workflows',
-      'Savings and current account management with interest computation and statements',
-      'Fixed deposit and term investment product management',
-      'Loan origination, appraisal, collateral management, and disbursement workflows',
-      'Repayment tracking with EMI computation, penalty calculation, and restructuring tools',
-      'Group lending and village banking support',
-      'Treasury and liquidity management dashboards',
-      'General ledger, trial balance, and financial statement generation',
-      'NIBSS NIP integration for real-time transfers',
-      'CBN reporting for MPR, CRMS, and quarterly returns',
-    ],
-    meta: [
-      { label: 'Product Code', value: 'FN1 / MFBS' },
-      { label: 'Delivery Model', value: 'SaaS' },
-      { label: 'Demo Access', value: 'Live demo available' },
-      {
-        label: 'Primary Market',
-        value: 'Microfinance banks and regulated lenders',
-      },
-    ],
-    technologies: [
-      { label: 'Deposits & Loans', icon: BarChart3Icon },
-      { label: 'Compliance', icon: ShieldCheckIcon },
-      { label: 'Interbank Transfers', icon: Globe2Icon },
-      { label: 'Branch Reporting', icon: LineChartIcon },
-    ],
-    subject:
-      'CBN-licensed institutions that need a regulated operating backbone, not generic accounting software.',
-    subjectInitials: 'MF',
-    methods: [
-      'Live demo access',
-      'CBN reporting support',
-      'Multi-branch architecture',
-    ],
-    labels: productLabels,
-  },
-  {
-    id: 'csms',
-    title: 'Cooperative Society Management System',
-    image: assetUrl('/assets/netpro/Cooperative Society Management System.png'),
-    tags: [
-      { label: 'Cooperatives', icon: BriefcaseBusinessIcon },
-      { label: 'Thrift & Credit', icon: BarChart3Icon },
-    ],
-    summary:
-      'CSMS helps cooperative societies manage member savings, share capital, loans, dividends, and reporting with stronger transparency and member self-service.',
-    details: [
-      'Member registration, share subscription, and membership tier management',
-      'Savings account management for regular savings, target savings, and share capital',
-      'Loan application, approval workflows, guarantor management, and disbursement',
-      'Repayment tracking with penalty and rebate computations',
-      'Dividend computation and payment processing at year-end',
-      'Monthly, quarterly, and AGM financial reporting for officers and auditors',
-      'Deduction-at-source payroll integration for salary-based cooperatives',
-      'SMS and email member statement notifications',
-      'Member self-service portal for balances, loans, and statements',
-      'Audit and compliance reporting for registrar submissions',
-    ],
-    meta: [
-      { label: 'Product Code', value: 'FN2 / CSMS' },
-      { label: 'Delivery Model', value: 'SaaS' },
-      { label: 'Demo Access', value: 'Live demo available' },
-      {
-        label: 'Primary Market',
-        value: 'Registered cooperatives and thrift societies',
-      },
-    ],
-    technologies: [
-      { label: 'Member Accounts', icon: DatabaseIcon },
-      { label: 'Loans', icon: BarChart3Icon },
-      { label: 'Notifications', icon: SmartphoneIcon },
-      { label: 'Audit Reports', icon: ShieldCheckIcon },
-    ],
-    subject:
-      'Cooperatives that need digital transparency across member savings, loans, and annual reporting.',
-    subjectInitials: 'CS',
-    methods: [
-      'Live demo access',
-      'Member self-service',
-      'Payroll deduction support',
-    ],
-    labels: productLabels,
-  },
-  {
-    id: 'lms-fin',
-    title: 'Digital Lending & Loan Management System',
+    id: 'tvhs',
+    title: 'Telemedicine Virtual Healthcare Solutions',
     image: assetUrl(
-      '/assets/netpro/Digital Lending & Loan Management System.png',
+      '/assets/netpro/Telemedicine Virtual Healthcare Solutions.png',
     ),
     tags: [
-      { label: 'Digital Lending', icon: SmartphoneIcon },
-      { label: 'Credit Workflows', icon: LineChartIcon },
+      { label: 'Home-Based Care', icon: MonitorSmartphoneIcon },
+      { label: 'Care Coordination', icon: BriefcaseBusinessIcon },
     ],
     summary:
-      'LMS-Fin automates loan application, scoring, disbursement, repayment, collections, and portfolio oversight for digital lenders and credit providers.',
+      'NetPro delivers secure telemedicine and virtual healthcare platforms that enable healthcare providers to consult, diagnose, monitor, and manage patients remotely while maintaining a unified clinical record across digital and physical care channels.',
     details: [
-      'Online and USSD loan application with configurable eligibility criteria',
-      'Automated credit scoring with bureau integration support',
-      'Document collection and e-signature for loan agreements',
-      'Multi-product lending across salary advance, asset-backed, group, and unsecured loans',
-      'Disbursement via bank transfer with reconciliation support',
-      'Repayment schedules and direct debit or standing instruction management',
-      'Collections workflow with reminders, arrears intervention, and legal escalation',
-      'Non-performing loan management and provisioning tools',
-      'Portfolio analytics for PAR, cohort performance, and MFI benchmarks',
-      'Integration with NIBSS, payment gateways, and payroll systems',
+      'Secure virtual consultation platform with audio and video appointments',
+      '⁠Online patient registration, appointment scheduling, and digital check-in',
+      'Electronic medical records accessible during virtual and in-person consultations',
+      'Digital prescription generation and medication management',
+      '⁠Laboratory and diagnostic request integration with electronic result delivery',
+      'Remote patient monitoring, follow-up management, and automated notifications',
     ],
     meta: [
-      { label: 'Product Code', value: 'FN3 / LMS-Fin' },
+      { label: 'Product Code', value: 'HC3 / HHS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
       {
         label: 'Primary Market',
-        value: 'Digital lenders and credit providers',
+        value: 'Home-care agencies and digital health providers',
       },
     ],
     technologies: [
-      { label: 'Origination', icon: SmartphoneIcon },
-      { label: 'Credit Scoring', icon: LineChartIcon },
-      { label: 'Collections', icon: ShieldCheckIcon },
-      { label: 'Integrations', icon: Globe2Icon },
+      { label: 'Care Plans', icon: BriefcaseBusinessIcon },
+      { label: 'Remote Monitoring', icon: MonitorSmartphoneIcon },
+      { label: 'Medication Tracking', icon: ShieldCheckIcon },
+      { label: 'Claims & Outcomes', icon: BarChart3Icon },
     ],
     subject:
-      'Lenders that need faster loan operations, cleaner repayment tracking, and stronger portfolio control.',
-    subjectInitials: 'DL',
-    methods: [
-      'Live demo access',
-      'Bureau integration ready',
-      'USSD to collections flow',
-    ],
-    labels: productLabels,
-  },
-  {
-    id: 'abp',
-    title: 'Agent Banking Management Platform',
-    image: assetUrl('/assets/netpro/Agent Banking Management Platform.png'),
-    tags: [
-      { label: 'Agent Banking', icon: Globe2Icon },
-      { label: 'Network Visibility', icon: LineChartIcon },
-    ],
-    summary:
-      'ABP helps financial institutions manage agent onboarding, transactions, float, commissions, and compliance across distributed agent networks.',
-    details: [
-      'Agent onboarding with KYB documentation, contracts, and activation workflows',
-      'Terminal and POS device deployment tracking',
-      'Real-time transaction monitoring for deposits, withdrawals, transfers, and bill payments',
-      'Float top-up requests, alerts, and settlement reconciliation',
-      'Commission computation for agents and super-agents',
-      'Geographic and performance analytics with heat maps and activity dashboards',
-      'Customer complaint and dispute management portal',
-      'Regulatory reporting for CBN agent banking returns',
-      'Super-agent hierarchy management for tiered network structures',
-      'Audit logs and anti-fraud alerting for unusual transaction patterns',
-    ],
-    meta: [
-      { label: 'Product Code', value: 'FN4 / ABP' },
-      { label: 'Delivery Model', value: 'SaaS' },
-      { label: 'Demo Access', value: 'Live demo available' },
-      {
-        label: 'Primary Market',
-        value: 'Banks, MFBs, and agent network operators',
-      },
-    ],
-    technologies: [
-      { label: 'Agent Onboarding', icon: BriefcaseBusinessIcon },
-      { label: 'Transaction Monitoring', icon: Globe2Icon },
-      { label: 'Commissions', icon: BarChart3Icon },
-      { label: 'Fraud Alerts', icon: ShieldCheckIcon },
-    ],
-    subject:
-      'Institutions extending services through agent networks and needing stronger transaction control.',
-    subjectInitials: 'AB',
-    methods: ['Live demo access', 'Super-agent support', 'Fraud monitoring'],
-    labels: productLabels,
-  },
-  {
-    id: 'mbapp',
-    title: 'Mobile Banking Application',
-    image: assetUrl('/assets/netpro/Mobile Banking Application.png'),
-    tags: [
-      { label: 'Digital Banking', icon: SmartphoneIcon },
-      { label: 'White Label', icon: BriefcaseBusinessIcon },
-    ],
-    summary:
-      'MbApp gives banks and cooperative institutions a secure white-labelled mobile app for self-service banking, transactions, loan access, and customer support.',
-    details: [
-      'Account dashboard with balances, transaction history, and mini-statements',
-      'Funds transfer for intrabank and interbank transactions with beneficiary management',
-      'Bill payments for utilities, airtime, data, and government levies',
-      'Loan application, repayment, and status viewing',
-      'Fixed deposit creation and renewal',
-      'Card services including requests, blocking, and PIN management',
-      'Cardless withdrawal QR code generation',
-      'Push notifications for transaction alerts and account activity',
-      'Biometric login with device binding security',
-      'Customer onboarding with KYC document upload and in-app support chat',
-    ],
-    meta: [
-      { label: 'Product Code', value: 'FN5 / MbApp' },
-      { label: 'Delivery Model', value: 'White-labelled SaaS' },
-      { label: 'Demo Access', value: 'Live demo available' },
-      {
-        label: 'Primary Market',
-        value: 'MFBs, cooperatives, and community banks',
-      },
-    ],
-    technologies: [
-      { label: 'Mobile Self-Service', icon: SmartphoneIcon },
-      { label: 'Transfers & Bills', icon: Globe2Icon },
-      { label: 'KYC Onboarding', icon: ShieldCheckIcon },
-      { label: 'Customer Support', icon: MonitorSmartphoneIcon },
-    ],
-    subject:
-      'Financial institutions ready to launch branded mobile banking without building from scratch.',
-    subjectInitials: 'MB',
-    methods: ['Live demo access', 'White-label delivery', 'Biometric login'],
-    labels: productLabels,
-  },
-  {
-    id: 'pmts',
-    title: 'Payment & Transaction Management System',
-    image: assetUrl(
-      '/assets/netpro/Payment & Transaction Management System.png',
-    ),
-    tags: [
-      { label: 'Payments Infrastructure', icon: Globe2Icon },
-      { label: 'Reconciliation', icon: BarChart3Icon },
-    ],
-    summary:
-      'PMTS gives transaction-heavy institutions a central platform for payment processing, status tracking, settlement, reconciliation, and dispute resolution.',
-    details: [
-      'Multi-channel payment acceptance across POS, web, mobile, USSD, and agents',
-      'Real-time transaction status tracking and reconciliation engine',
-      'Settlement computation and automated posting to beneficiary accounts',
-      'Dispute and chargeback workflow with timeline tracking',
-      'Gateway integration across Paystack, Flutterwave, Remita, and Interswitch',
-      'NIBSS NIP and instant payment notification handling',
-      'Bulk payment processing for salaries, vendors, and dividends',
-      'Fraud monitoring rules engine with configurable alert thresholds',
-      'Financial reporting for settlement, exceptions, and reconciliation statements',
-      'API-first architecture for ERP and accounting integrations',
-    ],
-    meta: [
-      { label: 'Product Code', value: 'FN6 / PMTS' },
-      { label: 'Delivery Model', value: 'SaaS' },
-      { label: 'Demo Access', value: 'Live demo available' },
-      {
-        label: 'Primary Market',
-        value: 'Payment-heavy institutions and platforms',
-      },
-    ],
-    technologies: [
-      { label: 'Channel Processing', icon: Globe2Icon },
-      { label: 'Settlement', icon: BarChart3Icon },
-      { label: 'Fraud Monitoring', icon: ShieldCheckIcon },
-      { label: 'API Integrations', icon: Code2Icon },
-    ],
-    subject:
-      'Institutions that need one source of truth for settlements, disputes, and payment exceptions.',
-    subjectInitials: 'PM',
-    methods: [
-      'Live demo access',
-      'Gateway integrations',
-      'Reconciliation engine',
-    ],
+      'Providers scaling structured home-based care, follow-up, and caregiver coordination.',
+    subjectInitials: 'HH',
+    methods: ['Live demo access', 'Caregiver scheduling', 'Outcome tracking'],
     labels: productLabels,
   },
 ];
+
+// const financialProducts: SoftwareProject[] = [
+//   {
+//     id: 'mfbs',
+//     title: 'Microfinance Bank Management System',
+//     image: assetUrl('/assets/netpro/Microfinance Bank Management System.png'),
+//     tags: [
+//       { label: 'Core Banking', icon: BarChart3Icon },
+//       { label: 'CBN Aware', icon: ShieldCheckIcon },
+//     ],
+//     summary:
+//       'MFBS is a core banking platform for CBN-licensed microfinance banks, covering deposit accounts, loans, treasury, reporting, and branch operations in one regulated system.',
+//     details: [
+//       'Customer onboarding with BVN verification, KYC documentation, and account opening workflows',
+//       'Savings and current account management with interest computation and statements',
+//       'Fixed deposit and term investment product management',
+//       'Loan origination, appraisal, collateral management, and disbursement workflows',
+//       'Repayment tracking with EMI computation, penalty calculation, and restructuring tools',
+//       'Group lending and village banking support',
+//       'Treasury and liquidity management dashboards',
+//       'General ledger, trial balance, and financial statement generation',
+//       'NIBSS NIP integration for real-time transfers',
+//       'CBN reporting for MPR, CRMS, and quarterly returns',
+//     ],
+//     meta: [
+//       { label: 'Product Code', value: 'FN1 / MFBS' },
+//       { label: 'Delivery Model', value: 'SaaS' },
+//       { label: 'Demo Access', value: 'Live demo available' },
+//       {
+//         label: 'Primary Market',
+//         value: 'Microfinance banks and regulated lenders',
+//       },
+//     ],
+//     technologies: [
+//       { label: 'Deposits & Loans', icon: BarChart3Icon },
+//       { label: 'Compliance', icon: ShieldCheckIcon },
+//       { label: 'Interbank Transfers', icon: Globe2Icon },
+//       { label: 'Branch Reporting', icon: LineChartIcon },
+//     ],
+//     subject:
+//       'CBN-licensed institutions that need a regulated operating backbone, not generic accounting software.',
+//     subjectInitials: 'MF',
+//     methods: [
+//       'Live demo access',
+//       'CBN reporting support',
+//       'Multi-branch architecture',
+//     ],
+//     labels: productLabels,
+//   },
+//   {
+//     id: 'csms',
+//     title: 'Cooperative Society Management System',
+//     image: assetUrl('/assets/netpro/Cooperative Society Management System.png'),
+//     tags: [
+//       { label: 'Cooperatives', icon: BriefcaseBusinessIcon },
+//       { label: 'Thrift & Credit', icon: BarChart3Icon },
+//     ],
+//     summary:
+//       'CSMS helps cooperative societies manage member savings, share capital, loans, dividends, and reporting with stronger transparency and member self-service.',
+//     details: [
+//       'Member registration, share subscription, and membership tier management',
+//       'Savings account management for regular savings, target savings, and share capital',
+//       'Loan application, approval workflows, guarantor management, and disbursement',
+//       'Repayment tracking with penalty and rebate computations',
+//       'Dividend computation and payment processing at year-end',
+//       'Monthly, quarterly, and AGM financial reporting for officers and auditors',
+//       'Deduction-at-source payroll integration for salary-based cooperatives',
+//       'SMS and email member statement notifications',
+//       'Member self-service portal for balances, loans, and statements',
+//       'Audit and compliance reporting for registrar submissions',
+//     ],
+//     meta: [
+//       { label: 'Product Code', value: 'FN2 / CSMS' },
+//       { label: 'Delivery Model', value: 'SaaS' },
+//       { label: 'Demo Access', value: 'Live demo available' },
+//       {
+//         label: 'Primary Market',
+//         value: 'Registered cooperatives and thrift societies',
+//       },
+//     ],
+//     technologies: [
+//       { label: 'Member Accounts', icon: DatabaseIcon },
+//       { label: 'Loans', icon: BarChart3Icon },
+//       { label: 'Notifications', icon: SmartphoneIcon },
+//       { label: 'Audit Reports', icon: ShieldCheckIcon },
+//     ],
+//     subject:
+//       'Cooperatives that need digital transparency across member savings, loans, and annual reporting.',
+//     subjectInitials: 'CS',
+//     methods: [
+//       'Live demo access',
+//       'Member self-service',
+//       'Payroll deduction support',
+//     ],
+//     labels: productLabels,
+//   },
+//   {
+//     id: 'lms-fin',
+//     title: 'Digital Lending & Loan Management System',
+//     image: assetUrl(
+//       '/assets/netpro/Digital Lending & Loan Management System.png',
+//     ),
+//     tags: [
+//       { label: 'Digital Lending', icon: SmartphoneIcon },
+//       { label: 'Credit Workflows', icon: LineChartIcon },
+//     ],
+//     summary:
+//       'LMS-Fin automates loan application, scoring, disbursement, repayment, collections, and portfolio oversight for digital lenders and credit providers.',
+//     details: [
+//       'Online and USSD loan application with configurable eligibility criteria',
+//       'Automated credit scoring with bureau integration support',
+//       'Document collection and e-signature for loan agreements',
+//       'Multi-product lending across salary advance, asset-backed, group, and unsecured loans',
+//       'Disbursement via bank transfer with reconciliation support',
+//       'Repayment schedules and direct debit or standing instruction management',
+//       'Collections workflow with reminders, arrears intervention, and legal escalation',
+//       'Non-performing loan management and provisioning tools',
+//       'Portfolio analytics for PAR, cohort performance, and MFI benchmarks',
+//       'Integration with NIBSS, payment gateways, and payroll systems',
+//     ],
+//     meta: [
+//       { label: 'Product Code', value: 'FN3 / LMS-Fin' },
+//       { label: 'Delivery Model', value: 'SaaS' },
+//       { label: 'Demo Access', value: 'Live demo available' },
+//       {
+//         label: 'Primary Market',
+//         value: 'Digital lenders and credit providers',
+//       },
+//     ],
+//     technologies: [
+//       { label: 'Origination', icon: SmartphoneIcon },
+//       { label: 'Credit Scoring', icon: LineChartIcon },
+//       { label: 'Collections', icon: ShieldCheckIcon },
+//       { label: 'Integrations', icon: Globe2Icon },
+//     ],
+//     subject:
+//       'Lenders that need faster loan operations, cleaner repayment tracking, and stronger portfolio control.',
+//     subjectInitials: 'DL',
+//     methods: [
+//       'Live demo access',
+//       'Bureau integration ready',
+//       'USSD to collections flow',
+//     ],
+//     labels: productLabels,
+//   },
+//   {
+//     id: 'abp',
+//     title: 'Agent Banking Management Platform',
+//     image: assetUrl('/assets/netpro/Agent Banking Management Platform.png'),
+//     tags: [
+//       { label: 'Agent Banking', icon: Globe2Icon },
+//       { label: 'Network Visibility', icon: LineChartIcon },
+//     ],
+//     summary:
+//       'ABP helps financial institutions manage agent onboarding, transactions, float, commissions, and compliance across distributed agent networks.',
+//     details: [
+//       'Agent onboarding with KYB documentation, contracts, and activation workflows',
+//       'Terminal and POS device deployment tracking',
+//       'Real-time transaction monitoring for deposits, withdrawals, transfers, and bill payments',
+//       'Float top-up requests, alerts, and settlement reconciliation',
+//       'Commission computation for agents and super-agents',
+//       'Geographic and performance analytics with heat maps and activity dashboards',
+//       'Customer complaint and dispute management portal',
+//       'Regulatory reporting for CBN agent banking returns',
+//       'Super-agent hierarchy management for tiered network structures',
+//       'Audit logs and anti-fraud alerting for unusual transaction patterns',
+//     ],
+//     meta: [
+//       { label: 'Product Code', value: 'FN4 / ABP' },
+//       { label: 'Delivery Model', value: 'SaaS' },
+//       { label: 'Demo Access', value: 'Live demo available' },
+//       {
+//         label: 'Primary Market',
+//         value: 'Banks, MFBs, and agent network operators',
+//       },
+//     ],
+//     technologies: [
+//       { label: 'Agent Onboarding', icon: BriefcaseBusinessIcon },
+//       { label: 'Transaction Monitoring', icon: Globe2Icon },
+//       { label: 'Commissions', icon: BarChart3Icon },
+//       { label: 'Fraud Alerts', icon: ShieldCheckIcon },
+//     ],
+//     subject:
+//       'Institutions extending services through agent networks and needing stronger transaction control.',
+//     subjectInitials: 'AB',
+//     methods: ['Live demo access', 'Super-agent support', 'Fraud monitoring'],
+//     labels: productLabels,
+//   },
+//   {
+//     id: 'mbapp',
+//     title: 'Mobile Banking Application',
+//     image: assetUrl('/assets/netpro/Mobile Banking Application.png'),
+//     tags: [
+//       { label: 'Digital Banking', icon: SmartphoneIcon },
+//       { label: 'White Label', icon: BriefcaseBusinessIcon },
+//     ],
+//     summary:
+//       'MbApp gives banks and cooperative institutions a secure white-labelled mobile app for self-service banking, transactions, loan access, and customer support.',
+//     details: [
+//       'Account dashboard with balances, transaction history, and mini-statements',
+//       'Funds transfer for intrabank and interbank transactions with beneficiary management',
+//       'Bill payments for utilities, airtime, data, and government levies',
+//       'Loan application, repayment, and status viewing',
+//       'Fixed deposit creation and renewal',
+//       'Card services including requests, blocking, and PIN management',
+//       'Cardless withdrawal QR code generation',
+//       'Push notifications for transaction alerts and account activity',
+//       'Biometric login with device binding security',
+//       'Customer onboarding with KYC document upload and in-app support chat',
+//     ],
+//     meta: [
+//       { label: 'Product Code', value: 'FN5 / MbApp' },
+//       { label: 'Delivery Model', value: 'White-labelled SaaS' },
+//       { label: 'Demo Access', value: 'Live demo available' },
+//       {
+//         label: 'Primary Market',
+//         value: 'MFBs, cooperatives, and community banks',
+//       },
+//     ],
+//     technologies: [
+//       { label: 'Mobile Self-Service', icon: SmartphoneIcon },
+//       { label: 'Transfers & Bills', icon: Globe2Icon },
+//       { label: 'KYC Onboarding', icon: ShieldCheckIcon },
+//       { label: 'Customer Support', icon: MonitorSmartphoneIcon },
+//     ],
+//     subject:
+//       'Financial institutions ready to launch branded mobile banking without building from scratch.',
+//     subjectInitials: 'MB',
+//     methods: ['Live demo access', 'White-label delivery', 'Biometric login'],
+//     labels: productLabels,
+//   },
+//   {
+//     id: 'pmts',
+//     title: 'Payment & Transaction Management System',
+//     image: assetUrl(
+//       '/assets/netpro/Payment & Transaction Management System.png',
+//     ),
+//     tags: [
+//       { label: 'Payments Infrastructure', icon: Globe2Icon },
+//       { label: 'Reconciliation', icon: BarChart3Icon },
+//     ],
+//     summary:
+//       'PMTS gives transaction-heavy institutions a central platform for payment processing, status tracking, settlement, reconciliation, and dispute resolution.',
+//     details: [
+//       'Multi-channel payment acceptance across POS, web, mobile, USSD, and agents',
+//       'Real-time transaction status tracking and reconciliation engine',
+//       'Settlement computation and automated posting to beneficiary accounts',
+//       'Dispute and chargeback workflow with timeline tracking',
+//       'Gateway integration across Paystack, Flutterwave, Remita, and Interswitch',
+//       'NIBSS NIP and instant payment notification handling',
+//       'Bulk payment processing for salaries, vendors, and dividends',
+//       'Fraud monitoring rules engine with configurable alert thresholds',
+//       'Financial reporting for settlement, exceptions, and reconciliation statements',
+//       'API-first architecture for ERP and accounting integrations',
+//     ],
+//     meta: [
+//       { label: 'Product Code', value: 'FN6 / PMTS' },
+//       { label: 'Delivery Model', value: 'SaaS' },
+//       { label: 'Demo Access', value: 'Live demo available' },
+//       {
+//         label: 'Primary Market',
+//         value: 'Payment-heavy institutions and platforms',
+//       },
+//     ],
+//     technologies: [
+//       { label: 'Channel Processing', icon: Globe2Icon },
+//       { label: 'Settlement', icon: BarChart3Icon },
+//       { label: 'Fraud Monitoring', icon: ShieldCheckIcon },
+//       { label: 'API Integrations', icon: Code2Icon },
+//     ],
+//     subject:
+//       'Institutions that need one source of truth for settlements, disputes, and payment exceptions.',
+//     subjectInitials: 'PM',
+//     methods: [
+//       'Live demo access',
+//       'Gateway integrations',
+//       'Reconciliation engine',
+//     ],
+//     labels: productLabels,
+//   },
+// ];
 
 const enterpriseProducts: SoftwareProject[] = [
   {
@@ -1038,7 +1122,7 @@ const enterpriseProducts: SoftwareProject[] = [
   },
   {
     id: 'nbaccs',
-    title: 'NBA Conveyancing Compliance System',
+    title: 'Conveyancing Compliance System',
     image: assetUrl('/assets/netpro/NBA Conveyancing Compliance System.png'),
     tags: [
       { label: 'Legal Compliance', icon: ShieldCheckIcon },
@@ -1103,14 +1187,14 @@ export const productCatalogSections: ShowcaseSection[] = [
       "NetPro's healthcare portfolio addresses hospital management, campus health, and home-based care with a focus on connected, patient-centred digital health delivery.",
     projects: healthcareProducts,
   },
-  {
-    id: 'financial-products',
-    eyebrow: 'Financial Services Software',
-    title: 'Regulated finance platforms built for Nigerian operations',
-    description:
-      "NetPro's financial technology suite supports microfinance banks, cooperative societies, agent networks, payment operators, and digital lenders with compliance-aware workflows.",
-    projects: financialProducts,
-  },
+  // {
+  //   id: 'financial-products',
+  //   eyebrow: 'Financial Services Software',
+  //   title: 'Regulated finance platforms built for Nigerian operations',
+  //   description:
+  //     "NetPro's financial technology suite supports microfinance banks, cooperative societies, agent networks, payment operators, and digital lenders with compliance-aware workflows.",
+  //   projects: financialProducts,
+  // },
   {
     id: 'enterprise-products',
     eyebrow: 'Enterprise & Other',
@@ -1387,7 +1471,7 @@ export const featuredDeployments: SoftwareProject[] = [
       'Volume, issue, and table-of-contents management across journal titles',
     ],
     meta: [
-      { label: 'Sector', value: 'Research & Academic Publishing' },
+      { label: 'Sector', value: 'Research Publishing' },
       { label: 'Delivery Focus', value: 'Journal digitisation' },
       { label: 'Institution Type', value: 'University' },
       { label: 'Status', value: 'Deployed' },
@@ -1407,45 +1491,45 @@ export const featuredDeployments: SoftwareProject[] = [
     ],
     labels: deploymentLabels,
   },
-  {
-    id: 'imopoly-induction',
-    title: 'Digital Induction Programme',
-    image: assetUrl('/assets/netpro/Digital Induction Programme.png'),
-    tags: [
-      { label: 'Education Technology', icon: GraduationCapIcon },
-      { label: 'Digital Onboarding', icon: MonitorSmartphoneIcon },
-    ],
-    summary:
-      'NetPro delivered a fully digital induction experience for Imo State Polytechnic, moving orientation and compliance acknowledgement online for students and staff.',
-    details: [
-      'Mobile-responsive induction portal accessible on any device, including low-specification phones',
-      'Modular content delivery for institutional history, regulations, student welfare, and HR policies',
-      'Digital policy and handbook acknowledgment with compliance timestamps',
-      'Comprehension assessment before completion of key institutional rules',
-      'Automated digital certificate issuance on successful completion',
-      'Administrator dashboard tracking completion rates by faculty, department, and cohort',
-    ],
-    meta: [
-      { label: 'Sector', value: 'Education Technology' },
-      { label: 'Delivery Focus', value: 'Digital onboarding' },
-      { label: 'Institution Type', value: 'Polytechnic' },
-      { label: 'Status', value: 'Delivered' },
-    ],
-    technologies: [
-      { label: 'Mobile Access', icon: SmartphoneIcon },
-      { label: 'Learning Modules', icon: MonitorSmartphoneIcon },
-      { label: 'Compliance Tracking', icon: ShieldCheckIcon },
-      { label: 'Completion Analytics', icon: LineChartIcon },
-    ],
-    subject: 'Imo State Polytechnic (IMOPOLY)',
-    subjectInitials: 'IM',
-    methods: [
-      'Orientation at scale',
-      'Policy sign-off',
-      'Completion dashboards',
-    ],
-    labels: deploymentLabels,
-  },
+  // {
+  //   id: 'imopoly-induction',
+  //   title: 'Digital Induction Programme',
+  //   image: assetUrl('/assets/netpro/Digital Induction Programme.png'),
+  //   tags: [
+  //     { label: 'Education Technology', icon: GraduationCapIcon },
+  //     { label: 'Digital Onboarding', icon: MonitorSmartphoneIcon },
+  //   ],
+  //   summary:
+  //     'NetPro delivered a fully digital induction experience for Imo State Polytechnic, moving orientation and compliance acknowledgement online for students and staff.',
+  //   details: [
+  //     'Mobile-responsive induction portal accessible on any device, including low-specification phones',
+  //     'Modular content delivery for institutional history, regulations, student welfare, and HR policies',
+  //     'Digital policy and handbook acknowledgment with compliance timestamps',
+  //     'Comprehension assessment before completion of key institutional rules',
+  //     'Automated digital certificate issuance on successful completion',
+  //     'Administrator dashboard tracking completion rates by faculty, department, and cohort',
+  //   ],
+  //   meta: [
+  //     { label: 'Sector', value: 'Education Technology' },
+  //     { label: 'Delivery Focus', value: 'Digital onboarding' },
+  //     { label: 'Institution Type', value: 'Polytechnic' },
+  //     { label: 'Status', value: 'Delivered' },
+  //   ],
+  //   technologies: [
+  //     { label: 'Mobile Access', icon: SmartphoneIcon },
+  //     { label: 'Learning Modules', icon: MonitorSmartphoneIcon },
+  //     { label: 'Compliance Tracking', icon: ShieldCheckIcon },
+  //     { label: 'Completion Analytics', icon: LineChartIcon },
+  //   ],
+  //   subject: 'Imo State Polytechnic (IMOPOLY)',
+  //   subjectInitials: 'IM',
+  //   methods: [
+  //     'Orientation at scale',
+  //     'Policy sign-off',
+  //     'Completion dashboards',
+  //   ],
+  //   labels: deploymentLabels,
+  // },
 ];
 
 export const projectsCta = {

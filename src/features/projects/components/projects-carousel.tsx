@@ -20,6 +20,7 @@ export function ProjectsCarousel({
 }: ProjectsCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isExpanded, setExpanded] = useState(false)
+  const hasHandledInitialActiveItem = useRef(false)
   const itemRefs = useRef<Array<HTMLButtonElement | null>>([])
   const activeProject = projects[activeIndex]
   const countLabel = useMemo(
@@ -28,6 +29,11 @@ export function ProjectsCarousel({
   )
 
   useEffect(() => {
+    if (!hasHandledInitialActiveItem.current) {
+      hasHandledInitialActiveItem.current = true
+      return
+    }
+
     itemRefs.current[activeIndex]?.scrollIntoView({
       behavior: 'smooth',
       block: 'nearest',

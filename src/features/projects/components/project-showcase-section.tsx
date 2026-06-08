@@ -1,23 +1,29 @@
-import { LandingButton } from '@/features/home/components/landing-button'
-import { ProjectsCarousel } from '@/features/projects/components/projects-carousel'
-import type { ShowcaseSection, SoftwareProject } from '@/features/projects/data/projects-page-content'
-import type { NavigationPath } from '@/shared/config/navigation'
-import { cn } from '@/lib/utils'
+import { LandingButton } from '@/features/home/components/landing-button';
+import { ProjectsCarousel } from '@/features/projects/components/projects-carousel';
+import type {
+  ShowcaseSection,
+  SoftwareProject,
+} from '@/features/projects/data/projects-page-content';
+import type { NavigationPath } from '@/shared/config/navigation';
+import { cn } from '@/lib/utils';
 
-type ProjectShowcaseIntro = Pick<ShowcaseSection, 'eyebrow' | 'title' | 'description'>
+type ProjectShowcaseIntro = Pick<
+  ShowcaseSection,
+  'eyebrow' | 'title' | 'description'
+>;
 
 type ProjectShowcaseSectionProps = {
-  intro: ProjectShowcaseIntro
-  projects: SoftwareProject[]
-  itemLabel?: string
-  variant?: 'page' | 'home'
-  className?: string
-  carouselClassName?: string
+  intro: ProjectShowcaseIntro;
+  projects: SoftwareProject[];
+  itemLabel?: string;
+  variant?: 'page' | 'home';
+  className?: string;
+  carouselClassName?: string;
   cta?: {
-    label: string
-    to: NavigationPath
-  }
-}
+    label: string;
+    to: NavigationPath;
+  };
+};
 
 export function ProjectShowcaseSection({
   intro,
@@ -28,7 +34,7 @@ export function ProjectShowcaseSection({
   carouselClassName,
   cta,
 }: ProjectShowcaseSectionProps) {
-  const isHome = variant === 'home'
+  const isHome = variant === 'home';
 
   return (
     <section
@@ -45,13 +51,13 @@ export function ProjectShowcaseSection({
       >
         <div className="mx-auto max-w-4xl text-center">
           <span
-            className="inline-flex min-h-10 max-w-full items-center rounded-full border border-white/10 bg-white/[0.035] px-3.5 text-sm font-medium text-[color:var(--np-subtle)] sm:px-4"
+            className="inline-flex min-h-10 max-w-full items-center rounded-full border border-white/10 bg-white/[0.035] px-3.5 text-sm font-medium text-(--np-subtle) sm:px-4"
             data-reveal="title"
           >
             {intro.eyebrow}
           </span>
           <h2
-            className="mx-auto mt-4 max-w-4xl font-heading text-[clamp(1.85rem,7vw,3.8rem)] font-semibold leading-[1.08] tracking-[-0.025em] text-foreground sm:tracking-[-0.03em]"
+            className="mx-auto mt-4 max-w-4xl font-heading text-[clamp(1.85rem,7vw,3.8rem)] font-semibold leading-[1.08] tracking-tight text-foreground sm:tracking-[-0.03em]"
             data-reveal="title"
           >
             {intro.title}
@@ -78,5 +84,5 @@ export function ProjectShowcaseSection({
         />
       </div>
     </section>
-  )
+  );
 }

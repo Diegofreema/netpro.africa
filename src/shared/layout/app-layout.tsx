@@ -1,4 +1,4 @@
-import { Link } from '@tanstack/react-router';
+import { Link, useRouterState } from '@tanstack/react-router';
 import {
   CameraIcon,
   LinkIcon,
@@ -8,7 +8,7 @@ import {
   PhoneCallIcon,
   SendIcon,
 } from 'lucide-react';
-import type { PropsWithChildren } from 'react';
+import { useLayoutEffect, type PropsWithChildren } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
@@ -114,6 +114,34 @@ const socialLinks = [
 export function AppLayout({ children }: PropsWithChildren) {
   const isMobileNavOpen = useUiStore((state) => state.isMobileNavOpen);
   const setMobileNavOpen = useUiStore((state) => state.setMobileNavOpen);
+  const pathname = useRouterState({
+    select: (state) => state.location.pathname,
+  });
+  const search = useRouterState({
+    select: (state) => state.location.searchStr,
+  });
+  const hash = useRouterState({
+    select: (state) => state.location.hash,
+  });
+
+  useLayoutEffect(() => {
+    if (hash) {
+      return;
+    }
+
+    const resetScroll = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    };
+    const animationFrame = window.requestAnimationFrame(resetScroll);
+    const timeout = window.setTimeout(resetScroll, 0);
+
+    resetScroll();
+
+    return () => {
+      window.cancelAnimationFrame(animationFrame);
+      window.clearTimeout(timeout);
+    };
+  }, [hash, pathname, search]);
 
   return (
     <div className="flex min-h-svh flex-col bg-background text-foreground">

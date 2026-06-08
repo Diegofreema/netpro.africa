@@ -299,8 +299,8 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Compliance Reporting', icon: ShieldCheckIcon },
     ],
     subject:
-      'Institutions managing large SIWES cohorts and accreditation evidence requirements.',
-    subjectInitials: 'SW',
+      'Institutions managing large Clinical Placement cohorts and accreditation evidence requirements.',
+    subjectInitials: 'CP',
     methods: [
       'Live demo access',
       'ITF reporting support',
@@ -311,26 +311,26 @@ const educationProducts: SoftwareProject[] = [
   {
     id: 'cpms',
     title: 'Clinical placement management system',
-    image: assetUrl('/assets/netpro/Clinical placement Management System.png'),
+    image: assetUrl('/assets/netpro/Clinical placement management system.png'),
     tags: [
-      { label: 'SIWES', icon: BriefcaseBusinessIcon },
+      { label: 'Clinical Placement', icon: BriefcaseBusinessIcon },
       { label: 'Accreditation Ready', icon: ShieldCheckIcon },
     ],
     summary:
-      'SIWES replaces paper logbooks and manual coordination with a digital workflow for placement, supervision, assessment, and ITF reporting.',
+      'This replaces paper logbooks and manual coordination with a digital workflow for placement, supervision, assessment, and ITF reporting.',
     details: [
       'Student placement application, employer search, and placement confirmation workflows',
       'Digital daily and weekly logbook entries with timestamp and location data',
       'Industry supervisor assessment and report submission portal',
       'Coordinator dashboard for placement tracking across departments',
       'Midpoint and final assessment forms with automated scoring',
-      'Automated SIWES completion certificates for eligible students',
+      'Automated Clinical Placement completion certificates for eligible students',
       'Employer feedback module for programme improvement insights',
       'Integration with EMS for student eligibility and programme data',
       'Bulk reporting tools for ITF returns and accreditation documentation',
     ],
     meta: [
-      { label: 'Product Code', value: 'EE6 / SIWES' },
+      { label: 'Product Code', value: 'EE6 / CPMS' },
       { label: 'Delivery Model', value: 'SaaS' },
       { label: 'Demo Access', value: 'Live demo available' },
       { label: 'Primary Market', value: 'Polytechnics and universities' },
@@ -342,8 +342,8 @@ const educationProducts: SoftwareProject[] = [
       { label: 'Compliance Reporting', icon: ShieldCheckIcon },
     ],
     subject:
-      'Institutions managing large SIWES cohorts and accreditation evidence requirements.',
-    subjectInitials: 'SW',
+      'Institutions managing large Clinical Placement cohorts and accreditation evidence requirements.',
+    subjectInitials: 'CP',
     methods: [
       'Live demo access',
       'ITF reporting support',

@@ -283,21 +283,21 @@ export const expertiseTabs: ExpertiseTab[] = [
   // },
 ];
 
-export const pricing = {
-  title: 'Transparent, Flexible Pricing',
-  body: 'Our SaaS model means you pay for value, not headcount. Our EMS pricing starts as low as ₦10,000/student/year, with full institution licensing available for larger deployments. Financial platform pricing is based on seat and transaction volume.',
-  columns: [
-    'EMS — Standard (per student/year)',
-    'EMS — Full E-Learning / Distance Learning',
-    'Financial Platforms',
-  ],
-  values: [
-    '₦10,000 – ₦15,000',
-    '₦15,000 – ₦20,000',
-    'Quote-based: contact sales for MFB and cooperative tiers',
-  ],
-  cta: 'Get a Custom Quote',
-};
+// export const pricing = {
+//   title: 'Transparent, Flexible Pricing',
+//   body: 'Our SaaS model means you pay for value, not headcount. Our EMS pricing starts as low as ₦10,000/student/year, with full institution licensing available for larger deployments. Financial platform pricing is based on seat and transaction volume.',
+//   columns: [
+//     'EMS — Standard (per student/year)',
+//     'EMS — Full E-Learning / Distance Learning',
+//     'Financial Platforms',
+//   ],
+//   values: [
+//     '₦10,000 – ₦15,000',
+//     '₦15,000 – ₦20,000',
+//     'Quote-based: contact sales for MFB and cooperative tiers',
+//   ],
+//   cta: 'Get a Custom Quote',
+// };
 
 export const successIntro = {
   titleLead: 'Success',

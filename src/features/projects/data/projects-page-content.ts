@@ -1255,7 +1255,7 @@ export const featuredDeployments: SoftwareProject[] = [
   },
   {
     id: 'fpno-siwes',
-    title: 'SIWES Management System',
+    title: 'AI Powered SIWES Management System',
     image: assetUrl('/assets/netpro/SIWES Management System.png'),
     tags: [
       { label: 'Education Technology', icon: GraduationCapIcon },
@@ -1294,7 +1294,7 @@ export const featuredDeployments: SoftwareProject[] = [
   },
   {
     id: 'imo-judiciary',
-    title: 'Judiciary Management Information System',
+    title: 'AI Powered Judiciaries Management Information System',
     image: assetUrl(
       '/assets/netpro/Judiciary Management Information System.png',
     ),
@@ -1415,7 +1415,7 @@ export const featuredDeployments: SoftwareProject[] = [
   },
   {
     id: 'holy-family-hms',
-    title: 'Hospital Management System Deployment',
+    title: 'AI Powered Hospital Management System Deployment',
     image: assetUrl('/assets/netpro/Hospital Management System.png'),
     tags: [
       { label: 'Healthcare Technology', icon: ShieldCheckIcon },
@@ -1454,7 +1454,7 @@ export const featuredDeployments: SoftwareProject[] = [
   },
   {
     id: 'cun-jms',
-    title: 'Academic Journal Management System',
+    title: 'AI Powered Academic Journal Management System',
     image: assetUrl('/assets/netpro/Academic Journal Management System.png'),
     tags: [
       { label: 'Education Technology', icon: GraduationCapIcon },

@@ -42,7 +42,6 @@ const companyLinks = [
   { label: 'Services', to: '/services' },
   { label: 'Products', to: '/projects' },
   { label: 'Contact Us', to: '/contact-us' },
-  { label: 'Demo Portal', to: '/contact-us' },
 ] as const;
 
 const productLinks = [
@@ -51,9 +50,7 @@ const productLinks = [
   'HMS - Hospital System',
   'SHIMS - Student Health',
   'RTMS - Results System',
-  'MFBS - Microfinance Banking',
   'CSMS - Cooperative Management',
-  'LMS-Fin - Digital Lending',
 ] as const;
 
 const siteLinks = [

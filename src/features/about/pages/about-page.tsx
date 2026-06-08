@@ -1,7 +1,6 @@
 import { AboutHero } from '@/features/about/components/about-hero';
 import { AboutPillars } from '@/features/about/components/about-pillars';
 import { ApproachSection } from '@/features/about/components/approach-section';
-import { AwardsSection } from '@/features/about/components/awards-section';
 import { StorySection } from '@/features/about/components/story-section';
 import { TeamSection } from '@/features/about/components/team-section';
 import {
@@ -44,13 +43,13 @@ const aboutSections: AnimatedPageSectionConfig[] = [
     scale: 0.994,
     amount: 0.22,
   },
-  {
-    id: 'awards',
-    Component: AwardsSection,
-    y: 30,
-    scale: 0.995,
-    amount: 0.24,
-  },
+  // {
+  //   id: 'awards',
+  //   Component: AwardsSection,
+  //   y: 30,
+  //   scale: 0.995,
+  //   amount: 0.24,
+  // },
 ];
 
 export function AboutPage() {

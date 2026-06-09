@@ -310,7 +310,7 @@ const educationProducts: SoftwareProject[] = [
   },
   {
     id: 'cpms',
-    title: 'Clinical Placement management system',
+    title: 'Clinical Placement Management System',
     image: assetUrl('/assets/netpro/Clinical placement management system.png'),
     tags: [
       { label: 'Clinical Placement', icon: BriefcaseBusinessIcon },
@@ -1294,7 +1294,7 @@ export const featuredDeployments: SoftwareProject[] = [
   },
   {
     id: 'imo-judiciary',
-    title: 'Judiciaries Management Information System',
+    title: 'Judiciary Management Information System',
     image: assetUrl(
       '/assets/netpro/Judiciary Management Information System.png',
     ),

@@ -141,7 +141,7 @@ export const teamMembers: TeamMember[] = [
 export const story = {
   eyebrow: 'Our Story',
   title: "Building Africa's Technology Future Since 2000",
-  body: 'Netpro Limited was incorporated in 2000 and has evolved into a customer-focused, Africa-oriented technology company serving institutions. What started as network infrastructure and software consultancy has grown into a full-spectrum platform company with AI-powered products for universities, polytechnics, hospitals, financial institutions, government agencies, cooperative societies, and business management teams.',
+  body: 'Netpro International Limited was incorporated in 2000 and has evolved into a customer-focused, Africa-oriented technology company serving institutions. What started as network infrastructure and software consultancy has grown into a full-spectrum platform company with AI-powered products for universities, polytechnics, hospitals, financial institutions, government agencies, cooperative societies, and business management teams.',
   stats: [
     { value: '25+', label: 'Years incorporated' },
     { value: '20+', label: 'Distinct software products' },

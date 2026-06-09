@@ -8,13 +8,13 @@ type PageSeo = {
   path: string;
 };
 
-export const siteName = 'Netpro Limited';
+export const siteName = 'Netpro International Limited';
 export const defaultOgImage = absoluteUrl('/assets/netpro/logo.png');
 
 export const pageSeo = {
   home: {
     title:
-      'Netpro Limited - Leading Innovation & Technology Transformation in Africa',
+      'Netpro International Limited - Leading Innovation & Technology Transformation in Africa',
     description:
       'Netpro delivers bespoke software solutions, technology transformation, and innovation-led services across education, healthcare, financial services, and enterprise in Africa. Trusted since 2000.',
     keywords:
@@ -30,7 +30,7 @@ export const pageSeo = {
     path: '/about-us',
   },
   services: {
-    title: 'Technology Services & Capabilities | Netpro Limited',
+    title: 'Technology Services & Capabilities | Netpro International Limited',
     description:
       "Explore NetPro's 9 technology service lines - from management consultancy and bespoke ERP development to financial technology, cybersecurity, mobile apps, and enterprise hardware.",
     keywords:

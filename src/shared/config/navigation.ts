@@ -5,15 +5,16 @@ export const navigationItems = [
     description: 'Company overview and core highlights',
   },
   {
-    title: 'Services',
-    path: '/services',
-    description: 'Consulting, implementation, support, and managed services',
-  },
-  {
     title: 'Products',
     path: '/products',
     description: 'Case studies, delivery snapshots, and portfolio work',
   },
+  {
+    title: 'Services',
+    path: '/services',
+    description: 'Consulting, implementation, support, and managed services',
+  },
+
   {
     title: 'About us',
     path: '/about-us',

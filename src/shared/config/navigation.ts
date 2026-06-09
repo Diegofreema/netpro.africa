@@ -36,7 +36,7 @@ export type NavigationItem = (typeof navigationItems)[number];
 export type NavigationPath =
   | '/'
   | '/services'
-  | '/projects'
+  | '/products'
   | '/about-us'
   | '/contact-us'
   | '/careers'

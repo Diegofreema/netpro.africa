@@ -20,7 +20,7 @@ export function ServicesCta() {
             <LandingButton to="/contact-us">
               {servicesCta.primary}
             </LandingButton>
-            <LandingButton to="/projects" variant="quiet">
+            <LandingButton to="/products" variant="quiet">
               {servicesCta.secondary}
             </LandingButton>
           </div>

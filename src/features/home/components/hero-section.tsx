@@ -32,7 +32,7 @@ export function HeroSection() {
             <LandingButton to="/contact-us">
               {heroContent.primaryCta}
             </LandingButton>
-            <LandingButton to="/projects" variant="quiet">
+            <LandingButton to="/products" variant="quiet">
               {heroContent.secondaryCta}
             </LandingButton>
           </div>

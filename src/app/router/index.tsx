@@ -45,7 +45,7 @@ const projectsRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/products',
   component: ProjectsPage,
-  head: () => routeHead(pageSeo.projects),
+  head: () => routeHead(pageSeo.products),
 });
 
 const aboutRoute = createRoute({

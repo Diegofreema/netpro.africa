@@ -1,16 +1,16 @@
-import type { NavigationPath } from '@/shared/config/navigation'
+import type { NavigationPath } from '@/shared/config/navigation';
 
 export type PageContent = {
-  title: string
-  summary: string
-  status: string
+  title: string;
+  summary: string;
+  status: string;
   sections: Array<{
-    title: string
-    description: string
-  }>
-  ctaLabel: string
-  ctaPath: NavigationPath
-}
+    title: string;
+    description: string;
+  }>;
+  ctaLabel: string;
+  ctaPath: NavigationPath;
+};
 
 export const pageContent = {
   services: {
@@ -38,12 +38,12 @@ export const pageContent = {
       },
     ],
   },
-  projects: {
-    title: 'Projects',
+  products: {
+    title: 'Products',
     summary:
       'A portfolio skeleton for featured work, measurable outcomes, industries served, and implementation notes.',
     status: 'Portfolio modules',
-    ctaLabel: 'Start a project',
+    ctaLabel: 'Ask about a product',
     ctaPath: '/contact-us',
     sections: [
       {
@@ -163,4 +163,4 @@ export const pageContent = {
       },
     ],
   },
-} satisfies Record<string, PageContent>
+} satisfies Record<string, PageContent>;

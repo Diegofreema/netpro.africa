@@ -35,7 +35,7 @@ export type ContactNote = {
 export const contactHero = {
   titleLead: 'Get in',
   title: 'Touch with Us Today!',
-  body: "At Netpro, we value your inquiries, feedback, and collaborations. Whether you are interested in our digital services, have questions about our projects, or want to explore potential partnerships, reach out to our team. We'll respond with the next useful step.",
+  body: "At Netpro, we value your inquiries, feedback, and collaborations. Whether you are interested in our digital services, have questions about our products, or want to explore potential partnerships, reach out to our team. We'll respond with the next useful step.",
   pill: 'Feel free to contact us through any of the following channels',
 };
 

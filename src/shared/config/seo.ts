@@ -37,14 +37,14 @@ export const pageSeo = {
       'software development Nigeria, technology transformation, ERP development, cybersecurity Nigeria, mobile app development Africa, microfinance banking software, fintech consulting Nigeria, digital lending platform, agent banking platform Nigeria',
     path: '/services',
   },
-  projects: {
+  products: {
     title:
       'Software Product for Education, Healthcare, FinTech & Enterprise | Netpro',
     description:
       'Explore Netpro software products for education, healthcare, financial services, and enterprise institutions across Nigeria and Africa. Live demos available.',
     keywords:
       'education software Nigeria, hospital management system Nigeria, microfinance bank software Nigeria, cooperative society management system, digital lending platform Nigeria, HRMS Nigeria, enterprise ERP Africa, SaaS education Africa, fintech software Nigeria, NetPro products',
-    path: '/projects',
+    path: '/products',
   },
   contact: {
     title: 'Contact Netpro | Enterprise Software Consultation',
@@ -79,7 +79,7 @@ export const productCategorySeo = {
       '10 SaaS-based education software products for African institutions - EMS, LMS, HMS, SHIMS, RTMS, HRMS and more. Live demos available.',
     keywords:
       'EMS Nigeria, LMS Africa, student management system, SIWES software, education ERP Nigeria, SaaS education Africa, academic management system Nigeria, distance learning software Nigeria',
-    path: '/projects',
+    path: '/products',
   },
   healthcare: {
     title: 'Healthcare Software Products | Netpro',
@@ -87,7 +87,7 @@ export const productCategorySeo = {
       'Hospital management, student health, and home healthcare platforms for Nigerian and African institutions. Live demos available.',
     keywords:
       'hospital management system Nigeria, HMS software Africa, student health management system, campus health software Nigeria, home health software Nigeria, healthcare ERP Nigeria',
-    path: '/projects',
+    path: '/products',
   },
   financialServices: {
     title:
@@ -96,7 +96,7 @@ export const productCategorySeo = {
       '6 SaaS-based financial technology products for African financial institutions - Microfinance Bank System, Cooperative Management, Digital Lending, Agent Banking Platform, Mobile Banking App, and Payment Management. CBN-aware. Live demos available.',
     keywords:
       'microfinance bank software Nigeria, cooperative society management system, digital lending platform Nigeria, agent banking software CBN, mobile banking app Nigeria, loan management system Africa, payment management system, core banking software MFB Nigeria, fintech software Nigeria, SACCO management system, thrift and credit society software',
-    path: '/projects',
+    path: '/products',
   },
   enterprise: {
     title: 'Enterprise Software Products | HRMS, JMIS, PMS, NBACCS | Netpro',
@@ -104,7 +104,7 @@ export const productCategorySeo = {
       'Enterprise management software for HR, the judiciary, property management, and legal compliance - built for Nigerian organisations. Live demos available.',
     keywords:
       'HRMS Nigeria, judiciary management system, property management software Nigeria, conveyancing compliance NBA, enterprise ERP Africa',
-    path: '/projects',
+    path: '/products',
   },
 } satisfies Record<string, PageSeo>;
 

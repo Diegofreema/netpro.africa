@@ -1,65 +1,77 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import {
+  ChevronDownIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  ChevronUpIcon,
+} from 'lucide-react';
 
-import { ProjectDetails } from '@/features/projects/components/project-details'
-import { ProjectPill } from '@/features/projects/components/project-pill'
-import { ProductVisual } from '@/features/projects/components/project-visual'
-import type { SoftwareProject } from '@/features/projects/data/projects-page-content'
-import { cn } from '@/lib/utils'
+import { ProjectDetails } from '@/features/projects/components/project-details';
+import { ProjectPill } from '@/features/projects/components/project-pill';
+import { ProductVisual } from '@/features/projects/components/project-visual';
+import type { SoftwareProject } from '@/features/projects/data/projects-page-content';
+import { cn } from '@/lib/utils';
 
 type ProjectsCarouselProps = {
-  projects: SoftwareProject[]
-  itemLabel?: string
-  className?: string
-}
+  projects: SoftwareProject[];
+  itemLabel?: string;
+  className?: string;
+};
 
 export function ProjectsCarousel({
   projects,
   itemLabel = 'item',
   className,
 }: ProjectsCarouselProps) {
-  const [activeIndex, setActiveIndex] = useState(0)
-  const [isExpanded, setExpanded] = useState(false)
-  const hasHandledInitialActiveItem = useRef(false)
-  const itemRefs = useRef<Array<HTMLButtonElement | null>>([])
-  const activeProject = projects[activeIndex]
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isExpanded, setExpanded] = useState(false);
+  const hasHandledInitialActiveItem = useRef(false);
+  const itemRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const activeProject = projects[activeIndex];
   const countLabel = useMemo(
     () => `${activeIndex + 1} of ${projects.length}`,
     [activeIndex, projects.length],
-  )
+  );
 
   useEffect(() => {
     if (!hasHandledInitialActiveItem.current) {
-      hasHandledInitialActiveItem.current = true
-      return
+      hasHandledInitialActiveItem.current = true;
+      return;
     }
 
     itemRefs.current[activeIndex]?.scrollIntoView({
       behavior: 'smooth',
       block: 'nearest',
       inline: 'center',
-    })
-  }, [activeIndex])
+    });
+  }, [activeIndex]);
 
   function moveProject(direction: 1 | -1) {
-    setActiveIndex((index) => (index + direction + projects.length) % projects.length)
-    setExpanded(false)
+    setActiveIndex(
+      (index) => (index + direction + projects.length) % projects.length,
+    );
+    setExpanded(false);
   }
 
   function selectProject(index: number) {
-    setActiveIndex(index)
-    setExpanded(false)
+    setActiveIndex(index);
+    setExpanded(false);
   }
 
   return (
-    <section className={cn('relative mx-auto w-full max-w-[80rem] pb-12 sm:px-4 sm:pb-20 lg:px-8', className)}>
+    <section
+      className={cn(
+        'relative mx-auto w-full max-w-7xl pb-12 sm:px-4 sm:pb-20 lg:px-8',
+        className,
+      )}
+    >
       <div data-reveal="media">
-        <div className="-mx-1 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1 pb-2 [scrollbar-width:none] [-ms-overflow-style:none] sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden">
+        <div className="-mx-1 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1 pb-2 scrollbar-none [-ms-overflow-style:none] sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden">
           {projects.map((project, index) => (
             <button
               key={project.id}
               ref={(element) => {
-                itemRefs.current[index] = element
+                itemRefs.current[index] = element;
               }}
               type="button"
               className={cn(
@@ -72,15 +84,15 @@ export function ProjectsCarousel({
             >
               <article
                 className={cn(
-                  'h-full rounded-[var(--np-radius-xl)] border bg-[color:var(--np-surface)] p-4 transition-[border-color,transform,box-shadow,background-color] duration-(--np-duration-fast) sm:p-5',
+                  'h-full rounded-(--np-radius-xl) border bg-(--np-surface) p-4 transition-[border-color,transform,box-shadow,background-color] duration-(--np-duration-fast) sm:p-5',
                   index === activeIndex
                     ? 'border-primary/55 shadow-[0_22px_70px_rgba(24,133,207,.18)]'
-                    : 'border-white/10 hover:border-white/18 hover:bg-white/[0.02]',
+                    : 'border-white/10 hover:border-white/18 hover:bg-white/2',
                 )}
               >
                 <ProductVisual
                   project={project}
-                  className="aspect-[4/5] rounded-[var(--np-radius-lg)] sm:aspect-[16/10]"
+                  className="aspect-4/5 rounded-(--np-radius-lg) sm:aspect-16/10"
                 />
 
                 <div className="mt-5">
@@ -93,7 +105,7 @@ export function ProjectsCarousel({
                         'inline-flex min-h-8 w-fit shrink-0 items-center rounded-full border px-3 text-xs font-medium sm:mt-0.5',
                         index === activeIndex
                           ? 'border-primary/35 bg-primary/12 text-foreground'
-                          : 'border-white/10 bg-white/[0.04] text-[color:var(--np-subtle)]',
+                          : 'border-white/10 bg-white/4 text-(--np-subtle)',
                       )}
                     >
                       {project.meta[0]?.value ?? `${index + 1}`}
@@ -108,7 +120,10 @@ export function ProjectsCarousel({
                         key={tag.label}
                         className="inline-flex min-h-9 items-center gap-2 rounded-full border border-white/10 bg-white/[0.035] px-3 text-xs text-muted-foreground"
                       >
-                        <tag.icon className="size-3.5 text-foreground" aria-hidden="true" />
+                        <tag.icon
+                          className="size-3.5 text-foreground"
+                          aria-hidden="true"
+                        />
                         {tag.label}
                       </span>
                     ))}
@@ -121,7 +136,7 @@ export function ProjectsCarousel({
 
         <div className="mt-5 flex flex-col gap-4 sm:mt-6 sm:flex-row sm:items-center sm:justify-between">
           <div
-            className="-mx-1 flex min-h-11 max-w-full items-center gap-1 overflow-x-auto px-1 [scrollbar-width:none] [-ms-overflow-style:none] sm:mx-0 sm:gap-2 sm:px-0 [&::-webkit-scrollbar]:hidden"
+            className="-mx-1 flex min-h-11 max-w-full items-center gap-1 overflow-x-auto px-1 scrollbar-none [-ms-overflow-style:none] sm:mx-0 sm:gap-2 sm:px-0 [&::-webkit-scrollbar]:hidden"
             aria-label={`${itemLabel} slides`}
           >
             {projects.map((project, index) => (
@@ -136,7 +151,9 @@ export function ProjectsCarousel({
                 <span
                   className={cn(
                     'h-2.5 rounded-full transition-[background-color,width] duration-(--np-duration-fast)',
-                    index === activeIndex ? 'w-7 bg-primary' : 'w-2.5 bg-white/18 group-hover:bg-white/32',
+                    index === activeIndex
+                      ? 'w-7 bg-primary'
+                      : 'w-2.5 bg-white/18 group-hover:bg-white/32',
                   )}
                   aria-hidden="true"
                 />
@@ -145,11 +162,17 @@ export function ProjectsCarousel({
           </div>
 
           <div className="flex items-center justify-between gap-3 sm:justify-end">
-            <span className="text-sm text-[color:var(--np-subtle)]">{countLabel}</span>
-            <CarouselButton label={`Previous ${itemLabel}`} onClick={() => moveProject(-1)}>
+            <span className="text-sm text-(--np-subtle)">{countLabel}</span>
+            <CarouselButton
+              label={`Previous ${itemLabel}`}
+              onClick={() => moveProject(-1)}
+            >
               <ChevronLeftIcon className="size-5" aria-hidden="true" />
             </CarouselButton>
-            <CarouselButton label={`Next ${itemLabel}`} onClick={() => moveProject(1)}>
+            <CarouselButton
+              label={`Next ${itemLabel}`}
+              onClick={() => moveProject(1)}
+            >
               <ChevronRightIcon className="size-5" aria-hidden="true" />
             </CarouselButton>
           </div>
@@ -161,19 +184,21 @@ export function ProjectsCarousel({
 
       <article
         key={activeProject.id}
-        className="np-project-slide mt-8 rounded-[var(--np-radius-xl)] border border-white/10 bg-[color:var(--np-surface)] p-4 sm:p-8 lg:p-10"
+        className="np-project-slide mt-8 rounded-(--np-radius-xl) border border-white/10 bg-(--np-surface) p-4 sm:p-8 lg:p-10"
         data-reveal="media"
       >
         <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(20rem,.8fr)] xl:items-start">
           <ProductVisual
             project={activeProject}
             variant="feature"
-            className="aspect-[5/6] min-h-[22rem] sm:aspect-[16/10] sm:min-h-[24rem]"
+            className="aspect-5/6 min-h-88 sm:aspect-16/10 sm:min-h-96"
           />
 
           <div className="flex flex-col gap-6">
             <div>
-              <p className="text-sm font-medium text-[color:var(--np-subtle)]">{countLabel}</p>
+              <p className="text-sm font-medium text-(--np-subtle)">
+                {countLabel}
+              </p>
               <h2 className="mt-3 text-[clamp(1.45rem,6.5vw,1.875rem)] font-semibold leading-tight tracking-[-0.02em] text-foreground sm:text-3xl">
                 {activeProject.title}
               </h2>
@@ -186,12 +211,12 @@ export function ProjectsCarousel({
 
             <button
               type="button"
-              className="np-focus inline-flex min-h-12 items-center justify-center gap-3 self-start rounded-full px-4 text-sm font-medium text-muted-foreground transition-[background-color,color,transform] duration-(--np-duration-fast) hover:bg-white/[0.04] hover:text-foreground active:scale-[0.97]"
+              className="np-focus inline-flex min-h-12 items-center justify-center gap-3 self-start rounded-full px-4 text-sm font-medium text-muted-foreground transition-[background-color,color,transform] duration-(--np-duration-fast) hover:bg-white/4 hover:text-foreground active:scale-[0.97]"
               aria-expanded={isExpanded}
               onClick={() => setExpanded((value) => !value)}
             >
               {isExpanded ? 'Show Less' : 'Show More'}
-              <span className="inline-flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-foreground">
+              <span className="inline-flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-foreground">
                 {isExpanded ? (
                   <ChevronUpIcon className="size-5" aria-hidden="true" />
                 ) : (
@@ -207,24 +232,24 @@ export function ProjectsCarousel({
         </div>
       </article>
     </section>
-  )
+  );
 }
 
 type CarouselButtonProps = {
-  label: string
-  children: ReactNode
-  onClick: () => void
-}
+  label: string;
+  children: ReactNode;
+  onClick: () => void;
+};
 
 function CarouselButton({ label, children, onClick }: CarouselButtonProps) {
   return (
     <button
       type="button"
-      className="np-focus inline-flex size-11 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-(--np-shadow-blue) transition-[background-color,transform] duration-(--np-duration-fast) hover:bg-[color:var(--np-blue-strong)] active:scale-[0.95] sm:size-12"
+      className="np-focus inline-flex size-11 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-(--np-shadow-blue) transition-[background-color,transform] duration-(--np-duration-fast) hover:bg-(--np-blue-strong) active:scale-[0.95] sm:size-12"
       aria-label={label}
       onClick={onClick}
     >
       {children}
     </button>
-  )
+  );
 }

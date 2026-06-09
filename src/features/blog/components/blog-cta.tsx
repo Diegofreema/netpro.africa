@@ -21,7 +21,7 @@ export function BlogCta() {
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <LandingButton to="/contact-us">{blogCta.primary}</LandingButton>
-            <LandingButton to="/projects" variant="quiet">
+            <LandingButton to="/products" variant="quiet">
               {blogCta.secondary}
             </LandingButton>
           </div>

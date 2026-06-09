@@ -21,7 +21,7 @@ export function CareersCta() {
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <LandingButton to="/contact-us">{careersCta.primary}</LandingButton>
-            <LandingButton to="/projects" variant="quiet">
+            <LandingButton to="/products" variant="quiet">
               {careersCta.secondary}
             </LandingButton>
           </div>

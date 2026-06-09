@@ -41,7 +41,7 @@ const activeNavLinkClass = 'bg-white/[0.04] text-foreground';
 const companyLinks = [
   { label: 'About Us', to: '/about-us' },
   { label: 'Services', to: '/services' },
-  { label: 'Products', to: '/projects' },
+  { label: 'Products', to: '/products' },
   { label: 'Contact Us', to: '/contact-us' },
 ] as const;
 

@@ -26,7 +26,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
             ) : null}
           </div>
         </div>
-        <LandingButton to="/projects" showArrow>
+        <LandingButton to="/products" showArrow>
           See Products
         </LandingButton>
       </div>

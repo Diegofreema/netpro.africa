@@ -18,8 +18,8 @@ export function WorksSection() {
       variant="home"
       carouselClassName="pb-0 sm:pb-4"
       cta={{
-        label: 'View More Projects',
-        to: '/projects',
+        label: 'View More Products',
+        to: '/products',
       }}
     />
   );

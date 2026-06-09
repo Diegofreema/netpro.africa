@@ -148,7 +148,7 @@ We focus on building practical AI systems that solve real operational challenges
 
 export const socialSection = {
   title: 'Join Us on Social Media',
-  body: 'Stay updated with our latest projects, industry insights, and company news by following us on social media.',
+  body: 'Stay updated with our latest products, industry insights, and company news by following us on social media.',
   thanks: 'Thank You!',
   thanksBody:
     'For considering Netpro for your digital needs. We look forward to connecting with you and supporting your digital goals.',

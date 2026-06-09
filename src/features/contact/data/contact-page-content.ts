@@ -93,6 +93,11 @@ export const officeLocations: OfficeLocation[] = [
       'NetPro International Limited, 10 Wilfred Okereke Street, Obinze, Owerri West, Imo State',
     href: 'https://maps.google.com/?q=NetPro+International+Limited+10+Wilfred+Okereke+Street+Obinze+Owerri+West+Imo+State',
   },
+  // {
+  //   city: 'Nairobi, Keyna',
+  //   address: '',
+  //   href: '',
+  // },
 ];
 
 export const inquiryForm = {

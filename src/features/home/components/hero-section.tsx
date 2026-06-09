@@ -11,7 +11,7 @@ export function HeroSection() {
 
       <div className="np-container relative z-10 flex min-h-[calc(100svh-6rem)] flex-col items-center justify-center py-24 text-center">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-8">
-          <p className="np-hero-support max-w-5xl leading-8 text-[oklch(0.93_0_0/0.88)] sm:text-lg">
+          <p className="np-hero-support max-w-5xl leading-8 text-foreground/90 sm:text-lg">
             {heroContent.pretext}
           </p>
           <TextType
@@ -22,10 +22,10 @@ export function HeroSection() {
             cursorCharacter="_"
             deletingSpeed={50}
             cursorBlinkDuration={0.5}
-            className="np-hero-title max-w-full normal-case font-heading text-[clamp(2.15rem,5.2vw,4.3rem)] font-semibold leading-[1.08] tracking-tight text-[oklch(0.985_0_0)]"
+            className="np-hero-title max-w-full normal-case font-heading text-[clamp(2.15rem,5.2vw,4.3rem)] font-semibold leading-[1.08] tracking-tight text-foreground"
           />
 
-          <p className="np-hero-support max-w-5xl leading-8 text-[oklch(0.93_0_0/0.88)] sm:text-lg">
+          <p className="np-hero-support max-w-5xl leading-8 text-foreground/90 sm:text-lg">
             {heroContent.description}
           </p>
           <div className="np-hero-actions flex flex-col items-center gap-4 sm:flex-row">

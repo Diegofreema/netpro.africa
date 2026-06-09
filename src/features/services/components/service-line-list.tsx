@@ -51,7 +51,7 @@ function ServiceLineItem({ service }: ServiceLineItemProps) {
 
   return (
     <article
-      className="grid gap-8 rounded-(--np-radius-xl) border border-white/10 bg-(--np-surface) p-6 sm:p-8 lg:grid-cols-[15rem_1fr] lg:border-transparent lg:bg-transparent lg:p-0"
+      className="grid gap-8 rounded-(--np-radius-xl) border border-white/10 bg-(--np-surface) p-6 sm:p-8 lg:grid-cols-[15rem_1fr] lg:border-transparent lg:bg-transparent "
       data-reveal="card"
     >
       <div className="flex items-center gap-5 lg:min-h-72 lg:items-start">

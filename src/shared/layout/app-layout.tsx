@@ -32,6 +32,7 @@ import { BrandLogo } from '@/shared/components/brand-logo';
 import { SiteCta } from '@/shared/components/site-cta';
 import { navigationItems } from '@/shared/config/navigation';
 import { useUiStore } from '@/shared/stores/ui-store';
+import { ThemeToggle } from '../components/theme-toggle';
 
 const navLinkClass =
   'rounded-full px-5 py-3 text-base font-medium text-muted-foreground transition-[background-color,color] duration-(--np-duration-fast) hover:bg-white/[0.04] hover:text-foreground';
@@ -282,7 +283,7 @@ export function AppLayout({ children }: PropsWithChildren) {
 
       <main className="flex w-full flex-1 flex-col">{children}</main>
 
-      {/* <ThemeToggle /> */}
+      <ThemeToggle />
 
       <SiteCta />
 

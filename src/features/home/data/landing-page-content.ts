@@ -73,6 +73,8 @@ export const trustedInstitutions = [
   'University of Innovation, Science and Technology',
   'Treasure Scientia School',
   'University of Agriculture and Environmental Sciences',
+  'Ancilla Catholic Hospital Foundation',
+  'Holy Family Hospital & Maternity',
 ];
 
 export const benefits: LandingBenefit[] = [

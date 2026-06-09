@@ -65,7 +65,7 @@ const officeLocations = [
 ] as const;
 
 const countryLocations = [
-  { value: 'nigeria', label: 'Nigeria', cities: 'Owerri, Abuja & Lagos' },
+  { value: 'nigeria', label: 'Nigeria', cities: 'Abuja, Lagos & Owerri' },
   { value: 'kenya', label: 'Kenya', cities: 'Nairobi & Mombasa' },
 ] as const;
 

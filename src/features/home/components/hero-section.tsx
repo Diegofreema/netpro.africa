@@ -16,8 +16,8 @@ export function HeroSection() {
           </p>
           <TextType
             text={heroContent.titles}
-            typingSpeed={75}
-            pauseDuration={1500}
+            typingSpeed={100}
+            pauseDuration={2000}
             showCursor
             cursorCharacter="_"
             deletingSpeed={50}

@@ -53,8 +53,8 @@ export const heroContent = {
   title: 'Leading Innovation & Technology Transformation Since 2000',
   titles: [
     'Leading Innovation & Technology Transformation Since 2000',
-    'Pushing the boundaries of Bi/Ai in education and Healthcare',
-    'Credible, honest technology service provision like no other',
+    'Pushing The Boundaries Of Bi/Ai In Education & Healthcare',
+    'Credible, Honest Technology Service Provision Like No Other',
   ],
   description:
     'NetPro delivers bespoke software solutions, technology  transformation, and innovation-led services across education,  healthcare, government, SMEs and enterprises in sub-Saharan Africa.',

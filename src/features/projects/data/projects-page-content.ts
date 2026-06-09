@@ -310,7 +310,7 @@ const educationProducts: SoftwareProject[] = [
   },
   {
     id: 'cpms',
-    title: 'Clinical placement management system',
+    title: 'Clinical Placement management system',
     image: assetUrl('/assets/netpro/Clinical placement management system.png'),
     tags: [
       { label: 'Clinical Placement', icon: BriefcaseBusinessIcon },
@@ -654,7 +654,7 @@ const healthcareProducts: SoftwareProject[] = [
   },
   {
     id: 'tvhs',
-    title: 'Telemedicine Virtual Healthcare Solutions',
+    title: 'Telemedicine / Virtual Healthcare Solutions',
     image: assetUrl(
       '/assets/netpro/Telemedicine Virtual Healthcare Solutions.png',
     ),
@@ -1210,7 +1210,7 @@ export const portfolioIntro = {
   eyebrow: 'Portfolio',
   title: 'Our Work in Action',
   description:
-    "A selection of completed and live deployments across education, healthcare, the judiciary, and enterprise, demonstrating NetPro's proven capacity to deliver digital technology for Nigerian institutions.",
+    "A selection of completed and live deployments across education, healthcare, the judiciary, and enterprise, demonstrating NetPro's proven capacity to deliver digital technology for institutions.",
 };
 
 export const featuredDeployments: SoftwareProject[] = [
@@ -1294,7 +1294,7 @@ export const featuredDeployments: SoftwareProject[] = [
   },
   {
     id: 'imo-judiciary',
-    title: 'AI Powered Judiciaries Management Information System',
+    title: 'Judiciaries Management Information System',
     image: assetUrl(
       '/assets/netpro/Judiciary Management Information System.png',
     ),

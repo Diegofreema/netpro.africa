@@ -3,7 +3,6 @@ import {
   ArrowRightIcon,
   BarChart3Icon,
   BriefcaseBusinessIcon,
-  CalendarDaysIcon,
   CreditCardIcon,
   GraduationCapIcon,
   LineChartIcon,
@@ -57,7 +56,7 @@ export const servicesHero = {
 
 export const serviceLinesIntro = {
   kicker: 'What we offer',
-  title: '9 Service Lines. One Technology Partner.',
+  title: 'Multiple Service Lines. One Technology Partner.',
   summary:
     'Our capabilities span the full technology lifecycle, from initial strategy through implementation, training, and long-term support.',
 };
@@ -102,23 +101,10 @@ export const serviceLines: ServiceLine[] = [
     ],
     icon: MonitorCogIcon,
   },
-  {
-    id: 'fintech-solutions',
-    number: '04',
-    title: 'Financial Technology (FinTech) Solutions',
-    body: 'Purpose-built financial infrastructure for microfinance institutions, cooperative societies, credit unions, agent banking networks, and SME lenders.',
-    points: [
-      'Microfinance bank core platform design and deployment',
-      'Cooperative society and SACCO management systems',
-      'Digital lending workflow and credit scoring integration',
-      'USSD, NIP, and payment gateway integration',
-      'Regulatory compliance and audit trail architecture',
-    ],
-    icon: CreditCardIcon,
-  },
+
   {
     id: 'hardware-enterprise-equipment',
-    number: '05',
+    number: '04',
     title: 'Hardware & Enterprise Equipment',
     body: 'Supply and installation of enterprise network equipment, portable systems, servers, and didactic equipment for technical and engineering education.',
     points: [
@@ -130,7 +116,7 @@ export const serviceLines: ServiceLine[] = [
   },
   {
     id: 'training-capacity-building',
-    number: '06',
+    number: '05',
     title: 'Training & Capacity Building',
     body: 'Technical training programmes for Nigerian and African learners covering software development, data analysis, cybersecurity, AI/ML, UI/UX, DevOps, project management, and FinTech operations.',
     points: [
@@ -143,8 +129,8 @@ export const serviceLines: ServiceLine[] = [
   },
   {
     id: 'cybersecurity-data-analysis',
-    number: '07',
-    title: 'Cybersecurity & Data Analysis',
+    number: '06',
+    title: 'Business Intelligence & Cybersecurity',
     body: 'Cybersecurity services including network security audits, penetration testing, data analysis, and protection of digital assets and institutional data.',
     points: [
       'Network security assessments and vulnerability scanning',
@@ -156,7 +142,7 @@ export const serviceLines: ServiceLine[] = [
   },
   {
     id: 'mobile-app-development',
-    number: '08',
+    number: '07',
     title: 'Mobile App Development',
     body: 'Native and cross-platform mobile applications built with modern stacks for institutional clients, healthcare providers, financial services, and SMEs.',
     points: [
@@ -168,16 +154,18 @@ export const serviceLines: ServiceLine[] = [
     icon: SmartphoneIcon,
   },
   {
-    id: 'booking-scheduling-software',
-    number: '09',
-    title: 'Booking & Scheduling Software',
-    body: 'Appointment and scheduling management software for service businesses including salons, barbershops, clinics, and financial service branches.',
+    id: 'fintech-solutions',
+    number: '08',
+    title: 'Financial Technology (FinTech) Solutions',
+    body: 'Purpose-built financial infrastructure for microfinance institutions, cooperative societies, credit unions, agent banking networks, and SME lenders.',
     points: [
-      'Multi-location scheduling and capacity management',
-      'Automated appointment reminders via SMS and email',
-      'Staff and resource allocation dashboards',
+      'Microfinance bank core platform design and deployment',
+      'Cooperative society and SACCO management systems',
+      'Digital lending workflow and credit scoring integration',
+      'USSD, NIP, and payment gateway integration',
+      'Regulatory compliance and audit trail architecture',
     ],
-    icon: CalendarDaysIcon,
+    icon: CreditCardIcon,
   },
 ];
 

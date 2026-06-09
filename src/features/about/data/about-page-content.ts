@@ -153,7 +153,7 @@ export const story = {
 export const serviceIntro = {
   eyebrow: 'What we do',
   title:
-    'Purpose-Built Software for Education, Healthcare & Financial Services',
+    'Purpose-Built Software for Education, Healthcare & Corporate services',
   body: 'We build and deploy intelligent software platforms for how institutions educate, hospitals deliver care, financial institutions serve clients, and businesses operate.',
 };
 

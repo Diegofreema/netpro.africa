@@ -1,6 +1,6 @@
-# Netpro Africa
+# Netpro
 
-React application scaffold for the Netpro Africa website.
+React application scaffold for the Netpro website.
 
 ## Stack
 

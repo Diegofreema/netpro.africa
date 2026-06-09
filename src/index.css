@@ -40,6 +40,11 @@
   a {
     -webkit-tap-highlight-color: transparent;
   }
+  select,
+  select option {
+    background-color: var(--np-surface);
+    color: var(--np-text);
+  }
 }
 
 @layer utilities {

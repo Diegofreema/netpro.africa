@@ -18,11 +18,11 @@ export function SiteCta() {
             Ready to Transform Your Digital Presence?
           </h2>
           <p className="mt-5 max-w-295 text-base leading-7 text-(--np-subtle) sm:mt-7 sm:text-[clamp(1rem,1.35vw,1.25rem)] sm:leading-relaxed">
-            Take the first step towards digital success with NETPRO Africa by
-            your side. Our team of experts is eager to craft tailored solutions
-            that drive growth for your business. Whether you need a stunning
-            website, a powerful mobile app, or a data-driven marketing campaign,
-            we've got you covered. Let's embark on this transformative journey
+            Take the first step towards digital success with Netpro by your
+            side. Our team of experts is eager to craft tailored solutions that
+            drive growth for your business. Whether you need a stunning website,
+            a powerful mobile app, or a data-driven marketing campaign, we've
+            got you covered. Let's embark on this transformative journey
             together.
           </p>
           <p className="mt-8 text-lg font-medium leading-7 text-foreground sm:mt-14 sm:text-[clamp(1.05rem,1.5vw,1.35rem)]">

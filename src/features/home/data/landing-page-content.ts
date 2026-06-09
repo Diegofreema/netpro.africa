@@ -238,10 +238,9 @@ export const testimonials = [
 
 export const faqs: LandingFaq[] = [
   {
-    question:
-      'Why should we choose NetPro Africa over other technology companies?',
+    question: 'Why should we choose Netpro over other technology companies?',
     answer:
-      'NetPro Africa is more than a software development company - we are a digital transformation partner. We combine strategy, engineering, infrastructure, cybersecurity, and enterprise support to deliver technology solutions that solve real business problems and create measurable impact.',
+      'Netpro is more than a software development company - we are a digital transformation partner. We combine strategy, engineering, infrastructure, cybersecurity, and enterprise support to deliver technology solutions that solve real business problems and create measurable impact.',
   },
   {
     question: 'Do you build products or custom enterprise solutions?',
@@ -249,8 +248,7 @@ export const faqs: LandingFaq[] = [
       "Both. We develop proprietary platforms while also designing fully customized solutions tailored to an organization's processes, policies, and growth objectives. Every implementation is engineered to fit your business rather than forcing your business to fit the software.",
   },
   {
-    question:
-      'Can NetPro Africa handle large-scale digital transformation projects?',
+    question: 'Can Netpro handle large-scale digital transformation projects?',
     answer:
       'Yes. Our team works with institutions and enterprises to modernize operations through integrated technology ecosystems, automation, cloud solutions, intelligent data management, and enterprise applications that scale with organizational growth.',
   },
@@ -280,7 +278,7 @@ export const faqs: LandingFaq[] = [
       'Yes. Technology is an ongoing journey, not a one-time delivery. We provide post-deployment support, maintenance, performance optimization, updates, troubleshooting, and continuous improvement to ensure long-term success.',
   },
   {
-    question: 'Can NetPro Africa work with organizations outside Nigeria?',
+    question: 'Can Netpro work with organizations outside Nigeria?',
     answer:
       'Yes. Our solutions are designed for organizations across Africa and beyond. Through remote collaboration, cloud infrastructure, and modern development practices, we successfully deliver projects regardless of geographical location.',
   },
@@ -295,12 +293,12 @@ export const faqs: LandingFaq[] = [
       'Project timelines depend on complexity, scope, integrations, and organizational requirements. After discovery and requirements analysis, we provide a transparent implementation roadmap with clearly defined milestones and deliverables.',
   },
   {
-    question: 'What makes NetPro Africa different?',
+    question: 'What makes Netpro different?',
     answer:
       'Our philosophy is simple: Technology should solve business problems, not create new ones. We combine technical excellence with strategic thinking to deliver solutions that are scalable, secure, user-centric, and built for long-term value.',
   },
   {
-    question: 'How can we start working with NetPro Africa?',
+    question: 'How can we start working with Netpro?',
     answer:
       "Simply reach out to our team with your objectives or challenges. We'll schedule a consultation, assess your needs, recommend the most suitable solution, and develop a roadmap that aligns technology with your business goals.",
   },
@@ -310,37 +308,37 @@ export const partners: LandingPartner[] = [
   {
     name: 'ABC Tech Solutions',
     description:
-      'A leading technology firm that trusted Netpro Africa to develop their responsive website, showcasing their products and services.',
+      'A leading technology firm that trusted Netpro to develop their responsive website, showcasing their products and services.',
     icon: BoxesIcon,
   },
   {
     name: 'GreenEarth Eco Store',
     description:
-      'Netpro Africa collaborated with GreenEarth Eco Store to create an engaging e-commerce platform that promotes sustainable living and eco-friendly products.',
+      'Netpro collaborated with GreenEarth Eco Store to create an engaging e-commerce platform that promotes sustainable living and eco-friendly products.',
     icon: DiamondIcon,
   },
   {
     name: 'HealthTech Innovations',
     description:
-      'Netpro Africa developed a user-centric mobile app for HealthTech Innovations, helping them improve how people track and manage their health.',
+      'Netpro developed a user-centric mobile app for HealthTech Innovations, helping them improve how people track and manage their health.',
     icon: Flower2Icon,
   },
   {
     name: 'GlobalTech Solutions',
     description:
-      'GlobalTech Solutions partnered with Netpro Africa for a website redesign, resulting in a modern interface that elevates their online presence.',
+      'GlobalTech Solutions partnered with Netpro for a website redesign, resulting in a modern interface that elevates their online presence.',
     icon: BadgeCheckIcon,
   },
   {
     name: 'TechGuru Inc.',
     description:
-      "Netpro Africa digital marketing strategies boosted TechGuru Inc.'s online visibility and customer engagement, driving significant business growth.",
+      "Netpro digital marketing strategies boosted TechGuru Inc.'s online visibility and customer engagement, driving significant business growth.",
     icon: BlocksIcon,
   },
   {
     name: 'ArtScape Gallery',
     description:
-      "Netpro Africa brought ArtScape Gallery's artistic vision to life with a visually stunning website, showcasing the work of talented artists.",
+      "Netpro brought ArtScape Gallery's artistic vision to life with a visually stunning website, showcasing the work of talented artists.",
     icon: BlocksIcon,
   },
 ];

@@ -9,7 +9,7 @@ import {
 } from '@/features/contact/data/contact-page-content';
 
 const fieldClass =
-  'min-h-14 w-full rounded-full border border-white/10 bg-white/[0.02] px-5 text-base text-foreground outline-none transition-[background-color,border-color,box-shadow] duration-(--np-duration-fast) placeholder:text-[color:var(--np-subtle)] focus:border-primary focus:ring-3 focus:ring-ring/35';
+  'min-h-14 w-full rounded-full border border-(--np-border-strong) bg-(--np-surface) px-5 text-base text-foreground outline-none transition-[background-color,border-color,box-shadow] duration-(--np-duration-fast) placeholder:text-(--np-subtle) focus:border-primary focus:ring-3 focus:ring-ring/35';
 
 export function InquiryFormSection() {
   const [status, setStatus] = useState('');
@@ -32,7 +32,7 @@ export function InquiryFormSection() {
       </div>
 
       <form
-        className="mt-12 rounded-(--np-radius-xl) border border-white/10 bg-(--np-surface) p-6 sm:p-10 lg:p-14"
+        className="mt-12 rounded-(--np-radius-xl) border border-(--np-border) bg-(--np-surface) p-6 sm:p-10 lg:p-14"
         onSubmit={handleSubmit}
         data-reveal="media"
       >
@@ -77,7 +77,7 @@ export function InquiryFormSection() {
         <label className="mt-8 block">
           <span className="text-base font-medium text-foreground">Message</span>
           <textarea
-            className="mt-4 min-h-36 w-full resize-y rounded-lg border border-white/10 bg-white/2 px-5 py-4 text-base leading-7 text-foreground outline-none transition-[background-color,border-color,box-shadow] duration-(--np-duration-fast) placeholder:text-(--np-subtle) focus:border-primary focus:ring-3 focus:ring-ring/35"
+            className="mt-4 min-h-36 w-full resize-y rounded-lg border border-(--np-border-strong) bg-(--np-surface) px-5 py-4 text-base leading-7 text-foreground outline-none transition-[background-color,border-color,box-shadow] duration-(--np-duration-fast) placeholder:text-(--np-subtle) focus:border-primary focus:ring-3 focus:ring-ring/35"
             name="message"
             placeholder="Enter your Message"
             required
@@ -107,11 +107,11 @@ export function InquiryFormSection() {
           return (
             <article
               key={note.title}
-              className="rounded-(--np-radius-xl) border border-white/10 bg-(--np-surface) p-8 sm:p-10"
+              className="rounded-(--np-radius-xl) border border-(--np-border) bg-(--np-surface) p-8 sm:p-10"
               data-reveal="card"
             >
               <div className="flex items-center gap-5">
-                <span className="inline-flex size-14 items-center justify-center rounded-full bg-white/6 text-foreground">
+                <span className="inline-flex size-14 items-center justify-center rounded-full bg-(--np-surface-2) text-foreground">
                   <Icon className="size-7" aria-hidden="true" />
                 </span>
                 <h3 className="text-2xl font-medium text-foreground">

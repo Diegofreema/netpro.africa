@@ -8,7 +8,7 @@ export function TeamSection() {
         <LandingSectionHeading
           eyebrow="Our"
           title="Team Members"
-          description="Partnering with NetPro Africa means working with focused specialists across strategy, product design, software delivery, and digital growth."
+          description="Partnering with NetPro means working with focused specialists across strategy, product design, software delivery, and digital growth."
         />
         <div className="np-reveal-stagger grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
           {teamMembers.map((member) => (

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Netpro Africa uses a dark, high-contrast landing-page system with soft black surfaces, restrained blue actions, chrome-like texture, and centered section rhythm. The design should feel quiet, premium, and technically assured.
+Netpro uses a dark, high-contrast landing-page system with soft black surfaces, restrained blue actions, chrome-like texture, and centered section rhythm. The design should feel quiet, premium, and technically assured.
 
 ## Tokens
 

@@ -15,7 +15,7 @@ export function BrandLogo({ className }: BrandLogoProps) {
         'np-focus inline-flex min-h-11 items-center rounded-sm transition-opacity duration-(--np-duration-fast) hover:opacity-90',
         className,
       )}
-      aria-label="NetPro Africa home"
+      aria-label="Netpro home"
     >
       <img
         src={assetUrl('/assets/netpro/logo.png')}

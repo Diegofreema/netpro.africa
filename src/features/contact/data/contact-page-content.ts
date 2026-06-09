@@ -35,7 +35,7 @@ export type ContactNote = {
 export const contactHero = {
   titleLead: 'Get in',
   title: 'Touch with Us Today!',
-  body: "At NetPro Africa, we value your inquiries, feedback, and collaborations. Whether you are interested in our digital services, have questions about our projects, or want to explore potential partnerships, reach out to our team. We'll respond with the next useful step.",
+  body: "At Netpro, we value your inquiries, feedback, and collaborations. Whether you are interested in our digital services, have questions about our projects, or want to explore potential partnerships, reach out to our team. We'll respond with the next useful step.",
   pill: 'Feel free to contact us through any of the following channels',
 };
 
@@ -151,7 +151,7 @@ export const socialSection = {
   body: 'Stay updated with our latest projects, industry insights, and company news by following us on social media.',
   thanks: 'Thank You!',
   thanksBody:
-    'For considering NetPro Africa for your digital needs. We look forward to connecting with you and supporting your digital goals.',
+    'For considering Netpro for your digital needs. We look forward to connecting with you and supporting your digital goals.',
 };
 
 export const socialLinks = [
@@ -179,7 +179,7 @@ export const socialLinks = [
 
 export const contactCta = {
   title: 'Ready to Transform Your Digital Presence?',
-  body: "Take the first step toward digital success with NetPro Africa by your side. Whether you need a website, mobile app, or data-driven campaign, we'll help you map the next move.",
+  body: "Take the first step toward digital success with Netpro by your side. Whether you need a website, mobile app, or data-driven campaign, we'll help you map the next move.",
   prompt: 'Unlock your digital potential today',
   primary: 'Request Consultation',
   secondary: 'See our products',

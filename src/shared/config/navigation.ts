@@ -10,8 +10,8 @@ export const navigationItems = [
     description: 'Consulting, implementation, support, and managed services',
   },
   {
-    title: 'Projects',
-    path: '/projects',
+    title: 'Products',
+    path: '/products',
     description: 'Case studies, delivery snapshots, and portfolio work',
   },
   {
@@ -40,4 +40,4 @@ export type NavigationPath =
   | '/about-us'
   | '/contact-us'
   | '/careers'
-  | '/blog'
+  | '/blog';

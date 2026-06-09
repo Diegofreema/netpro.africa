@@ -39,7 +39,7 @@ export const pageSeo = {
   },
   projects: {
     title:
-      'Software Products for Education, Healthcare, FinTech & Enterprise | Netpro',
+      'Software Product for Education, Healthcare, FinTech & Enterprise | Netpro',
     description:
       'Explore Netpro software products for education, healthcare, financial services, and enterprise institutions across Nigeria and Africa. Live demos available.',
     keywords:

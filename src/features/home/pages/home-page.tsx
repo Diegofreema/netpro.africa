@@ -26,6 +26,13 @@ const homeSections: AnimatedPageSectionConfig[] = [
     amount: 0.55,
   },
   {
+    id: 'works',
+    Component: WorksSection,
+    y: 34,
+    scale: 0.994,
+    amount: 0.2,
+  },
+  {
     id: 'tech-partners',
     Component: TechPartnersSection,
     y: 22,
@@ -46,13 +53,7 @@ const homeSections: AnimatedPageSectionConfig[] = [
     scale: 0.993,
     amount: 0.2,
   },
-  {
-    id: 'works',
-    Component: WorksSection,
-    y: 34,
-    scale: 0.994,
-    amount: 0.2,
-  },
+
   {
     id: 'testimonials',
     Component: TestimonialsSection,

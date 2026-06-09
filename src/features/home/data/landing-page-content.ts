@@ -53,7 +53,7 @@ export const heroContent = {
   title: 'Leading Innovation & Technology Transformation Since 2000',
   titles: [
     'Leading Innovation & Technology Transformation Since 2000',
-    'Pushing the Boundaries of Bi/Ai In Education & Healthcare',
+    'Pushing the Boundaries of Bi/Ai in Education & Healthcare',
     'Credible, Honest Technology Service Provision Like No Other',
   ],
   description:

@@ -8,29 +8,29 @@ type PageSeo = {
   path: string;
 };
 
-export const siteName = 'Netpro International Limited';
+export const siteName = 'NetPro International Limited';
 export const defaultOgImage = absoluteUrl('/assets/netpro/logo.png');
 
 export const pageSeo = {
   home: {
     title:
-      'Netpro International Limited - Leading Innovation & Technology Transformation in Africa',
+      'NetPro International Limited - Leading Innovation & Technology Transformation in Africa',
     description:
-      'Netpro delivers bespoke software solutions, technology transformation, and innovation-led services across education, healthcare, financial services, and enterprise in Africa. Trusted since 2000.',
+      'NetPro delivers bespoke software solutions, technology transformation, and innovation-led services across education, healthcare, financial services, and enterprise in Africa. Trusted since 2000.',
     keywords:
       'technology transformation Africa, innovation consulting Nigeria, educational management system, hospital management system, microfinance bank software Nigeria, cooperative society management system, financial technology Africa, SaaS Nigeria, ERP Africa, bespoke software Nigeria, NetPro',
     path: '/',
   },
   about: {
-    title: 'About Netpro | 25 Years of Innovation & Technology in Africa',
+    title: 'About NetPro | 25 Years of Innovation & Technology in Africa',
     description:
-      'Netpro has been transforming institutions across Africa through bespoke software, technology consultancy, and innovation-led services since 2000.',
+      'NetPro has been transforming institutions across Africa through bespoke software, technology consultancy, and innovation-led services since 2000.',
     keywords:
       'NetPro history, innovation company Nigeria, technology consultancy Africa, bespoke software Nigeria, fintech Nigeria, software company Owerri',
     path: '/about-us',
   },
   services: {
-    title: 'Technology Services & Capabilities | Netpro International Limited',
+    title: 'Technology Services & Capabilities | NetPro International Limited',
     description:
       "Explore NetPro's 9 technology service lines - from management consultancy and bespoke ERP development to financial technology, cybersecurity, mobile apps, and enterprise hardware.",
     keywords:
@@ -39,33 +39,33 @@ export const pageSeo = {
   },
   products: {
     title:
-      'Software Product for Education, Healthcare, FinTech & Enterprise | Netpro',
+      'Software Product for Education, Healthcare, FinTech & Enterprise | NetPro',
     description:
-      'Explore Netpro software products for education, healthcare, financial services, and enterprise institutions across Nigeria and Africa. Live demos available.',
+      'Explore NetPro software products for education, healthcare, financial services, and enterprise institutions across Nigeria and Africa. Live demos available.',
     keywords:
       'education software Nigeria, hospital management system Nigeria, microfinance bank software Nigeria, cooperative society management system, digital lending platform Nigeria, HRMS Nigeria, enterprise ERP Africa, SaaS education Africa, fintech software Nigeria, NetPro products',
     path: '/products',
   },
   contact: {
-    title: 'Contact Netpro | Enterprise Software Consultation',
+    title: 'Contact NetPro | Enterprise Software Consultation',
     description:
-      'Contact Netpro for bespoke software, technology transformation, FinTech platforms, healthcare systems, education software, and enterprise technology consulting.',
+      'Contact NetPro for bespoke software, technology transformation, FinTech platforms, healthcare systems, education software, and enterprise technology consulting.',
     keywords:
-      'contact Netpro, software company Nigeria, technology consultation Nigeria, enterprise software consultation, fintech software consultation, Owerri software company',
+      'contact NetPro, software company Nigeria, technology consultation Nigeria, enterprise software consultation, fintech software consultation, Owerri software company',
     path: '/contact-us',
   },
   careers: {
-    title: 'Careers at Netpro | Build Software for African Institutions',
+    title: 'Careers at NetPro | Build Software for African Institutions',
     description:
-      'Join Netpro and help build education, healthcare, financial technology, and enterprise software products for institutions across Nigeria and Africa.',
+      'Join NetPro and help build education, healthcare, financial technology, and enterprise software products for institutions across Nigeria and Africa.',
     keywords:
       'NetPro careers, software jobs Nigeria, technology jobs Owerri, frontend jobs Nigeria, mobile developer Nigeria, product support jobs Nigeria',
     path: '/careers',
   },
   blog: {
-    title: 'Technology Insights & Software Innovation Blog | Netpro',
+    title: 'Technology Insights & Software Innovation Blog | NetPro',
     description:
-      'Read Netpro insights on software innovation, digital transformation, education technology, healthcare platforms, financial technology, and enterprise systems.',
+      'Read NetPro insights on software innovation, digital transformation, education technology, healthcare platforms, financial technology, and enterprise systems.',
     keywords:
       'NetPro blog, technology insights Nigeria, software innovation Africa, digital transformation Nigeria, education technology blog, fintech insights Africa',
     path: '/blog',
@@ -74,7 +74,7 @@ export const pageSeo = {
 
 export const productCategorySeo = {
   education: {
-    title: 'Education Software Products | Netpro',
+    title: 'Education Software Products | NetPro',
     description:
       '10 SaaS-based education software products for African institutions - EMS, LMS, HMS, SHIMS, RTMS, HRMS and more. Live demos available.',
     keywords:
@@ -82,7 +82,7 @@ export const productCategorySeo = {
     path: '/products',
   },
   healthcare: {
-    title: 'Healthcare Software Products | Netpro',
+    title: 'Healthcare Software Products | NetPro',
     description:
       'Hospital management, student health, and home healthcare platforms for Nigerian and African institutions. Live demos available.',
     keywords:
@@ -91,7 +91,7 @@ export const productCategorySeo = {
   },
   financialServices: {
     title:
-      'Financial Technology Software | Microfinance, Cooperative & Digital Banking | Netpro',
+      'Financial Technology Software | Microfinance, Cooperative & Digital Banking | NetPro',
     description:
       '6 SaaS-based financial technology products for African financial institutions - Microfinance Bank System, Cooperative Management, Digital Lending, Agent Banking Platform, Mobile Banking App, and Payment Management. CBN-aware. Live demos available.',
     keywords:
@@ -99,7 +99,7 @@ export const productCategorySeo = {
     path: '/products',
   },
   enterprise: {
-    title: 'Enterprise Software Products | HRMS, JMIS, PMS, NBACCS | Netpro',
+    title: 'Enterprise Software Products | HRMS, JMIS, PMS, NBACCS | NetPro',
     description:
       'Enterprise management software for HR, the judiciary, property management, and legal compliance - built for Nigerian organisations. Live demos available.',
     keywords:

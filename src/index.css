@@ -86,6 +86,12 @@
     will-change: transform;
   }
 
+  .np-testimonials-marquee {
+    animation: np-testimonials-marquee 48s linear infinite;
+    will-change: transform;
+  }
+
+
   .light .border-white\/8,
   .light .border-white\/10,
   .light .border-white\/12 {
@@ -445,6 +451,15 @@
   }
 }
 
+@keyframes np-testimonials-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 @keyframes np-faq-open {
   from {
     height: 0;
@@ -496,7 +511,8 @@
   .np-hero-actions,
   .np-type-cursor,
   .np-project-slide,
-  .np-trust-marquee {
+  .np-trust-marquee,
+  .np-testimonials-marquee {
     animation: none !important;
     filter: none !important;
     opacity: 1 !important;

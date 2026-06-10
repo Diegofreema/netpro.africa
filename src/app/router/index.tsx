@@ -4,14 +4,16 @@ import {
   createRouter,
 } from '@tanstack/react-router';
 
-import { AboutPage } from '@/features/about/pages/about-page';
-import { BlogPage } from '@/features/blog/pages/blog-page';
-import { CareersPage } from '@/features/careers/pages/careers-page';
-import { ContactPage } from '@/features/contact/pages/contact-page';
-import { HomePage } from '@/features/home/pages/home-page';
-import { ProjectsPage } from '@/features/projects/pages/projects-page';
-import { ServicesPage } from '@/features/services/pages/services-page';
 import { RootRouteComponent } from '@/app/router/root-route';
+import {
+  AboutPage,
+  BlogPage,
+  CareersPage,
+  ContactPage,
+  HomePage,
+  ProjectsPage,
+  ServicesPage,
+} from '@/app/router/lazy-pages';
 import { routerBasePath } from '@/shared/config/site';
 import { organizationJsonLd, pageSeo, routeHead } from '@/shared/config/seo';
 

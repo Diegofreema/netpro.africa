@@ -28,7 +28,7 @@ export type BlogMetaItem = {
 export const blogHero = {
   titleLead: 'Empowering Your',
   title: 'Digital Journey',
-  body: 'At Netpro, we share practical notes from design, development, marketing, and technology delivery. Our blog gives founders, operators, and technical teams useful ideas they can apply to real projects.',
+  body: 'At NetPro, we share practical notes from design, development, marketing, and technology delivery. Our blog gives founders, operators, and technical teams useful ideas they can apply to real projects.',
 };
 
 export const blogCategories: BlogCategory[] = [
@@ -51,7 +51,7 @@ export const blogPosts: BlogPost[] = [
     date: '15 / 01 / 2023',
     readTime: '6 minutes',
     image: assetUrl('/assets/netpro/logo.png'),
-    imageAlt: 'Netpro brand mark on a dark textured card',
+    imageAlt: 'NetPro brand mark on a dark textured card',
     featured: true,
   },
   {
@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
 export const blogCta = {
   title: 'Ready to Transform Your Digital Presence?',
   description:
-    'Take the first step towards digital success with Netpro by your side. Our team is eager to craft tailored solutions that move your project forward.',
+    'Take the first step towards digital success with NetPro by your side. Our team is eager to craft tailored solutions that move your project forward.',
   prompt: 'Unlock your digital potential today',
   primary: 'Request Consultation',
   secondary: 'See our products',

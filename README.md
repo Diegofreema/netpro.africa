@@ -1,6 +1,6 @@
-# Netpro
+# NetPro
 
-React application scaffold for the Netpro website.
+React application scaffold for the NetPro website.
 
 ## Stack
 

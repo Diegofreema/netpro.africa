@@ -127,7 +127,7 @@ export const pageContent = {
           'Role cards grouped by department, seniority, location, and employment type.',
       },
       {
-        title: 'Life at Netpro',
+        title: 'Life at NetPro',
         description:
           'Culture stories, growth paths, working norms, and employee experience content.',
       },

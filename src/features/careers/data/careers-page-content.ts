@@ -32,7 +32,7 @@ export type ApplicationStep = {
 export const careersHero = {
   title: 'Unlock Your Potential in the Digital World',
   titleMuted: 'in the Digital World',
-  body: 'At Netpro, we build a work environment where careful people can do strong work. Join a team creating software, design systems, and digital services for organizations that need dependable technology.',
+  body: 'At NetPro, we build a work environment where careful people can do strong work. Join a team creating software, design systems, and digital services for organizations that need dependable technology.',
 };
 
 export const careersIntro = {
@@ -50,7 +50,7 @@ export const careerJobs: CareerJob[] = [
     skills:
       'Proficiency in Adobe Creative Suite, Figma, responsive design systems, and practical UI/UX design principles.',
     description:
-      'As a Web Designer at Netpro, you will create polished, user-friendly website designs and work closely with development and marketing teams to turn concepts into production interfaces.',
+      'As a Web Designer at NetPro, you will create polished, user-friendly website designs and work closely with development and marketing teams to turn concepts into production interfaces.',
     deadline: '30th September 2025',
     responsibilities: [
       'Design responsive website layouts, graphics, icons, and interface states.',
@@ -86,7 +86,7 @@ export const careerJobs: CareerJob[] = [
     skills:
       'Proficiency in SEO, SEM, social media marketing, content strategy, campaign analytics, and reporting tools.',
     description:
-      'You will plan campaigns, improve client visibility, and turn performance data into clear next steps for brands across Netpro projects.',
+      'You will plan campaigns, improve client visibility, and turn performance data into clear next steps for brands across NetPro projects.',
     deadline: '20th October 2025',
     responsibilities: [
       'Plan digital campaigns across search, social, email, and content channels.',
@@ -105,7 +105,7 @@ export const careerJobs: CareerJob[] = [
     skills:
       'Strong troubleshooting, SQL basics, client communication, documentation, and incident follow-up skills.',
     description:
-      'You will support institutions using Netpro platforms, investigate issues, document fixes, and help product teams improve reliability.',
+      'You will support institutions using NetPro platforms, investigate issues, document fixes, and help product teams improve reliability.',
     deadline: '31st October 2025',
     responsibilities: [
       'Respond to product support tickets with clear status updates.',
@@ -119,7 +119,7 @@ export const careerJobs: CareerJob[] = [
 export const applyIntro = {
   titleLead: 'How to',
   title: 'Apply',
-  body: 'Interested in joining Netpro? Review the role, prepare your materials, and submit your application through the form.',
+  body: 'Interested in joining NetPro? Review the role, prepare your materials, and submit your application through the form.',
 };
 
 export const applicationSteps: ApplicationStep[] = [
@@ -158,7 +158,7 @@ export const applicationSteps: ApplicationStep[] = [
 export const careersCta = {
   title: 'Ready to Transform Your Digital Presence?',
   description:
-    'Take the first step towards digital success with Netpro by your side. Our team is eager to craft tailored solutions that drive growth for your business.',
+    'Take the first step towards digital success with NetPro by your side. Our team is eager to craft tailored solutions that drive growth for your business.',
   prompt: 'Unlock your digital potential today',
   primary: 'Request Consultation',
   secondary: 'See our products',

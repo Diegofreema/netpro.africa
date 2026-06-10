@@ -6,11 +6,11 @@ brand
 
 ## Users
 
-Business owners, nonprofit leads, education teams, health-care operators, and public-sector stakeholders evaluating Netpro as a digital technology partner. They arrive with a project, redesign, or growth need and want confidence that the team can consult, design, build, and support serious work.
+Business owners, nonprofit leads, education teams, health-care operators, and public-sector stakeholders evaluating NetPro as a digital technology partner. They arrive with a project, redesign, or growth need and want confidence that the team can consult, design, build, and support serious work.
 
 ## Product Purpose
 
-Netpro's site presents the company as a calm, capable technology consultancy with a clear delivery range: web, mobile, design, marketing, SEO, and long-term support. Success means visitors quickly understand the offer, trust the craft, and move toward a consultation.
+NetPro's site presents the company as a calm, capable technology consultancy with a clear delivery range: web, mobile, design, marketing, SEO, and long-term support. Success means visitors quickly understand the offer, trust the craft, and move toward a consultation.
 
 ## Brand Personality
 

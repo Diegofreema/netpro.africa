@@ -55,7 +55,7 @@ const productLinks = [
 ] as const;
 
 const siteLinks = [
-  { label: 'Netpro International', href: 'https://www.netpro.international' },
+  { label: 'NetPro International', href: 'https://www.netpro.international' },
   { label: 'NetPro Software', href: 'https://www.netpro.software' },
 ] as const;
 
